@@ -89,10 +89,11 @@ RETURN p.content
 ## Ejercicio 5: Explorando el Grafo Visualmente
 
 ### Arrastra nodos para reorganizar el grafo.
-![Foto1](https://github.com/jairoG1/Ejercicios/tree/main/Fotos/Tarea2.png)
+![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea2.png)
+
 
 ### Haz doble clic en un nodo para expandir sus relaciones.
-![Foto2](https://github.com/jairoG1/Ejercicios/tree/main/Fotos/Tarea2.1.png)
+![Foto2](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea2.1.png)
 
 ### Usa el panel de estilos para cambiar colores y tamaños de nodos/relaciones.
-![Foto3](https://github.com/jairoG1/Ejercicios/tree/main/Fotos/Tarea2.2.png)
+![Foto3](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea2.2.png)
