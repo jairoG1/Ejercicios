@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Social con Neo4j</title>
+  <style>
+    body { font-family: Arial; margin: 20px; background: #f3f3f3; }
+    h1 { color: #333; }
+    button { margin-top: 10px; }
+    textarea, input { width: 300px; margin-top: 5px; }
+    pre { background: #fff; padding: 10px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>API Neo4j </h1>
+
+  <section>
+    <h2>Crear usuario</h2>
+    <input id="username" placeholder="Usuario">
+    <input id="name" placeholder="Nombre">
+    <button onclick="createUser()">Crear</button>
+  </section>
+
+  <section>
+    <h2>Seguir usuario</h2>
+    <input id="from" placeholder="De (username)">
+    <input id="to" placeholder="A (username)">
+    <button onclick="followUser()">Seguir</button>
+  </section>
+
+  <section>
+    <h2>Crear post</h2>
+    <input id="userPost" placeholder="Usuario">
+    <textarea id="content" placeholder="Contenido del post"></textarea>
+    <button onclick="createPost()">Publicar</button>
+  </section>
+
+  <section>
+    <h2>Listar posts de un usuario</h2>
+    <input id="userPosts" placeholder="Usuario">
+    <button onclick="getPosts()">Ver posts</button>
+  </section>
+
+  <section>
+    <h2>Usuarios</h2>
+    <button onclick="getUsers()">Listar usuarios</button>
+  </section>
+
+  <section>
+    <h2>Seguimientos mutuos</h2>
+    <button onclick="getMutuals()">Ver mutuos</button>
+  </section>
+
+  <pre id="output"></pre>
+
+  <script>
+    const out = document.getElementById("output");
+
+    async function createUser() {
+      const username = username.value;
+      const name = name.value;
+      const res = await fetch("/users", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({username, name})
+      });
+      out.textContent = await res.text();
+    }
+
+    async function followUser() {
+      const res = await fetch("/follow", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({from: from.value, to: to.value})
+      });
+      out.textContent = await res.text();
+    }
+
+    async function createPost() {
+      const res = await fetch("/posts", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({username: userPost.value, content: content.value})
+      });
+      out.textContent = await res.text();
+    }
+
+    async function getPosts() {
+      const res = await fetch("/posts/" + userPosts.value);
+      out.textContent = await res.text();
+    }
+
+    async function getUsers() {
+      const res = await fetch("/users");
+      out.textContent = await res.text();
+    }
+
+    async function getMutuals() {
+      const res = await fetch("/mutuals");
+      out.textContent = await res.text();
+    }
+  </script>
+</body>
+</html>
