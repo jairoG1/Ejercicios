@@ -4,25 +4,30 @@
 ### 1. Creando nuestra primera tabla en la nube
 
 ![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.1.png)
-
+En esta captura se realiza la tabla
 ---
 
 ### 2. Insertando nuestros primeros pedidos
 ![Foto2](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.2.png)
+En esta captura inserto los usuarios
 ---
 
 ### 3. Explorando y modificando los datos
 #### 3.1 Busqueda
 ![Foto3](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.3.png)
 ![Foto4](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.4.png)
+En estas capturas realizo las busquedas que se me han pedido
 #### 3.2 Detalles
 ![Foto5](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.5.png)
+En esta captura se muestras los detalles de un usuario
 #### 3.3 Actualizar
 ![Foto6](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.6.png)
+En esta captura se ve como se realiza una actualización desde la vista
 ---
 
 ### 4. Eliminando un pedido
 ![Foto7](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea3.7.png)
+En esta captura se ve como se elimina un pedido
 ---
 
 ## Reflexión Final: DynamoDB en el Ecosistema NoSQL
