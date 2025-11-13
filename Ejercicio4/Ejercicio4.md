@@ -3,10 +3,10 @@
 ## Parte 1: Preparando el Entorno de Programación
 ### 1.1. Instalación de Boto3
 #### Instala Boto3:
-(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.1.png))
+(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.1.png)
 ##### Aqui se muestra la instalacion de Boto3
 -------------
-(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.2.png)
+![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.2.png)
 ##### Despues introducimos las credenciales a traves del comando aws configure
 ### 1.2. Verificación de las Credenciales
 (![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.3.png)
