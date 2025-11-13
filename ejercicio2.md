@@ -1,7 +1,6 @@
 ###### Jairo Guardado Aragón
 # Ejercicios Neo4j
 ## Ejercicio 1: Diseño del Modelo de Datos de la Red Social
-### Nodos:
 #### Usuarios:
 ```json
 CREATE (:User {username: 'JairoG', name: 'Jairo',registration_date:'17/2/2003'})
