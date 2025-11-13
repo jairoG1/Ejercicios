@@ -3,13 +3,13 @@
 ## Parte 1: Preparando el Entorno de Programación
 ### 1.1. Instalación de Boto3
 #### Instala Boto3:
-![Foto3](![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.1.png))
+(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.1.png))
 ##### Aqui se muestra la instalacion de Boto3
 -------------
-![Foto3](![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.2.png)
+(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.2.png)
 ##### Despues introducimos las credenciales a traves del comando aws configure
 ### 1.2. Verificación de las Credenciales
-![Foto3](![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.3.png)
+(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.3.png)
 ##### En esta parte comprobamos y verificamos el usuaria de AWS
 ## Parte 2: Automatizando Operaciones con Boto3
 ### 2.1. Conexión a DynamoDB
@@ -138,7 +138,7 @@ if __name__ == "__main__":
     print("\n--- Demostración finalizada ---")
 ```
 ##### Resultado del Script
-![Foto3](![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.7.png)
+(![Foto1](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea4.7.png)
 
 ### Reflexión Final
  >Automatización vs. Consola: ¿Qué ventajas claras observas al usar un script de Python en lugar de la consola web de AWS para gestionar los datos? ¿Y qué desventajas?
