@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Palace - Sistema de Gestión</title>
+    <style>
+        /* ====== TEMA GRAN HOTEL CÁCERES - DORADO Y MARRÓN ====== */
+:root {
+    --color-primary: #8B7355;      /* Marrón cálido principal */
+    --color-secondary: #A0522D;    /* Marrón terracota */
+    --color-accent: #D4AF37;       /* Dorado principal */
+    --color-accent-light: #F5E6A6; /* Dorado claro */
+    --color-accent-dark: #B8860B;  /* Dorado oscuro */
+    --color-success: #2E7D32;
+    --color-warning: #F57C00;
+    --color-danger: #C62828;
+    --color-light: #FFF8E1;        /* Beige claro */
+    --color-dark: #3E2723;         /* Marrón oscuro */
+    --color-gray: #5D4037;         /* Marrón grisáceo */
+    --color-white: #FFFFFF;
+    --color-border: #D7CCC8;       /* Beige grisáceo */
+    --color-hover: #F5F0E6;        /* Beige muy claro */
+    --color-shadow: rgba(139, 115, 85, 0.1);
+    --color-shadow-hover: rgba(139, 115, 85, 0.2);
+    --text-dark: #3E2723;
+    --text-light: #8D6E63;
+}
+
+/* ====== RESET Y BASE ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    background-color: #F9F5F0; /* Fondo beige suave */
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 14px;
+    min-height: 100vh;
+    padding: 0;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 85% 30%, rgba(139, 115, 85, 0.03) 0%, transparent 20%);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ====== HEADER ELEGANTE - GRAN HOTEL ====== */
+.header {
+    background: linear-gradient(135deg, var(--color-dark) 0%, #5D4037 100%);
+    color: var(--color-accent-light);
+    padding: 28px 32px;
+    margin: 0;
+    box-shadow: 0 4px 20px rgba(62, 39, 35, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--color-accent);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    transform: translate(100px, -100px);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--color-accent-light);
+    font-family: 'Playfair Display', serif;
+}
+
+.header .subtitle {
+    font-size: 16px;
+    opacity: 0.9;
+    font-weight: 300;
+    color: #D7CCC8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+}
+
+/* ====== MENÚ PRINCIPAL ELEGANTE ====== */
+.main-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 32px 0 40px;
+}
+
+.menu-card {
+    background: linear-gradient(145deg, var(--color-white) 0%, #FFF8F0 100%);
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
+}
+
+.menu-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.25);
+}
+
+.menu-card.active {
+    background: linear-gradient(145deg, #FFF8E1 0%, #FFECB3 100%);
+    border-color: var(--color-accent);
+    border-left: 6px solid var(--color-accent);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.2);
+}
+
+.menu-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: var(--color-accent-dark);
+    background: linear-gradient(45deg, var(--color-accent), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.menu-card h3 {
+    color: var(--color-dark);
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Crimson Text', serif;
+}
+
+/* ====== PANEL DE CONTROL ELEGANTE ====== */
+.control-panel {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    box-shadow: 0 8px 32px rgba(139, 115, 85, 0.1);
+    border: 1px solid var(--color-border);
+    background-image: 
+        linear-gradient(to bottom, transparent 96%, var(--color-accent-light) 100%);
+}
+
+.section-title {
+    color: var(--color-dark);
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-accent-light);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-title::before {
+    content: '✨';
+    color: var(--color-accent);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+/* ====== BOTONES ELEGANTES ====== */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    letter-spacing: 0.5px;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
+    color: var(--color-accent-light);
+    border: 1px solid var(--color-secondary);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #4E342E 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(139, 115, 85, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #388E3C 0%, #1B5E20 100%);
+    color: var(--color-white);
+    border: 1px solid #2E7D32;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #43A047 0%, #2E7D32 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.3);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--color-warning) 0%, #E65100 100%);
+    color: var(--color-white);
+    border: 1px solid #F57C00;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(245, 124, 0, 0.3);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--color-danger) 0%, #B71C1C 100%);
+    color: var(--color-white);
+    border: 1px solid #C62828;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #D32F2F 0%, #C62828 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(198, 40, 40, 0.3);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    color: var(--color-dark);
+    border: 1px solid var(--color-accent);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE082 100%);
+    border-color: var(--color-accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.2);
+}
+
+.btn-reporte {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-dark);
+    font-weight: 700;
+    border: 1px solid var(--color-accent-dark);
+}
+
+.btn-reporte:hover {
+    background: linear-gradient(135deg, #FFD54F 0%, var(--color-accent) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ====== FORMULARIOS ELEGANTES ====== */
+.form-container {
+    background: linear-gradient(145deg, #FFFBF0 0%, #FFF5E6 100%);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 28px;
+    display: none;
+    animation: slideDown 0.4s ease;
+    border: 2px solid var(--color-accent-light);
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.15);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-accent-light);
+}
+
+.form-title {
+    color: var(--color-dark);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Crimson Text', serif;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: var(--color-white);
+    color: var(--text-dark);
+    font-family: 'Crimson Text', serif;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.2);
+    background: #FFFDF8;
+}
+
+.form-control::placeholder {
+    color: #BCAAA4;
+    font-style: italic;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+select.form-control {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238B7355' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 14px;
+    padding-right: 48px;
+    appearance: none;
+}
+
+/* ====== TABLA ELEGANTE ====== */
+.data-container {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(139, 115, 85, 0.1);
+    border: 1px solid var(--color-border);
+    margin-bottom: 40px;
+    background-image: 
+        linear-gradient(to bottom, transparent 96%, var(--color-accent-light) 100%);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 24px 0;
+    border-radius: 10px;
+    border: 2px solid var(--color-accent-light);
+    box-shadow: 0 4px 16px rgba(139, 115, 85, 0.1);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 1000px;
+    font-size: 14px;
+}
+
+.data-table thead {
+    background: linear-gradient(135deg, var(--color-dark) 0%, #6D4C41 100%);
+}
+
+.data-table th {
+    padding: 18px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-accent-light);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    border-bottom: 3px solid var(--color-accent);
+    font-family: 'Crimson Text', serif;
+}
+
+.data-table tbody tr {
+    border-bottom: 1px solid var(--color-hover);
+    transition: all 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+    background: linear-gradient(90deg, #FFF8E1 0%, #FFF3E0 100%);
+    transform: scale(1.005);
+    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.1);
+}
+
+.data-table td {
+    padding: 18px 16px;
+    vertical-align: middle;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--color-hover);
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #FFFBF8;
+}
+
+.data-table tbody tr:nth-child(even):hover {
+    background: linear-gradient(90deg, #FFF8E1 0%, #FFF3E0 100%);
+}
+
+/* ====== ACCIONES EN TABLA ====== */
+.table-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 36px;
+    min-width: 80px;
+    justify-content: center;
+    font-family: 'Crimson Text', serif;
+}
+
+.action-view {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    color: #1565C0;
+    border: 1px solid #90CAF9;
+}
+
+.action-view:hover {
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+    color: var(--color-white);
+    border-color: #1565C0;
+    transform: translateY(-1px);
+}
+
+.action-edit {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    color: var(--color-success);
+    border: 1px solid #A5D6A7;
+}
+
+.action-edit:hover {
+    background: linear-gradient(135deg, var(--color-success) 0%, #1B5E20 100%);
+    color: var(--color-white);
+    border-color: var(--color-success);
+    transform: translateY(-1px);
+}
+
+.action-delete {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+    color: var(--color-danger);
+    border: 1px solid #EF9A9A;
+}
+
+.action-delete:hover {
+    background: linear-gradient(135deg, var(--color-danger) 0%, #B71C1C 100%);
+    color: var(--color-white);
+    border-color: var(--color-danger);
+    transform: translateY(-1px);
+}
+
+/* ====== PAGINACIÓN ====== */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    border-radius: 10px;
+    margin-top: 24px;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+
+.page-info {
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.page-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.page-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--color-white) 0%, #FFF8F0 100%);
+    border: 2px solid var(--color-accent);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 14px;
+    height: 40px;
+    min-width: 100px;
+    font-family: 'Crimson Text', serif;
+}
+
+.page-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-dark);
+    border-color: var(--color-accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #F5F5F5;
+    border-color: var(--color-border);
+}
+
+/* ====== MENSAJES ====== */
+.message-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: 400px;
+}
+
+.message {
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 6px solid;
+    background: linear-gradient(135deg, var(--color-white) 0%, #FFFBF0 100%);
+    font-size: 14px;
+    border-top: 1px solid var(--color-accent-light);
+    border-right: 1px solid var(--color-accent-light);
+    border-bottom: 1px solid var(--color-accent-light);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.message-success {
+    border-color: var(--color-success);
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+}
+
+.message-error {
+    border-color: var(--color-danger);
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+}
+
+.message-warning {
+    border-color: var(--color-warning);
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+}
+
+.message-info {
+    border-color: var(--color-accent);
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+}
+
+/* ====== BÚSQUEDA ESPECIAL ====== */
+.special-search {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    border: 3px solid var(--color-accent);
+    border-radius: 12px;
+    padding: 28px;
+    margin-top: 28px;
+    display: none;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+}
+
+.special-search::before {
+    content: '🔍';
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    font-size: 24px;
+    background: var(--color-white);
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--color-accent);
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    color: var(--color-dark);
+}
+
+.search-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+.quick-search {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quick-search input {
+    flex: 1;
+    min-width: 300px;
+    padding: 14px 18px;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    font-size: 15px;
+    background: var(--color-white);
+    color: var(--text-dark);
+    font-family: 'Crimson Text', serif;
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+
+.quick-search input:focus {
+    outline: none;
+    border-color: var(--color-accent-dark);
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.2);
+}
+
+/* ====== ESTADOS ====== */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid;
+    letter-spacing: 0.5px;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    color: var(--color-success);
+    border-color: #A5D6A7;
+}
+
+.status-pending {
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+    color: var(--color-warning);
+    border-color: #FFCC80;
+}
+
+.status-cancelled {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFCDD2 100%);
+    color: var(--color-danger);
+    border-color: #EF9A9A;
+}
+
+.status-available {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    color: #1565C0;
+    border-color: #90CAF9;
+}
+
+.status-vip {
+    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+    color: #7B1FA2;
+    border-color: #CE93D8;
+}
+
+/* ====== ESTILOS ESPECIALES ====== */
+.money {
+    font-weight: 700;
+    color: var(--color-success);
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(45deg, #2E7D32, #4CAF50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.monospace {
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--color-accent);
+    color: var(--color-dark);
+}
+
+/* ====== REPORTE COMPLEJO ====== */
+.reporte-container {
+    background: linear-gradient(135deg, var(--color-white) 0%, #FFFBF0 100%);
+    border-radius: 16px;
+    padding: 36px;
+    margin-bottom: 32px;
+    border: 3px solid var(--color-accent);
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.2);
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.reporte-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    transform: translate(100px, -100px);
+}
+
+.reporte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 3px solid var(--color-accent-light);
+    position: relative;
+    z-index: 1;
+}
+
+.reporte-title {
+    color: var(--color-dark);
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Playfair Display', serif;
+}
+
+.reporte-title::before {
+    content: '📊';
+    font-size: 28px;
+}
+
+.reporte-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 28px;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+}
+
+.reporte-card {
+    background: linear-gradient(145deg, var(--color-white) 0%, #FFF8F0 100%);
+    border-radius: 12px;
+    padding: 24px;
+    border: 2px solid var(--color-accent-light);
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.reporte-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
+}
+
+.reporte-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(139, 115, 85, 0.2);
+    border-color: var(--color-accent);
+}
+
+.reporte-card h4 {
+    color: var(--color-dark);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--color-accent-light);
+    font-family: 'Playfair Display', serif;
+}
+
+.estadistica-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-hover);
+    font-size: 14px;
+}
+
+.estadistica-item:last-child {
+    border-bottom: none;
+}
+
+.estadistica-label {
+    color: var(--color-dark);
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+}
+
+.estadistica-valor {
+    color: var(--color-accent-dark);
+    font-weight: 700;
+    font-size: 16px;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ====== LOADING ====== */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(212, 175, 55, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--color-accent);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .header {
+        padding: 24px 20px;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .header .subtitle {
+        font-size: 14px;
+    }
+    
+    .main-menu {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .control-panel,
+    .data-container {
+        padding: 24px;
+    }
+    
+    .table-responsive {
+        margin: 0 -16px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-width: 1px;
+    }
+    
+    .pagination {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 16px;
+    }
+    
+    .page-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .page-btn {
+        min-width: 80px;
+    }
+    
+    .quick-search input {
+        min-width: 100%;
+    }
+    
+    .reporte-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reporte-container {
+        padding: 24px;
+    }
+}
+
+/* ====== DECORACIONES ADICIONALES ====== */
+.header::after {
+    content: '🏨';
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 48px;
+    opacity: 0.2;
+    transform: rotate(15deg);
+}
+
+.data-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+    border-radius: 2px;
+}
+
+/* ====== EFECTO DORADO BRILLANTE ====== */
+@keyframes goldenGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+    }
+}
+
+.menu-card.active,
+.btn-reporte:hover {
+    animation: goldenGlow 2s infinite;
+}
+
+/* ====== TIPOGRAFÍA ELEGANTE ====== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Hotel Palace Management System</h1>
+                <div class="subtitle">Sistema Integral de Gestión Hotelera</div>
+            </div>
+        </div>
+
+        <!-- MENÚ PRINCIPAL -->
+        <div class="main-menu">
+            <div class="menu-card active" onclick="mostrarTabla('reservas')">
+                <div class="menu-icon">R</div>
+                <h3>Reservas</h3>
+                <p>Gestión completa de reservas y estadías</p>
+            </div>
+            <div class="menu-card" onclick="mostrarTabla('clientes')">
+                <div class="menu-icon">C</div>
+                <h3>Clientes</h3>
+                <p>Administración de información de clientes</p>
+            </div>
+            <div class="menu-card" onclick="mostrarTabla('limpiadores')">
+                <div class="menu-icon">P</div>
+                <h3>Personal</h3>
+                <p>Gestión del equipo de servicios</p>
+            </div>
+            <div class="menu-card" onclick="mostrarTabla('habitaciones')">
+                <div class="menu-icon">H</div>
+                <h3>Habitaciones</h3>
+                <p>Control de disponibilidad y estado</p>
+            </div>
+            <div class="menu-card" onclick="mostrarTabla('asignaciones')">
+                <div class="menu-icon">A</div>
+                <h3>Asignaciones</h3>
+                <p>Distribución de tareas de limpieza</p>
+            </div>
+            <div class="menu-card" onclick="mostrarTabla('agenda')">
+                <div class="menu-icon">G</div>
+                <h3>Agenda</h3>
+                <p>Programación de servicios</p>
+            </div>
+        </div>
+
+        <!-- PANEL DE CONTROL -->
+        <div class="control-panel">
+            <h2 class="section-title" id="tabla-titulo">Gestión de Reservas</h2>
+            
+            <!-- BOTONES DE ACCIÓN -->
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="cargarDatos()">
+                    Actualizar Datos
+                </button>
+                <button class="btn btn-success" onclick="mostrarFormulario('crear')">
+                    Nuevo Registro
+                </button>
+                <button class="btn btn-warning" onclick="mostrarFormulario('buscar')">
+                    Buscar por ID
+                </button>
+                <button class="btn btn-reporte" onclick="generarReporteComplejo()">
+                    Reporte Complejo
+                </button>
+                <button class="btn btn-secondary" onclick="limpiarFiltros()">
+                    Limpiar Filtros
+                </button>
+            </div>
+
+            <!-- FORMULARIO DE BÚSQUEDA -->
+            <div id="form-buscar" class="form-container">
+                <div class="form-header">
+                    <h3 class="form-title">Búsqueda Específica</h3>
+                    <button class="btn btn-secondary" onclick="ocultarFormularios()">
+                        Cerrar
+                    </button>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" id="buscar-label">ID Reserva:</label>
+                        <input type="text" id="buscar-id" class="form-control" 
+                               placeholder="Ingrese el ID a buscar...">
+                    </div>
+                    <div class="form-group" style="align-self: flex-end;">
+                        <button class="btn btn-primary" onclick="buscarPorId()" style="width: 100%;">
+                            Buscar Registro
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE CREACIÓN/EDICIÓN -->
+            <div id="form-crear" class="form-container">
+                <div class="form-header">
+                    <h3 class="form-title" id="form-title">Nuevo Registro</h3>
+                    <button class="btn btn-secondary" onclick="ocultarFormularios()">
+                        Cancelar
+                    </button>
+                </div>
+                <div id="form-fields" class="form-grid"></div>
+                <div style="text-align: right; margin-top: 24px;">
+                    <button class="btn btn-success" onclick="guardarRegistro()" style="min-width: 150px; padding: 12px 24px;">
+                        Guardar Registro
+                    </button>
+                </div>
+            </div>
+
+            <!-- REPORTE COMPLEJO -->
+            <div id="reporte-complejo" class="reporte-container">
+                <div class="reporte-header">
+                    <h3 class="reporte-title">Reporte Complejo del Sistema</h3>
+                    <button class="btn btn-secondary" onclick="ocultarReporte()">
+                        Cerrar Reporte
+                    </button>
+                </div>
+                <div id="reporte-contenido"></div>
+            </div>
+
+            <!-- MENSAJES -->
+            <div id="message-container"></div>
+        </div>
+
+        <!-- TABLA DE DATOS -->
+        <div class="data-container">
+            <!-- PAGINACIÓN -->
+            <div class="pagination">
+                <div class="page-info" id="page-info">
+                    Página 1 de datos
+                </div>
+                <div class="page-buttons">
+                    <button class="page-btn" id="prev-btn" onclick="cargarPaginaAnterior()" disabled>
+                        Anterior
+                    </button>
+                    <button class="page-btn" id="next-btn" onclick="cargarPaginaSiguiente()" disabled>
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+
+            <!-- TABLA -->
+            <div class="table-responsive">
+                <table class="data-table" id="tabla-datos">
+                    <thead id="tabla-header"></thead>
+                    <tbody id="tabla-body"></tbody>
+                </table>
+            </div>
+
+            <!-- CONTADOR DE REGISTROS -->
+            <div style="text-align: center; margin-top: 20px; color: var(--color-gray); font-size: 13px;">
+                <span id="contador-registros">0 registros encontrados</span>
+            </div>
+        </div>
+
+        <!-- BÚSQUEDA RÁPIDA DE RESERVA -->
+        <div id="reservas" class="special-search">
+            <div class="search-header">
+                <h3>Búsqueda Rápida de Reservas</h3>
+            </div>
+            <div class="quick-search">
+                <input type="text" id="inputReserva" 
+                       placeholder="Ingrese ID de reserva (ej: R001)">
+                <button class="btn btn-primary" onclick="buscarReserva()">
+                    Buscar Reserva
+                </button>
+                <button class="btn btn-secondary" onclick="ocultarBusquedaReserva()">
+                    Ocultar
+                </button>
+            </div>
+            <br><br>
+            <div id="resultado-reserva" style="display: none;">
+                <h4 style="color: var(--color-primary); margin-bottom: 16px;">Resultado de la Búsqueda:</h4>
+                <div class="table-responsive">
+                    <table class="data-table" id="tablaResultados">
+                        <thead>
+                            <tr>
+                                <th>ID Reserva</th>
+                                <th>Cliente</th>
+                                <th>Habitación</th>
+                                <th>Fecha Entrada</th>
+                                <th>Fecha Salida</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="filaDatos"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        // Variables globales
+        let tablaActual = 'reservas';
+        let lastKey = null;
+        let currentPage = 1;
+        let editId = null;
+        let editMode = false;
+        
+        // Mapeo de columnas a mostrar
+        const columnas = {
+            reservas: ['idReserva', 'idCliente', 'nombreCliente', 'tipoServicio', 'numeroHabitacion', 
+                      'piso', 'fechaInicio', 'fechaFin', 'horaCheckIn', 'horaCheckOut', 
+                      'estado', 'estadoPago', 'montoTotal', 'limpiadoresAsignados', 
+                      'peticionesEspeciales', 'prioridad'],
+            
+            clientes: ['PK', 'nombre', 'email', 'telefono', 'idioma', 'productosLimpieza', 
+                      'tipoHabitacion', 'reservasTotales', 'gastoTotal', 'nivelFidelidad', 
+                      'metodosPago'],
+            
+            limpiadores: ['PK', 'puesto', 'departamento', 'fechaContratacion', 'especialidades', 
+                         'horarioTrabajo', 'zonaAsignada', 'estadoActual', 'asignacionesTotales', 
+                         'calificacionPromedio'],
+            
+            habitaciones: ['PK', 'numeroHabitacion', 'piso', 'edificio', 'zona', 'tipoHabitacion', 
+                          'estadoActual', 'ultimaLimpieza', 'proximaLimpiezaProgramada', 
+                          'duracionLimpieza', 'comodidades', 'insumosLimpiezaNecesarios'],
+            
+            asignaciones: ['PK', 'SK', 'idLimpiador', 'idReserva', 'idHabitacion', 'tipoTarea', 
+                          'inicioProgramado', 'finProgramado', 'inicioReal', 'finReal', 
+                          'estado', 'puntuacionCalidad', 'listaVerificacion', 'problemasDetectados', 
+                          'notas'],
+            
+            agenda: ['PK', 'SK', 'fecha', 'zona', 'franjaHoraria', 'limpiadoresAsignados', 
+                    'habitationsAsignadas', 'habitacionesEstimadasPorHora', 'habitacionesPrioritarias', 
+                    'estado', 'progreso', 'notas']
+        };
+
+        // Esquemas para formularios
+        const esquemas = {
+            reservas: {
+                idReserva: { tipo: 'text', requerido: true, label: 'ID Reserva', placeholder: 'R001' },
+                idCliente: { tipo: 'text', requerido: true, label: 'ID Cliente', placeholder: 'C001' },
+                nombreCliente: { tipo: 'text', requerido: true, label: 'Nombre Cliente', placeholder: 'Juan Pérez' },
+                tipoServicio: { tipo: 'select', opciones: ['HOTEL', 'LIMPIEZA'], requerido: true, label: 'Tipo de Servicio' },
+                numeroHabitacion: { tipo: 'number', requerido: false, label: 'Número Habitación', placeholder: '101' },
+                piso: { tipo: 'number', requerido: false, label: 'Piso', placeholder: '1' },
+                fechaInicio: { tipo: 'date', requerido: true, label: 'Fecha Inicio' },
+                fechaFin: { tipo: 'date', requerido: true, label: 'Fecha Fin' },
+                horaCheckIn: { tipo: 'time', requerido: false, label: 'Hora Check-in' },
+                horaCheckOut: { tipo: 'time', requerido: false, label: 'Hora Check-out' },
+                estado: { tipo: 'select', opciones: ['PENDIENTE', 'CONFIRMADA', 'COMPLETADA', 'CANCELADA'], 
+                         requerido: true, label: 'Estado' },
+                estadoPago: { tipo: 'select', opciones: ['PENDIENTE', 'PAGADO', 'NO_APLICA'], 
+                             requerido: true, label: 'Estado Pago' },
+                montoTotal: { tipo: 'number', requerido: true, label: 'Monto Total', placeholder: '280.00' },
+                limpiadoresAsignados: { tipo: 'text', requerido: false, label: 'Limpiadores Asignados', 
+                                      placeholder: 'L001,L002' },
+                peticionesEspeciales: { tipo: 'textarea', requerido: false, label: 'Peticiones Especiales', 
+                                      placeholder: 'Cuna adicional, almohadas extra...' },
+                prioridad: { tipo: 'select', opciones: ['BAJA', 'NORMAL', 'MEDIA', 'ALTA'], 
+                            requerido: true, label: 'Prioridad' }
+            },
+            clientes: {
+                idCliente: { tipo: 'text', requerido: false, label: 'ID Cliente', placeholder: 'C001' },
+                nombre: { tipo: 'text', requerido: true, label: 'Nombre', placeholder: 'Juan Pérez' },
+                email: { tipo: 'email', requerido: true, label: 'Email', placeholder: 'cliente@email.com' },
+                telefono: { tipo: 'tel', requerido: true, label: 'Teléfono', placeholder: '+34123456789' },
+                idioma: { tipo: 'select', opciones: ['ES', 'EN', 'FR', 'DE'], requerido: true, label: 'Idioma' },
+                productosLimpieza: { tipo: 'text', requerido: false, label: 'Productos Limpieza', 
+                                   placeholder: 'Detergente suave, Ambientador...' },
+                tipoHabitacion: { tipo: 'select', opciones: ['INDIVIDUAL', 'DOBLE', 'SUITE', 'FAMILIAR'], 
+                                requerido: false, label: 'Tipo Habitación Preferida' },
+                reservasTotales: { tipo: 'number', requerido: false, label: 'Reservas Totales', placeholder: '5' },
+                gastoTotal: { tipo: 'number', requerido: false, label: 'Gasto Total', placeholder: '1250.00' },
+                nivelFidelidad: { tipo: 'select', opciones: ['BRONCE', 'PLATA', 'ORO', 'DIAMANTE'], 
+                                requerido: false, label: 'Nivel Fidelidad' },
+                metodosPago: { tipo: 'text', requerido: false, label: 'Métodos de Pago', 
+                              placeholder: 'TOKEN_1234,TOKEN_5678' }
+            },
+            limpiadores: {
+                idEmpleado: { tipo: 'text', requerido: false, label: 'ID Empleado', placeholder: 'L001' },
+                nombre: { tipo: 'text', requerido: true, label: 'Nombre', placeholder: 'María García' },
+                puesto: { tipo: 'text', requerido: true, label: 'Puesto', placeholder: 'Limpieza General' },
+                departamento: { tipo: 'text', requerido: true, label: 'Departamento', placeholder: 'Servicios' },
+                fechaContratacion: { tipo: 'date', requerido: true, label: 'Fecha Contratación' },
+                especialidades: { tipo: 'text', requerido: false, label: 'Especialidades', 
+                                placeholder: 'Check-out, Limpieza profunda...' },
+                horarioTrabajo: { tipo: 'text', requerido: true, label: 'Horario Trabajo', placeholder: '07:00-15:00' },
+                zonaAsignada: { tipo: 'text', requerido: true, label: 'Zona Asignada', placeholder: 'Piso 1' },
+                estadoActual: { tipo: 'select', opciones: ['DISPONIBLE', 'ASIGNADO', 'FUERA_DE_SERVICIO'], 
+                              requerido: true, label: 'Estado Actual' },
+                asignacionesTotales: { tipo: 'number', requerido: false, label: 'Asignaciones Totales', placeholder: '420' },
+                calificacionPromedio: { tipo: 'number', requerido: false, label: 'Calificación Promedio', placeholder: '4.7' }
+            },
+            habitaciones: {
+                numeroHabitacion: { tipo: 'number', requerido: true, label: 'Número', placeholder: '101' },
+                piso: { tipo: 'number', requerido: true, label: 'Piso', placeholder: '1' },
+                edificio: { tipo: 'text', requerido: true, label: 'Edificio', placeholder: 'A' },
+                zona: { tipo: 'select', opciones: ['NORTE', 'SUR', 'ESTE', 'OESTE'], requerido: true, label: 'Zona' },
+                tipoHabitacion: { tipo: 'select', opciones: ['INDIVIDUAL', 'DOBLE', 'SUITE', 'FAMILIAR', 'PRESIDENCIAL'], 
+                                requerido: true, label: 'Tipo' },
+                estadoActual: { tipo: 'select', opciones: ['DISPONIBLE', 'OCUPADA', 'LIMPIANDOSE', 'MANTENIMIENTO'], 
+                              requerido: true, label: 'Estado' },
+                ultimaLimpieza: { tipo: 'date', requerido: false, label: 'Última Limpieza' },
+                proximaLimpiezaProgramada: { tipo: 'date', requerido: false, label: 'Próxima Limpieza' },
+                duracionLimpieza: { tipo: 'number', requerido: false, label: 'Duración Limpieza (min)', placeholder: '25' },
+                comodidades: { tipo: 'text', requerido: false, label: 'Comodidades', 
+                              placeholder: 'TV, Calefacción, Minibar...' },
+                insumosLimpiezaNecesarios: { tipo: 'text', requerido: false, label: 'Insumos Necesarios', 
+                                            placeholder: 'Detergente suave, Desinfectante...' }
+            },
+            asignaciones: {
+                idLimpiador: { tipo: 'text', requerido: true, label: 'ID Limpiador', placeholder: 'L001' },
+                idReserva: { tipo: 'text', requerido: false, label: 'ID Reserva', placeholder: 'R001' },
+                idHabitacion: { tipo: 'number', requerido: false, label: 'ID Habitación', placeholder: '101' },
+                tipoTarea: { tipo: 'select', opciones: ['LIMPIEZA_CHECKOUT', 'LIMPIEZA_PROFUNDA', 'ESTANCIA'], 
+                            requerido: true, label: 'Tipo de Tarea' },
+                fecha: { tipo: 'date', requerido: true, label: 'Fecha' },
+                horaInicio: { tipo: 'time', requerido: false, label: 'Hora Inicio', placeholder: '08:00' },
+                horaFin: { tipo: 'time', requerido: false, label: 'Hora Fin', placeholder: '09:00' },
+                estado: { tipo: 'select', opciones: ['PROGRAMADA', 'EN_PROGRESO', 'COMPLETADA', 'CANCELADA'], 
+                         requerido: true, label: 'Estado' },
+                puntuacionCalidad: { tipo: 'number', requerido: false, label: 'Puntuación Calidad', placeholder: '4.8' },
+                listaVerificacion: { tipo: 'text', requerido: false, label: 'Lista Verificación', 
+                                   placeholder: 'Baño, Ropa de cama, Superficies...' },
+                problemasDetectados: { tipo: 'text', requerido: false, label: 'Problemas Detectados', 
+                                     placeholder: 'Manchas, Roturas...' },
+                notas: { tipo: 'textarea', requerido: false, label: 'Notas', placeholder: 'Observaciones...' }
+            },
+            agenda: {
+                fecha: { tipo: 'date', requerido: true, label: 'Fecha' },
+                zona: { tipo: 'select', opciones: ['NORTE', 'SUR', 'ESTE', 'OESTE'], requerido: true, label: 'Zona' },
+                franjaHoraria: { tipo: 'text', requerido: true, label: 'Franja Horaria', placeholder: '08:00-09:00' },
+                limpiadoresAsignados: { tipo: 'text', requerido: false, label: 'Limpiadores Asignados', 
+                                      placeholder: 'L001,L002' },
+                habitationsAsignadas: { tipo: 'text', requerido: false, label: 'Habitaciones Asignadas', 
+                                      placeholder: '101,102,103' },
+                habitacionesEstimadasPorHora: { tipo: 'number', requerido: false, label: 'Habitaciones/Hora', placeholder: '3' },
+                habitacionesPrioritarias: { tipo: 'text', requerido: false, label: 'Habitaciones Prioritarias', 
+                                           placeholder: '101,204' },
+                estado: { tipo: 'select', opciones: ['PENDIENTE', 'EN_PROGRESO', 'COMPLETADA'], 
+                         requerido: true, label: 'Estado' },
+                progreso: { tipo: 'number', requerido: false, label: 'Progreso (%)', placeholder: '40' },
+                notas: { tipo: 'textarea', requerido: false, label: 'Notas', placeholder: 'Observaciones...' }
+            }
+        };
+
+        // FUNCIONES PRINCIPALES
+
+        function mostrarTabla(tabla) {
+            document.querySelectorAll('.menu-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+            
+            tablaActual = tabla;
+            document.getElementById('tabla-titulo').innerHTML = obtenerNombreTabla(tabla);
+            
+            document.getElementById('buscar-label').textContent = `${obtenerBuscarLabel(tabla)}:`;
+            
+            if (tabla === 'reservas') {
+                document.getElementById('reservas').style.display = 'block';
+            } else {
+                document.getElementById('reservas').style.display = 'none';
+            }
+            
+            currentPage = 1;
+            lastKey = null;
+            editMode = false;
+            editId = null;
+            
+            cargarDatos();
+        }
+
+        async function cargarDatos() {
+            try {
+                mostrarMensaje('Cargando datos...', 'info');
+                
+                const url = lastKey ? 
+                    `/datos/${tablaActual}?last_key=${encodeURIComponent(lastKey)}` :
+                    `/datos/${tablaActual}`;
+                
+                const response = await fetch(url);
+                const result = await response.json();
+                
+                if (response.ok) {
+                    mostrarDatos(result.items);
+                    lastKey = result.last_key || null;
+                    
+                    document.getElementById('prev-btn').disabled = currentPage === 1;
+                    document.getElementById('next-btn').disabled = !result.has_more;
+                    document.getElementById('page-info').innerHTML = 
+                        `Página ${currentPage} | ${result.items.length} registros`;
+                    document.getElementById('contador-registros').textContent = 
+                        `${result.items.length} registros encontrados`;
+                    
+                    mostrarMensaje(`Se cargaron ${result.items.length} registros correctamente`, 'success');
+                } else {
+                    mostrarMensaje(`Error: ${result.error || 'No se pudieron cargar los datos'}`, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        function mostrarDatos(items) {
+            const header = document.getElementById('tabla-header');
+            const body = document.getElementById('tabla-body');
+            
+            header.innerHTML = '';
+            body.innerHTML = '';
+            
+            if (items.length === 0) {
+                body.innerHTML = `
+                    <tr>
+                        <td colspan="20" style="text-align: center; padding: 40px 20px;">
+                            <div style="font-size: 48px; margin-bottom: 16px; color: #90a4ae;">-</div>
+                            <h3 style="color: #546e7a; margin-bottom: 8px;">
+                                No hay datos disponibles
+                            </h3>
+                            <p style="color: #90a4ae;">
+                                Haga clic en "Nuevo Registro" para agregar datos
+                            </p>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            const headerRow = document.createElement('tr');
+            columnas[tablaActual].forEach(col => {
+                const th = document.createElement('th');
+                th.textContent = formatearNombreCampo(col);
+                headerRow.appendChild(th);
+            });
+            
+            const actionsTh = document.createElement('th');
+            actionsTh.textContent = 'Acciones';
+            actionsTh.style.textAlign = 'center';
+            headerRow.appendChild(actionsTh);
+            header.appendChild(headerRow);
+            
+            items.forEach(item => {
+                const row = document.createElement('tr');
+                
+                columnas[tablaActual].forEach(col => {
+                    const td = document.createElement('td');
+                    td.style.maxWidth = '200px';
+                    td.style.overflow = 'hidden';
+                    td.style.textOverflow = 'ellipsis';
+                    td.style.whiteSpace = 'nowrap';
+                    
+                    const valor = item[col];
+                    td.innerHTML = formatearValorParaTabla(col, valor, item);
+                    
+                    row.appendChild(td);
+                });
+                
+                const actionsTd = document.createElement('td');
+                actionsTd.className = 'table-actions';
+                actionsTd.style.textAlign = 'center';
+                
+                const viewBtn = document.createElement('button');
+                viewBtn.className = 'action-btn action-view';
+                viewBtn.innerHTML = 'Ver';
+                viewBtn.title = 'Ver detalles';
+                viewBtn.onclick = () => verDetalle(item);
+                
+                const editBtn = document.createElement('button');
+                editBtn.className = 'action-btn action-edit';
+                editBtn.innerHTML = 'Editar';
+                editBtn.title = 'Editar';
+                editBtn.onclick = () => editarRegistro(item);
+                
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'action-btn action-delete';
+                deleteBtn.innerHTML = 'Eliminar';
+                deleteBtn.title = 'Eliminar';
+                deleteBtn.onclick = () => eliminarRegistro(item);
+                
+                actionsTd.appendChild(viewBtn);
+                actionsTd.appendChild(editBtn);
+                actionsTd.appendChild(deleteBtn);
+                row.appendChild(actionsTd);
+                
+                body.appendChild(row);
+            });
+        }
+
+        function formatearValorParaTabla(col, valor, item) {
+            if (valor === null || valor === undefined || valor === '') {
+                return '<span style="color: #90a4ae; font-style: italic;">-</span>';
+            }
+            
+            if ((col.includes('fecha') || col.includes('Fecha')) && valor) {
+                try {
+                    const fecha = new Date(valor);
+                    if (!isNaN(fecha.getTime())) {
+                        return fecha.toLocaleDateString('es-ES');
+                    }
+                } catch {
+                    // Si falla, devolver el valor original
+                }
+            }
+            
+            if ((col.includes('hora') || col.includes('Hora') || col === 'franjaHoraria') && valor) {
+                return valor;
+            }
+            
+            if ((col.includes('estado') || col.includes('Estado') || 
+                 col === 'prioridad' || col === 'nivelFidelidad' || 
+                 col === 'zona' || col === 'estadoPago') && valor) {
+                const clase = obtenerClaseEstado(valor);
+                return `<span class="status-badge ${clase}">${valor}</span>`;
+            }
+            
+            if (Array.isArray(valor)) {
+                if (valor.length === 0) {
+                    return '-';
+                }
+                const items = valor.slice(0, 3).join(', ');
+                const extra = valor.length > 3 ? `... (+${valor.length - 3})` : '';
+                return `<span title="${valor.join(', ')}">${items}${extra}</span>`;
+            }
+            
+            if (typeof valor === 'number') {
+                if (col.includes('Total') || col.includes('monto') || col.includes('gasto') || col.includes('precio')) {
+                    return `<span class="money">$${valor.toFixed(2)}</span>`;
+                } else if (col.includes('calificacion') || col.includes('puntuacion')) {
+                    return `${valor.toFixed(1)}`;
+                } else {
+                    return valor.toString();
+                }
+            }
+            
+            if (col === 'PK' || col === 'SK') {
+                return `<span class="monospace" title="${valor}">${valor.substring(0, 20)}...</span>`;
+            }
+            
+            if (typeof valor === 'string' && valor.length > 30) {
+                return `<span title="${valor}">${valor.substring(0, 30)}...</span>`;
+            }
+            
+            return valor.toString();
+        }
+
+        function obtenerClaseEstado(valor) {
+            const estadoClases = {
+                'PENDIENTE': 'status-pending',
+                'CONFIRMADA': 'status-active',
+                'COMPLETADA': 'status-active',
+                'CANCELADA': 'status-cancelled',
+                'PAGADO': 'status-active',
+                'NO_APLICA': 'status-cancelled',
+                'DISPONIBLE': 'status-active',
+                'OCUPADA': 'status-pending',
+                'LIMPIANDOSE': 'status-pending',
+                'MANTENIMIENTO': 'status-cancelled',
+                'ASIGNADO': 'status-pending',
+                'FUERA_DE_SERVICIO': 'status-cancelled',
+                'PROGRAMADA': 'status-pending',
+                'EN_PROGRESO': 'status-active',
+                'ALTA': 'status-vip',
+                'DIAMANTE': 'status-vip',
+                'ORO': 'status-active',
+                'PLATA': 'status-pending',
+                'BRONCE': 'status-cancelled'
+            };
+            
+            return estadoClases[valor] || 'status-pending';
+        }
+
+        function mostrarFormulario(tipo) {
+            ocultarFormularios();
+            ocultarReporte();
+            
+            if (tipo === 'crear') {
+                editMode = false;
+                editId = null;
+                document.getElementById('form-crear').style.display = 'block';
+                document.getElementById('form-title').innerHTML = 'Nuevo Registro';
+                generarCamposFormulario();
+            } else if (tipo === 'buscar') {
+                document.getElementById('form-buscar').style.display = 'block';
+            }
+        }
+
+        function ocultarFormularios() {
+            document.getElementById('form-crear').style.display = 'none';
+            document.getElementById('form-buscar').style.display = 'none';
+            editMode = false;
+            editId = null;
+        }
+
+        function generarCamposFormulario(datos = {}) {
+            const container = document.getElementById('form-fields');
+            container.innerHTML = '';
+            
+            const esquema = esquemas[tablaActual];
+            
+            for (const [campo, config] of Object.entries(esquema)) {
+                const div = document.createElement('div');
+                div.className = 'form-group';
+                
+                const label = document.createElement('label');
+                label.className = 'form-label';
+                label.textContent = config.label + (config.requerido ? ' *' : '');
+                label.htmlFor = campo;
+                
+                let input;
+                
+                if (config.tipo === 'select') {
+                    input = document.createElement('select');
+                    input.className = 'form-control';
+                    input.id = campo;
+                    input.name = campo;
+                    
+                    const opcionVacia = document.createElement('option');
+                    opcionVacia.value = '';
+                    opcionVacia.textContent = 'Seleccione...';
+                    input.appendChild(opcionVacia);
+                    
+                    config.opciones.forEach(opcion => {
+                        const option = document.createElement('option');
+                        option.value = opcion;
+                        option.textContent = opcion;
+                        
+                        if (Array.isArray(datos[campo])) {
+                            if (datos[campo].includes(opcion)) {
+                                option.selected = true;
+                            }
+                        } else if (datos[campo] === opcion) {
+                            option.selected = true;
+                        }
+                        input.appendChild(option);
+                    });
+                } else if (config.tipo === 'textarea') {
+                    input = document.createElement('textarea');
+                    input.className = 'form-control';
+                    input.id = campo;
+                    input.name = campo;
+                    input.rows = 3;
+                    
+                    if (Array.isArray(datos[campo])) {
+                        input.value = datos[campo].join(', ');
+                    } else {
+                        input.value = datos[campo] || '';
+                    }
+                    
+                    input.placeholder = config.placeholder || '';
+                } else {
+                    input = document.createElement('input');
+                    input.type = config.tipo;
+                    input.className = 'form-control';
+                    input.id = campo;
+                    input.name = campo;
+                    
+                    if (Array.isArray(datos[campo])) {
+                        input.value = datos[campo].join(', ');
+                    } else {
+                        if (config.tipo === 'date' && datos[campo]) {
+                            const fecha = new Date(datos[campo]);
+                            if (!isNaN(fecha.getTime())) {
+                                input.value = fecha.toISOString().split('T')[0];
+                            } else {
+                                input.value = datos[campo] || '';
+                            }
+                        } else {
+                            input.value = datos[campo] || '';
+                        }
+                    }
+                    
+                    input.placeholder = config.placeholder || '';
+                }
+                
+                if (config.requerido) {
+                    input.required = true;
+                }
+                
+                div.appendChild(label);
+                div.appendChild(input);
+                container.appendChild(div);
+            }
+        }
+
+        async function guardarRegistro() {
+            const esquema = esquemas[tablaActual];
+            const data = {};
+            
+            for (const campo in esquema) {
+                const element = document.getElementById(campo);
+                if (element) {
+                    if (esquema[campo].requerido && !element.value.trim()) {
+                        mostrarMensaje(`El campo "${esquema[campo].label}" es requerido`, 'warning');
+                        element.focus();
+                        return;
+                    }
+                    
+                    const valor = element.value.trim();
+                    
+                    if (campo.includes('limpiadores') || campo.includes('habitaciones') || 
+                        campo.includes('productos') || campo.includes('metodos') ||
+                        campo.includes('comodidades') || campo.includes('insumos') ||
+                        campo.includes('especialidades') || campo.includes('lista') ||
+                        campo.includes('problemas') || campo.includes('peticiones')) {
+                        if (valor) {
+                            data[campo] = valor.split(',').map(item => item.trim()).filter(item => item);
+                        } else {
+                            data[campo] = [];
+                        }
+                    }
+                    else if (esquema[campo].tipo === 'number') {
+                        data[campo] = valor ? parseFloat(valor) : null;
+                    }
+                    else {
+                        data[campo] = valor;
+                    }
+                }
+            }
+            
+            try {
+                mostrarMensaje('Guardando registro...', 'info');
+                
+                let response;
+                let url;
+                let method;
+                
+                if (editMode && editId) {
+                    method = 'PUT';
+                    url = `/datos/${tablaActual}/${editId}`;
+                } else {
+                    method = 'POST';
+                    url = `/datos/${tablaActual}`;
+                }
+                
+                response = await fetch(url, {
+                    method: method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    mostrarMensaje(`${result.message || 'Registro guardado exitosamente'}`, 'success');
+                    ocultarFormularios();
+                    cargarDatos();
+                } else {
+                    mostrarMensaje(`Error: ${result.error || 'No se pudo guardar el registro'}`, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        async function buscarPorId() {
+            const idInput = document.getElementById('buscar-id');
+            const id = idInput.value.trim();
+            
+            if (!id) {
+                mostrarMensaje('Ingrese un ID para buscar', 'warning');
+                idInput.focus();
+                return;
+            }
+            
+            try {
+                mostrarMensaje('Buscando registro...', 'info');
+                
+                let searchId = id;
+                
+                if (tablaActual === 'clientes' && !id.startsWith('CLIENTE#')) {
+                    searchId = `CLIENTE#${id}`;
+                } else if (tablaActual === 'limpiadores' && !id.startsWith('LIMPIADOR#')) {
+                    searchId = `LIMPIADOR#${id}`;
+                } else if (tablaActual === 'agenda' && !id.startsWith('AGENDA#')) {
+                    searchId = `AGENDA#${id}`;
+                }
+                
+                const response = await fetch(`/datos/${tablaActual}/${searchId}`);
+                const result = await response.json();
+                
+                if (response.ok) {
+                    mostrarMensaje('Registro encontrado', 'success');
+                    mostrarDatos([result]);
+                    ocultarFormularios();
+                } else {
+                    if (tablaActual === 'clientes' || tablaActual === 'limpiadores' || tablaActual === 'agenda') {
+                        const response2 = await fetch(`/datos/${tablaActual}/${id}`);
+                        const result2 = await response2.json();
+                        
+                        if (response2.ok) {
+                            mostrarMensaje('Registro encontrado', 'success');
+                            mostrarDatos([result2]);
+                            ocultarFormularios();
+                        } else {
+                            mostrarMensaje(`${result2.error || 'Registro no encontrado'}`, 'error');
+                        }
+                    } else {
+                        mostrarMensaje(`${result.error || 'Registro no encontrado'}`, 'error');
+                    }
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        function verDetalle(item) {
+            let detalles = `**Detalles Completos del Registro**\n\n`;
+            
+            for (const [key, value] of Object.entries(item)) {
+                detalles += `**${formatearNombreCampo(key)}**: `;
+                
+                if (Array.isArray(value)) {
+                    if (value.length === 0) {
+                        detalles += `(vacío)\n`;
+                    } else {
+                        detalles += `\n`;
+                        value.forEach((item, index) => {
+                            detalles += `  ${index + 1}. ${item}\n`;
+                        });
+                    }
+                } else if (value === null || value === undefined) {
+                    detalles += `-\n`;
+                } else if (typeof value === 'number') {
+                    if (key.includes('Total') || key.includes('monto') || key.includes('gasto') || key.includes('precio')) {
+                        detalles += `$${value.toFixed(2)}\n`;
+                    } else if (key.includes('calificacion') || key.includes('puntuacion')) {
+                        detalles += `${value.toFixed(1)}\n`;
+                    } else {
+                        detalles += `${value}\n`;
+                    }
+                } else if ((key.includes('fecha') || key.includes('Fecha')) && !isNaN(new Date(value).getTime())) {
+                    const fecha = new Date(value);
+                    detalles += `${fecha.toLocaleDateString('es-ES')}\n`;
+                } else {
+                    detalles += `${value}\n`;
+                }
+            }
+            
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(13, 27, 42, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2000;
+                padding: 20px;
+            `;
+            
+            const modalContent = document.createElement('div');
+            modalContent.style.cssText = `
+                background: white;
+                border-radius: 8px;
+                padding: 28px;
+                max-width: 800px;
+                width: 100%;
+                max-height: 80vh;
+                overflow-y: auto;
+                box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+                border: 1px solid #e0e0e0;
+            `;
+            
+            modalContent.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h3 style="color: #1a237e; margin: 0; font-weight: 500;">Detalles Completos</h3>
+                    <button onclick="this.parentElement.parentElement.parentElement.remove()" 
+                            style="background: none; border: none; font-size: 24px; cursor: pointer; color: #546e7a;">
+                        ×
+                    </button>
+                </div>
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 6px; font-family: 'Courier New', monospace; white-space: pre-wrap; line-height: 1.6; color: #333;">
+${detalles}
+                </div>
+                <div style="text-align: right; margin-top: 20px;">
+                    <button onclick="this.parentElement.parentElement.parentElement.remove()" 
+                            style="padding: 10px 20px; background: #1a237e; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">
+                        Cerrar
+                    </button>
+                </div>
+            `;
+            
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+            
+            modal.onclick = (e) => {
+                if (e.target === modal) modal.remove();
+            };
+        }
+
+        function editarRegistro(item) {
+            editMode = true;
+            
+            let searchId;
+            
+            if (tablaActual === 'reservas') {
+                searchId = item.idReserva;
+            } else if (tablaActual === 'clientes') {
+                searchId = item.idCliente || (item.PK ? item.PK.replace('CLIENTE#', '') : null);
+            } else if (tablaActual === 'limpiadores') {
+                searchId = item.idEmpleado || (item.PK ? item.PK.replace('LIMPIADOR#', '') : null);
+            } else if (tablaActual === 'habitaciones') {
+                searchId = item.numeroHabitacion;
+            } else if (tablaActual === 'asignaciones') {
+                searchId = item.idLimpiador;
+            } else if (tablaActual === 'agenda') {
+                searchId = item.PK || item.fecha;
+            }
+            
+            if (!searchId) {
+                mostrarMensaje('No se pudo obtener el ID del registro', 'error');
+                return;
+            }
+            
+            editId = searchId;
+            
+            const datosFormulario = { ...item };
+            
+            if (tablaActual === 'clientes' && item.PK) {
+                datosFormulario.idCliente = item.PK.replace('CLIENTE#', '');
+            }
+            if (tablaActual === 'limpiadores' && item.PK) {
+                datosFormulario.idEmpleado = item.PK.replace('LIMPIADOR#', '');
+            }
+            if (tablaActual === 'habitaciones' && item.PK) {
+                datosFormulario.numeroHabitacion = item.PK.replace('HABITACION#', '');
+            }
+            
+            generarCamposFormulario(datosFormulario);
+            document.getElementById('form-crear').style.display = 'block';
+            document.getElementById('form-title').innerHTML = 'Editar Registro';
+        }
+
+        async function eliminarRegistro(item) {
+            let searchId;
+            
+            if (tablaActual === 'reservas') {
+                searchId = item.idReserva;
+            } else if (tablaActual === 'clientes') {
+                searchId = item.idCliente || (item.PK ? item.PK.replace('CLIENTE#', '') : null);
+            } else if (tablaActual === 'limpiadores') {
+                searchId = item.idEmpleado || (item.PK ? item.PK.replace('LIMPIADOR#', '') : null);
+            } else if (tablaActual === 'habitaciones') {
+                searchId = item.numeroHabitacion;
+            } else if (tablaActual === 'asignaciones') {
+                searchId = item.idLimpiador;
+            } else if (tablaActual === 'agenda') {
+                searchId = item.PK;
+            }
+            
+            if (!searchId) {
+                mostrarMensaje('No se pudo obtener el ID del registro', 'error');
+                return;
+            }
+            
+            if (!confirm(`¿Está seguro de eliminar el registro "${searchId}"?\n\nEsta acción no se puede deshacer.`)) {
+                return;
+            }
+            
+            try {
+                mostrarMensaje('Eliminando registro...', 'info');
+                
+                const response = await fetch(`/datos/${tablaActual}/${searchId}`, {
+                    method: 'DELETE'
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    mostrarMensaje(`${result.message || 'Registro eliminado exitosamente'}`, 'success');
+                    cargarDatos();
+                } else {
+                    mostrarMensaje(`Error: ${result.error || 'No se pudo eliminar el registro'}`, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        function cargarPaginaSiguiente() {
+            if (lastKey) {
+                currentPage++;
+                cargarDatos();
+            }
+        }
+
+        function cargarPaginaAnterior() {
+            if (currentPage > 1) {
+                currentPage--;
+                mostrarMensaje('Para navegación completa, implementa historial de claves', 'info');
+            }
+        }
+
+        function limpiarFiltros() {
+            currentPage = 1;
+            lastKey = null;
+            cargarDatos();
+            mostrarMensaje('Filtros limpiados', 'success');
+        }
+
+        function mostrarMensaje(texto, tipo) {
+            const container = document.getElementById('message-container');
+            const mensaje = document.createElement('div');
+            mensaje.className = `message message-${tipo}`;
+            mensaje.innerHTML = texto;
+            
+            container.appendChild(mensaje);
+            
+            setTimeout(() => {
+                if (mensaje.parentNode === container) {
+                    container.removeChild(mensaje);
+                }
+            }, 5000);
+        }
+
+        // ========== REPORTE COMPLEJO ==========
+
+        async function generarReporteComplejo() {
+            try {
+                ocultarFormularios();
+                mostrarMensaje('Generando reporte complejo...', 'info');
+                
+                const reporteBtn = document.querySelector('.btn-reporte');
+                const originalText = reporteBtn.innerHTML;
+                reporteBtn.innerHTML = '<span class="loading"></span> Generando...';
+                reporteBtn.disabled = true;
+                
+                const response = await fetch('/reporte_complejo');
+                const result = await response.json();
+                
+                reporteBtn.innerHTML = originalText;
+                reporteBtn.disabled = false;
+                
+                if (response.ok) {
+                    if (result.error) {
+                        mostrarMensaje(`Error: ${result.detalles || result.error}`, 'error');
+                        return;
+                    }
+                    
+                    mostrarMensaje('Reporte generado exitosamente', 'success');
+                    mostrarReporte(result);
+                } else {
+                    mostrarMensaje(`Error ${response.status}: ${result.error || result.detalles || 'Error desconocido'}`, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        function mostrarReporte(reporte) {
+            const container = document.getElementById('reporte-complejo');
+            const contenido = document.getElementById('reporte-contenido');
+            
+            const estadisticas = reporte.estadisticas || {};
+            const reservasVip = reporte.reservas_vip || [];
+            const personalCalificado = reporte.personal_calificado || [];
+            const habitacionesLujo = reporte.habitaciones_lujo || [];
+            
+            contenido.innerHTML = `
+                <div style="margin-bottom: 24px; padding: 20px; background: #f5f7fa; border-radius: 8px; border: 1px solid #e0e0e0;">
+                    <h4 style="color: #1a237e; margin-bottom: 8px; font-size: 18px;">${reporte.resumen?.titulo || 'Reporte del Sistema'}</h4>
+                    <p style="color: #546e7a; margin: 0; font-size: 14px;">
+                        ${reporte.resumen?.descripcion || 'Analisis integrado del sistema hotelero'}
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px; padding-top: 16px; border-top: 1px solid #e0e0e0;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #546e7a; font-size: 13px;">Fecha:</span>
+                            <span style="color: #333; font-size: 13px;">${reporte.resumen?.fecha_generacion || reporte.reporte_generado || new Date().toLocaleString()}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="color: #546e7a; font-size: 13px;">Status:</span>
+                            <span class="status-badge ${reporte.resumen?.status === 'COMPLETADO' ? 'status-active' : 'status-pending'}">
+                                ${reporte.resumen?.status || 'PROCESANDO'}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 28px;">
+                    <h4 style="color: #1a237e; margin-bottom: 20px; font-size: 16px;">Estadísticas Principales</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+                        <div class="reporte-card" style="text-align: center;">
+                            <div style="font-size: 28px; color: #3949ab; margin-bottom: 8px; font-weight: 600;">
+                                ${estadisticas.total_reservas_vip || 0}
+                            </div>
+                            <div style="color: #333; font-size: 13px; font-weight: 500;">Reservas VIP</div>
+                        </div>
+                        
+                        <div class="reporte-card" style="text-align: center;">
+                            <div style="font-size: 28px; color: #2e7d32; margin-bottom: 8px; font-weight: 600;">
+                                $${(estadisticas.monto_total_reservas_vip || 0).toLocaleString('es-ES', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+                            </div>
+                            <div style="color: #333; font-size: 13px; font-weight: 500;">Ingresos VIP</div>
+                        </div>
+                        
+                        <div class="reporte-card" style="text-align: center;">
+                            <div style="font-size: 28px; color: #f57c00; margin-bottom: 8px; font-weight: 600;">
+                                ${(estadisticas.promedio_calificacion_personal || 0).toFixed(1)}
+                            </div>
+                            <div style="color: #333; font-size: 13px; font-weight: 500;">Calificación Promedio</div>
+                        </div>
+                        
+                        <div class="reporte-card" style="text-align: center;">
+                            <div style="font-size: 28px; color: #7b1fa2; margin-bottom: 8px; font-weight: 600;">
+                                ${estadisticas.total_habitaciones_lujo || 0}
+                            </div>
+                            <div style="color: #333; font-size: 13px; font-weight: 500;">Habitaciones Lujo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reporte-grid">
+                    <div class="reporte-card">
+                        <h4>Reservas VIP Activas
+                            <span style="float: right; font-size: 13px; color: #546e7a;">
+                                ${reservasVip.length || 0}
+                            </span>
+                        </h4>
+                        
+                        ${reservasVip.length === 0 ? `
+                            <div style="text-align: center; padding: 30px 20px; color: #90a4ae;">
+                                <p>No hay reservas VIP activas en este momento</p>
+                            </div>
+                        ` : `
+                            <div style="max-height: 300px; overflow-y: auto; padding-right: 8px;">
+                                ${reservasVip.slice(0, 5).map((reserva, index) => `
+                                    <div style="padding: 12px; margin-bottom: 8px; background: ${index % 2 === 0 ? '#f5f7fa' : 'transparent'}; border-radius: 6px; border: 1px solid #e0e0e0;">
+                                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
+                                            <div>
+                                                <strong style="color: #1a237e; font-size: 14px;">${reserva.idReserva || 'N/A'}</strong>
+                                                <div style="color: #546e7a; font-size: 12px; margin-top: 2px;">
+                                                    ${reserva.nombreCliente || reserva.idCliente || 'Cliente'}
+                                                </div>
+                                            </div>
+                                            <span style="color: #2e7d32; font-weight: 600; font-size: 14px;">
+                                                $${(reserva.montoTotal || 0).toLocaleString('es-ES', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+                                            </span>
+                                        </div>
+                                        
+                                        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+                                            <div style="display: flex; align-items: center; gap: 4px;">
+                                                <span style="color: #546e7a; font-size: 12px;">Duración:</span>
+                                                <span style="color: #333; font-size: 12px;">${reserva.duracion_estadia || 0} días</span>
+                                            </div>
+                                            <div style="display: flex; align-items: center; gap: 4px;">
+                                                <span style="color: #546e7a; font-size: 12px;">Hab.:</span>
+                                                <span style="color: #333; font-size: 12px;">${reserva.numeroHabitacion || 'N/A'}</span>
+                                            </div>
+                                            <div>
+                                                <span class="status-badge ${reserva.prioridad === 'ALTA' ? 'status-vip' : 'status-active'}">
+                                                    ${reserva.prioridad || 'NORMAL'}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `}
+                    </div>
+                    
+                    <div class="reporte-card">
+                        <h4>Personal Calificado
+                            <span style="float: right; font-size: 13px; color: #546e7a;">
+                                ${personalCalificado.length || 0}
+                            </span>
+                        </h4>
+                        
+                        ${personalCalificado.length === 0 ? `
+                            <div style="text-align: center; padding: 30px 20px; color: #90a4ae;">
+                                <p>No hay personal calificado disponible</p>
+                            </div>
+                        ` : `
+                            <div style="max-height: 300px; overflow-y: auto; padding-right: 8px;">
+                                ${personalCalificado.slice(0, 5).map((empleado, index) => `
+                                    <div style="padding: 12px; margin-bottom: 8px; background: ${index % 2 === 0 ? '#f5f7fa' : 'transparent'}; border-radius: 6px; border: 1px solid #e0e0e0;">
+                                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
+                                            <div>
+                                                <strong style="color: #1a237e; font-size: 14px;">${empleado.nombre || empleado.idEmpleado || 'Empleado'}</strong>
+                                                <div style="color: #546e7a; font-size: 12px; margin-top: 2px;">
+                                                    ${empleado.puesto || 'Sin puesto'}
+                                                </div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div style="color: #f57c00; font-weight: 600; font-size: 14px;">
+                                                    ${(empleado.calificacionPromedio || 0).toFixed(1)}
+                                                </div>
+                                                <span class="status-badge status-active" style="font-size: 11px; margin-top: 2px;">
+                                                    ${empleado.estadoActual || 'N/A'}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div style="margin-top: 8px;">
+                                            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                                                <span style="color: #546e7a; font-size: 12px;">Zona:</span>
+                                                <span style="color: #333; font-size: 12px;">${empleado.zonaAsignada || 'Sin zona'}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `}
+                    </div>
+                    
+                    <div class="reporte-card">
+                        <h4>Habitaciones de Lujo
+                            <span style="float: right; font-size: 13px; color: #546e7a;">
+                                ${habitacionesLujo.length || 0}
+                            </span>
+                        </h4>
+                        
+                        ${habitacionesLujo.length === 0 ? `
+                            <div style="text-align: center; padding: 30px 20px; color: #90a4ae;">
+                                <p>No hay habitaciones de lujo registradas</p>
+                            </div>
+                        ` : `
+                            <div style="max-height: 300px; overflow-y: auto; padding-right: 8px;">
+                                ${habitacionesLujo.slice(0, 5).map((habitacion, index) => `
+                                    <div style="padding: 12px; margin-bottom: 8px; background: ${index % 2 === 0 ? '#f5f7fa' : 'transparent'}; border-radius: 6px; border: 1px solid #e0e0e0;">
+                                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
+                                            <div>
+                                                <strong style="color: #1a237e; font-size: 14px;">
+                                                    Hab. ${habitacion.numeroHabitacion || 'N/A'}
+                                                </strong>
+                                                <div style="color: #546e7a; font-size: 12px; margin-top: 2px;">
+                                                    ${habitacion.tipoHabitacion || 'Sin tipo'} • Piso ${habitacion.piso || 'N/A'}
+                                                </div>
+                                            </div>
+                                            <span class="status-badge ${habitacion.estadoActual === 'DISPONIBLE' ? 'status-active' : 'status-pending'}">
+                                                ${habitacion.estadoActual || 'N/A'}
+                                            </span>
+                                        </div>
+                                        
+                                        <div style="margin-top: 8px;">
+                                            <div style="display: flex; align-items: center; gap: 6px;">
+                                                <span style="color: #546e7a; font-size: 12px;">Ubicación:</span>
+                                                <span style="color: #333; font-size: 12px;">${habitacion.zona || 'N/A'}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        `}
+                    </div>
+                </div>
+                
+                <div style="margin-top: 28px; padding: 20px; background: #f5f7fa; border-radius: 8px; border: 1px solid #e0e0e0;">
+                    <h5 style="color: #1a237e; margin-bottom: 16px; font-size: 14px;">Resumen Ejecutivo</h5>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                        <div>
+                            <div style="color: #546e7a; font-size: 12px; margin-bottom: 4px;">Estadía Promedio VIP</div>
+                            <div style="color: #333; font-size: 14px; font-weight: 500;">
+                                ${(estadisticas.promedio_duracion_estadia || 0).toFixed(1)} días promedio
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: #546e7a; font                            <div style="color: #333; font-size: 14px; font-weight: 500;">
+                                ${(estadisticas.promedio_duracion_estadia || 0).toFixed(1)} días promedio
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: #546e7a; font-size: 12px; margin-bottom: 4px;">Personal de Alto Rendimiento</div>
+                            <div style="color: #333; font-size: 14px; font-weight: 500;">
+                                ${estadisticas.total_personal_calificado || 0} empleados calificados
+                            </div>
+                        </div>
+                        <div>
+                            <div style="color: #546e7a; font-size: 12px; margin-bottom: 4px;">Capacidad de Lujo</div>
+                            <div style="color: #333; font-size: 14px; font-weight: 500;">
+                                ${estadisticas.total_habitaciones_lujo || 0} habitaciones premium
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            container.style.display = 'block';
+            
+            // Desplazar hasta el reporte
+            container.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function ocultarReporte() {
+            document.getElementById('reporte-complejo').style.display = 'none';
+        }
+
+        // ========== FUNCIONES AUXILIARES ==========
+
+        function obtenerNombreTabla(tabla) {
+            const nombres = {
+                'reservas': 'Gestión de Reservas',
+                'clientes': 'Gestión de Clientes',
+                'limpiadores': 'Gestión de Personal',
+                'habitaciones': 'Gestión de Habitaciones',
+                'asignaciones': 'Gestión de Asignaciones',
+                'agenda': 'Gestión de Agenda'
+            };
+            return nombres[tabla] || tabla;
+        }
+
+        function obtenerBuscarLabel(tabla) {
+            const labels = {
+                'reservas': 'ID Reserva',
+                'clientes': 'ID Cliente',
+                'limpiadores': 'ID Empleado',
+                'habitaciones': 'Número Habitación',
+                'asignaciones': 'ID Limpiador',
+                'agenda': 'Fecha (YYYY-MM-DD)'
+            };
+            return labels[tabla] || 'ID';
+        }
+
+        function formatearNombreCampo(campo) {
+            // Convertir camelCase a título
+            const resultado = campo
+                .replace(/([A-Z])/g, ' $1')
+                .replace(/^./, str => str.toUpperCase())
+                .replace(/_/g, ' ');
+            
+            // Traducciones específicas
+            const traducciones = {
+                'Id': 'ID',
+                'Pk': 'PK',
+                'Sk': 'SK',
+                'Email': 'Email',
+                'Telefono': 'Teléfono',
+                'Check In': 'Check-in',
+                'Check Out': 'Check-out',
+                'Vip': 'VIP',
+                'Tv': 'TV'
+            };
+            
+            return resultado.split(' ').map(palabra => traducciones[palabra] || palabra).join(' ');
+        }
+
+        // ========== BÚSQUEDA ESPECÍFICA DE RESERVAS ==========
+
+        function ocultarBusquedaReserva() {
+            document.getElementById('reservas').style.display = 'none';
+            document.getElementById('resultado-reserva').style.display = 'none';
+            document.getElementById('filaDatos').innerHTML = '';
+        }
+
+        async function buscarReserva() {
+            const id = document.getElementById('inputReserva').value.trim();
+            
+            if (!id) {
+                mostrarMensaje('Ingrese un ID de reserva', 'warning');
+                return;
+            }
+            
+            try {
+                mostrarMensaje('Buscando reserva...', 'info');
+                
+                const response = await fetch('/buscar_reserva', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ id: id })
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    if (result.found && result.data) {
+                        mostrarMensaje('Reserva encontrada', 'success');
+                        mostrarResultadoReserva(result.data);
+                    } else {
+                        mostrarMensaje('Reserva no encontrada', 'error');
+                        document.getElementById('resultado-reserva').style.display = 'none';
+                        document.getElementById('filaDatos').innerHTML = '';
+                    }
+                } else {
+                    mostrarMensaje(`Error: ${result.error || 'No se pudo buscar la reserva'}`, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje(`Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        function mostrarResultadoReserva(reserva) {
+            document.getElementById('resultado-reserva').style.display = 'block';
+            
+            const fila = document.getElementById('filaDatos');
+            fila.innerHTML = '';
+            
+            const tr = document.createElement('tr');
+            
+            const celdas = [
+                reserva.idReserva || '',
+                reserva.nombreCliente || reserva.idCliente || '',
+                reserva.numeroHabitacion || '',
+                reserva.fechaInicio ? new Date(reserva.fechaInicio).toLocaleDateString('es-ES') : '',
+                reserva.fechaFin ? new Date(reserva.fechaFin).toLocaleDateString('es-ES') : '',
+                reserva.estado || ''
+            ];
+            
+            celdas.forEach(texto => {
+                const td = document.createElement('td');
+                
+                if (texto === reserva.estado) {
+                    const badge = document.createElement('span');
+                    badge.className = obtenerClaseEstado(texto);
+                    badge.textContent = texto;
+                    td.appendChild(badge);
+                } else {
+                    td.textContent = texto || '-';
+                }
+                
+                tr.appendChild(td);
+            });
+            
+            fila.appendChild(tr);
+            
+            // Desplazar hacia los resultados
+            document.getElementById('resultado-reserva').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // ========== INICIALIZACIÓN ==========
+
+        window.onload = function() {
+            cargarDatos();
+            document.getElementById('reservas').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
