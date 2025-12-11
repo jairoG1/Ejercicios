@@ -849,8 +849,1040 @@ def buscar_reserva():
 
 @app.route('/reporte_complejo', methods=['GET'])
 def reporte_complejo():
-    # Mantener la misma implementación anterior
-    pass
+    """Generar reporte complejo con datos de múltiples tablas"""
+    try:
+        # Obtener parámetros opcionales
+        fecha_inicio = request.args.get('fecha_inicio', default=None)
+        fecha_fin = request.args.get('fecha_fin', default=None)
+        tipo_reporte = request.args.get('tipo', default='general')
+        zona = request.args.get('zona', default=None)
+        
+        # Fechas por defecto (últimos 7 días)
+        if not fecha_inicio:
+            fecha_inicio = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+        if not fecha_fin:
+            fecha_fin = datetime.now().strftime('%Y-%m-%d')
+        
+        print(f"Generando reporte: tipo={tipo_reporte}, fecha_inicio={fecha_inicio}, fecha_fin={fecha_fin}")
+        
+        # Dependiendo del tipo de reporte, generar diferentes estructuras
+        if tipo_reporte == 'limpieza':
+            return reporte_limpieza(fecha_inicio, fecha_fin, zona)
+        elif tipo_reporte == 'reservas':
+            return reporte_reservas(fecha_inicio, fecha_fin)
+        elif tipo_reporte == 'personal':
+            return reporte_personal(fecha_inicio, fecha_fin)
+        else:
+            # Reporte general
+            return reporte_general(fecha_inicio, fecha_fin)
+    
+    except Exception as e:
+        print(f"Error generando reporte complejo: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": f"Error al generar reporte: {str(e)}"}), 500
+
+def reporte_general(fecha_inicio, fecha_fin):
+    """Reporte general con estadísticas de todas las áreas"""
+    try:
+        # Obtener datos de reservas en el rango de fechas
+        reservas = obtener_reservas_por_fecha(fecha_inicio, fecha_fin)
+        
+        # Obtener datos de limpieza
+        agendas = obtener_agendas_por_fecha(fecha_inicio, fecha_fin)
+        
+        # Obtener datos de personal
+        limpiadores = obtener_limpiadores_activos()
+        
+        # Obtener datos de habitaciones
+        habitaciones = obtener_habitaciones()
+        
+        # Calcular estadísticas
+        estadisticas = {
+            'reservas': {
+                'total': len(reservas),
+                'confirmadas': len([r for r in reservas if r.get('estado') == 'CONFIRMADA']),
+                'pendientes': len([r for r in reservas if r.get('estado') == 'PENDIENTE']),
+                'canceladas': len([r for r in reservas if r.get('estado') == 'CANCELADA']),
+                'ingresos_estimados': sum(float(r.get('precioTotal', 0)) for r in reservas)
+            },
+            'limpieza': {
+                'tareas_totales': len(agendas),
+                'tareas_completadas': len([a for a in agendas if a.get('estado') == 'COMPLETADO']),
+                'tareas_pendientes': len([a for a in agendas if a.get('estado') == 'PENDIENTE']),
+                'tareas_en_progreso': len([a for a in agendas if a.get('estado') == 'EN_PROGRESO']),
+                'progreso_promedio': calcular_promedio([a.get('progreso', 0) for a in agendas])
+            },
+            'personal': {
+                'total_limpiadores': len(limpiadores),
+                'limpiadores_activos': len([l for l in limpiadores if l.get('estado') == 'ACTIVO']),
+                'limpiadores_inactivos': len([l for l in limpiadores if l.get('estado') == 'INACTIVO']),
+                'horas_totales_trabajadas': calcular_horas_trabajadas(agendas, limpiadores)
+            },
+            'habitaciones': {
+                'total': len(habitaciones),
+                'disponibles': len([h for h in habitaciones if h.get('estado') == 'DISPONIBLE']),
+                'ocupadas': len([h for h in habitaciones if h.get('estado') == 'OCUPADA']),
+                'en_limpieza': len([h for h in habitaciones if h.get('estado') == 'EN_LIMPIEZA']),
+                'mantenimiento': len([h for h in habitaciones if h.get('estado') == 'MANTENIMIENTO'])
+            },
+            'fechas': {
+                'inicio': fecha_inicio,
+                'fin': fecha_fin,
+                'generado': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            }
+        }
+        
+        # Datos detallados para gráficos
+        detalle_diario = obtener_detalle_diario(fecha_inicio, fecha_fin)
+        
+        return jsonify({
+            'estadisticas': estadisticas,
+            'detalle_diario': detalle_diario,
+            'resumen': generar_resumen_textual(estadisticas)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte general: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": f"Error generando reporte general: {str(e)}"}), 500
+
+def reporte_limpieza(fecha_inicio, fecha_fin, zona=None):
+    """Reporte específico de limpieza"""
+    try:
+        # Obtener agendas por fecha y zona
+        agendas = obtener_agendas_por_fecha(fecha_inicio, fecha_fin, zona)
+        
+        # Agrupar por zona y franja horaria
+        agrupado_por_zona = {}
+        for agenda in agendas:
+            zona_agenda = agenda.get('zona', 'SIN_ZONA')
+            if zona_agenda not in agrupado_por_zona:
+                agrupado_por_zona[zona_agenda] = {
+                    'total_tareas': 0,
+                    'completadas': 0,
+                    'pendientes': 0,
+                    'en_progreso': 0,
+                    'habitaciones_total': 0,
+                    'habitaciones_completadas': 0,
+                    'limpiadores_asignados': set(),
+                    'franjas_horarias': {}
+                }
+            
+            stats = agrupado_por_zona[zona_agenda]
+            stats['total_tareas'] += 1
+            
+            estado = agenda.get('estado', 'PENDIENTE')
+            if estado == 'COMPLETADO':
+                stats['completadas'] += 1
+            elif estado == 'EN_PROGRESO':
+                stats['en_progreso'] += 1
+            else:
+                stats['pendientes'] += 1
+            
+            # Habitaciones
+            habitaciones_asignadas = agenda.get('habitationsAsignadas', [])
+            if isinstance(habitaciones_asignadas, set):
+                habitaciones_asignadas = list(habitaciones_asignadas)
+            
+            stats['habitaciones_total'] += len(habitaciones_asignadas)
+            
+            # Limpiadores
+            limpiadores = agenda.get('limpiadoresAsignados', [])
+            if isinstance(limpiadores, set):
+                limpiadores = list(limpiadores)
+            
+            stats['limpiadores_asignados'].update(limpiadores)
+            
+            # Franja horaria
+            franja = agenda.get('franjaHoraria', 'SIN_FRANJA')
+            if franja not in stats['franjas_horarias']:
+                stats['franjas_horarias'][franja] = 0
+            stats['franjas_horarias'][franja] += 1
+        
+        # Convertir sets a listas para JSON
+        for zona_stats in agrupado_por_zona.values():
+            zona_stats['limpiadores_asignados'] = list(zona_stats['limpiadores_asignados'])
+        
+        # Calcular eficiencia
+        eficiencia_por_zona = {}
+        for zona, stats in agrupado_por_zona.items():
+            if stats['habitaciones_total'] > 0:
+                eficiencia = (stats['habitaciones_completadas'] / stats['habitaciones_total']) * 100
+            else:
+                eficiencia = 0
+            
+            eficiencia_por_zona[zona] = {
+                'eficiencia': round(eficiencia, 2),
+                'tareas_por_limpiador': stats['total_tareas'] / max(len(stats['limpiadores_asignados']), 1),
+                'habitaciones_por_hora': calcular_habitaciones_por_hora(zona, agendas)
+            }
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'zona_filtrada': zona,
+            'resumen_por_zona': agrupado_por_zona,
+            'eficiencia': eficiencia_por_zona,
+            'total_general': {
+                'tareas': sum(s['total_tareas'] for s in agrupado_por_zona.values()),
+                'completadas': sum(s['completadas'] for s in agrupado_por_zona.values()),
+                'pendientes': sum(s['pendientes'] for s in agrupado_por_zona.values()),
+                'habitaciones': sum(s['habitaciones_total'] for s in agrupado_por_zona.values())
+            },
+            'recomendaciones': generar_recomendaciones_limpieza(agrupado_por_zona)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte limpieza: {str(e)}")
+        return jsonify({"error": f"Error generando reporte limpieza: {str(e)}"}), 500
+
+def reporte_reservas(fecha_inicio, fecha_fin):
+    """Reporte específico de reservas"""
+    try:
+        reservas = obtener_reservas_por_fecha(fecha_inicio, fecha_fin)
+        
+        # Agrupar por estado y tipo
+        agrupado_por_estado = {}
+        agrupado_por_tipo_habitacion = {}
+        ingresos_por_dia = {}
+        
+        for reserva in reservas:
+            estado = reserva.get('estado', 'SIN_ESTADO')
+            tipo_habitacion = reserva.get('tipoHabitacion', 'SIN_TIPO')
+            fecha = reserva.get('fechaInicio', 'SIN_FECHA')
+            precio = float(reserva.get('precioTotal', 0))
+            
+            # Por estado
+            if estado not in agrupado_por_estado:
+                agrupado_por_estado[estado] = {'cantidad': 0, 'ingresos': 0}
+            agrupado_por_estado[estado]['cantidad'] += 1
+            agrupado_por_estado[estado]['ingresos'] += precio
+            
+            # Por tipo de habitación
+            if tipo_habitacion not in agrupado_por_tipo_habitacion:
+                agrupado_por_tipo_habitacion[tipo_habitacion] = {'cantidad': 0, 'ingresos': 0}
+            agrupado_por_tipo_habitacion[tipo_habitacion]['cantidad'] += 1
+            agrupado_por_tipo_habitacion[tipo_habitacion]['ingresos'] += precio
+            
+            # Ingresos por día
+            if fecha not in ingresos_por_dia:
+                ingresos_por_dia[fecha] = 0
+            ingresos_por_dia[fecha] += precio
+        
+        # Calcular ocupación
+        habitaciones_totales = len(obtener_habitaciones())
+        dias_periodo = (datetime.strptime(fecha_fin, '%Y-%m-%d') - datetime.strptime(fecha_inicio, '%Y-%m-%d')).days + 1
+        capacidad_total = habitaciones_totales * dias_periodo
+        noches_reservadas = sum(len(r.get('noches', [])) for r in reservas)
+        
+        ocupacion = (noches_reservadas / capacidad_total * 100) if capacidad_total > 0 else 0
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'resumen': {
+                'total_reservas': len(reservas),
+                'ingresos_totales': sum(float(r.get('precioTotal', 0)) for r in reservas),
+                'ocupacion_promedio': round(ocupacion, 2),
+                'duracion_promedio': calcular_duracion_promedio(reservas),
+                'tasa_cancelacion': calcular_tasa_cancelacion(reservas)
+            },
+            'por_estado': agrupado_por_estado,
+            'por_tipo_habitacion': agrupado_por_tipo_habitacion,
+            'ingresos_diarios': ingresos_por_dia,
+            'tendencias': analizar_tendencias_reservas(reservas)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte reservas: {str(e)}")
+        return jsonify({"error": f"Error generando reporte reservas: {str(e)}"}), 500
+
+def reporte_personal(fecha_inicio, fecha_fin):
+    """Reporte específico de personal"""
+    try:
+        limpiadores = obtener_limpiadores_activos()
+        agendas = obtener_agendas_por_fecha(fecha_inicio, fecha_fin)
+        
+        desempeno_limpiadores = []
+        
+        for limpiador in limpiadores:
+            id_limpiador = limpiador.get('idEmpleado')
+            
+            # Filtrar agendas asignadas a este limpiador
+            agendas_limpiador = []
+            for agenda in agendas:
+                limpiadores_asignados = agenda.get('limpiadoresAsignados', [])
+                if isinstance(limpiadores_asignados, set):
+                    limpiadores_asignados = list(limpiadores_asignados)
+                
+                if id_limpiador in limpiadores_asignados:
+                    agendas_limpiador.append(agenda)
+            
+            # Calcular métricas
+            tareas_completadas = len([a for a in agendas_limpiador if a.get('estado') == 'COMPLETADO'])
+            tareas_asignadas = len(agendas_limpiador)
+            
+            habitaciones_completadas = sum(len(a.get('habitationsAsignadas', [])) 
+                                         for a in agendas_limpiador if a.get('estado') == 'COMPLETADO')
+            
+            eficiencia = (tareas_completadas / tareas_asignadas * 100) if tareas_asignadas > 0 else 0
+            
+            desempeno_limpiadores.append({
+                'id': id_limpiador,
+                'nombre': limpiador.get('nombre', 'Sin nombre'),
+                'estado': limpiador.get('estado', 'INACTIVO'),
+                'tareas_asignadas': tareas_asignadas,
+                'tareas_completadas': tareas_completadas,
+                'habitaciones_completadas': habitaciones_completadas,
+                'eficiencia': round(eficiencia, 2),
+                'horas_trabajadas': calcular_horas_trabajadas_limpiador(id_limpiador, agendas)
+            })
+        
+        # Ordenar por eficiencia
+        desempeno_limpiadores.sort(key=lambda x: x['eficiencia'], reverse=True)
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'total_personal': len(limpiadores),
+            'activos': len([l for l in limpiadores if l.get('estado') == 'ACTIVO']),
+            'inactivos': len([l for l in limpiadores if l.get('estado') == 'INACTIVO']),
+            'desempeno_individual': desempeno_limpiadores,
+            'promedios': {
+                'eficiencia_promedio': calcular_promedio([d['eficiencia'] for d in desempeno_limpiadores]),
+                'tareas_promedio': calcular_promedio([d['tareas_asignadas'] for d in desempeno_limpiadores]),
+                'horas_promedio': calcular_promedio([d.get('horas_trabajadas', 0) for d in desempeno_limpiadores])
+            },
+            'recomendaciones_personal': generar_recomendaciones_personal(desempeno_limpiadores)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte personal: {str(e)}")
+        return jsonify({"error": f"Error generando reporte personal: {str(e)}"}), 500
+
+# ========== FUNCIONES AUXILIARES ==========
+
+# ========== FUNCIONES AUXILIARES CORREGIDAS ==========
+
+def obtener_reservas_por_fecha(fecha_inicio, fecha_fin):
+    """Obtener reservas en un rango de fechas - CORREGIDO"""
+    try:
+        # NOTA: En DynamoDB necesitamos un diseño específico para queries por fecha
+        # Asumiendo que las reservas tienen PK con formato: RESERVA#fecha#idReserva
+        
+        print(f"Buscando reservas entre {fecha_inicio} y {fecha_fin}")
+        
+        # Escanear todas las reservas con prefijo común
+        response = table_reservas.scan(
+            FilterExpression=Attr('PK').begins_with('RESERVA#')
+        )
+        reservas = response.get('Items', [])
+        
+        reservas_filtradas = []
+        for reserva in reservas:
+            # Extraer fecha de la PK
+            pk = reserva.get('PK', '')
+            if pk.startswith('RESERVA#'):
+                # Formato: RESERVA#2024-01-15#R12345
+                parts = pk.split('#')
+                if len(parts) >= 2:
+                    fecha_reserva = parts[1]  # La fecha está después del primer #
+                    
+                    # También intentar obtener fecha del campo fechaInicio
+                    if 'fechaInicio' in reserva:
+                        fecha_reserva = reserva['fechaInicio']
+                    
+                    # Verificar si está en el rango
+                    try:
+                        if fecha_inicio <= fecha_reserva <= fecha_fin:
+                            reservas_filtradas.append(convertir_para_json(reserva))
+                    except:
+                        # Si hay error en la comparación, omitir
+                        pass
+        
+        print(f"Encontradas {len(reservas_filtradas)} reservas en el rango")
+        return reservas_filtradas
+    except Exception as e:
+        print(f"Error obteniendo reservas: {str(e)}")
+        traceback.print_exc()
+        return []
+
+def obtener_agendas_por_fecha(fecha_inicio, fecha_fin, zona=None):
+    """Obtener agendas en un rango de fechas - CORREGIDO"""
+    try:
+        print(f"Buscando agendas entre {fecha_inicio} y {fecha_fin}")
+        
+        # Usar query en lugar de scan para mejor rendimiento
+        # Asumiendo que las agendas tienen PK: AGENDA#fecha
+        
+        agendas_filtradas = []
+        
+        # Convertir fechas a datetime para iterar
+        inicio_dt = datetime.strptime(fecha_inicio, '%Y-%m-%d')
+        fin_dt = datetime.strptime(fecha_fin, '%Y-%m-%d')
+        
+        current_dt = inicio_dt
+        while current_dt <= fin_dt:
+            fecha_str = current_dt.strftime('%Y-%m-%d')
+            pk = f"AGENDA#{fecha_str}"
+            
+            # Query por PK específica
+            try:
+                response = table_limpieza.query(
+                    KeyConditionExpression=Key('PK').eq(pk)
+                )
+                items = response.get('Items', [])
+                
+                for item in items:
+                    agenda_json = convertir_para_json(item)
+                    
+                    # Filtrar por zona si se especifica
+                    if zona:
+                        if agenda_json.get('zona') == zona:
+                            agendas_filtradas.append(agenda_json)
+                    else:
+                        agendas_filtradas.append(agenda_json)
+                
+            except Exception as query_error:
+                print(f"Error querying agenda para fecha {fecha_str}: {query_error}")
+            
+            current_dt += timedelta(days=1)
+        
+        print(f"Encontradas {len(agendas_filtradas)} agendas en el rango")
+        return agendas_filtradas
+        
+    except Exception as e:
+        print(f"Error obteniendo agendas: {str(e)}")
+        traceback.print_exc()
+        return []
+
+def obtener_limpiadores_activos():
+    """Obtener todos los limpiadores - CORREGIDO"""
+    try:
+        response = table_limpiadores.scan(
+            FilterExpression=Attr('PK').begins_with('LIMPIADOR#')
+        )
+        limpiadores = response.get('Items', [])
+        print(f"Encontrados {len(limpiadores)} limpiadores")
+        return [convertir_para_json(l) for l in limpiadores]
+    except Exception as e:
+        print(f"Error obteniendo limpiadores: {str(e)}")
+        traceback.print_exc()
+        return []
+
+def obtener_habitaciones():
+    """Obtener todas las habitaciones - CORREGIDO"""
+    try:
+        response = table_habitacion.scan(
+            FilterExpression=Attr('PK').begins_with('HABITACION#')
+        )
+        habitaciones = response.get('Items', [])
+        print(f"Encontradas {len(habitaciones)} habitaciones")
+        return [convertir_para_json(h) for h in habitaciones]
+    except Exception as e:
+        print(f"Error obteniendo habitaciones: {str(e)}")
+        traceback.print_exc()
+        return []
+
+def extract_fecha_from_pk(pk):
+    """Extraer fecha de una PK de agenda - MEJORADA"""
+    if pk.startswith('AGENDA#'):
+        parts = pk.split('#')
+        if len(parts) > 1:
+            fecha = parts[1]
+            # Validar formato de fecha
+            try:
+                datetime.strptime(fecha, '%Y-%m-%d')
+                return fecha
+            except ValueError:
+                # Intentar otros formatos
+                for fmt in ['%Y-%m-%d', '%d-%m-%Y', '%m/%d/%Y', '%Y/%m/%d']:
+                    try:
+                        datetime.strptime(fecha, fmt)
+                        return fecha
+                    except:
+                        continue
+    return None
+
+# ========== CORRECCIONES EN LAS FUNCIONES DE REPORTE ==========
+
+def reporte_limpieza(fecha_inicio, fecha_fin, zona=None):
+    """Reporte específico de limpieza - CORREGIDO"""
+    try:
+        # Obtener agendas por fecha y zona
+        agendas = obtener_agendas_por_fecha(fecha_inicio, fecha_fin, zona)
+        
+        print(f"Agendas obtenidas para reporte: {len(agendas)}")
+        
+        if len(agendas) == 0:
+            return jsonify({
+                'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+                'zona_filtrada': zona,
+                'mensaje': 'No se encontraron datos de limpieza en el período especificado',
+                'resumen_por_zona': {},
+                'total_general': {
+                    'tareas': 0,
+                    'completadas': 0,
+                    'pendientes': 0,
+                    'habitaciones': 0
+                }
+            })
+        
+        # Agrupar por zona y franja horaria
+        agrupado_por_zona = {}
+        for agenda in agendas:
+            zona_agenda = agenda.get('zona', 'SIN_ZONA')
+            if zona_agenda not in agrupado_por_zona:
+                agrupado_por_zona[zona_agenda] = {
+                    'total_tareas': 0,
+                    'completadas': 0,
+                    'pendientes': 0,
+                    'en_progreso': 0,
+                    'habitaciones_total': 0,
+                    'habitaciones_completadas': 0,
+                    'limpiadores_asignados': set(),
+                    'franjas_horarias': {}
+                }
+            
+            stats = agrupado_por_zona[zona_agenda]
+            stats['total_tareas'] += 1
+            
+            estado = agenda.get('estado', 'PENDIENTE')
+            if estado == 'COMPLETADO':
+                stats['completadas'] += 1
+                # Si está completado, contar habitaciones como completadas
+                habitaciones_asignadas = agenda.get('habitationsAsignadas', [])
+                if isinstance(habitaciones_asignadas, set):
+                    habitaciones_asignadas = list(habitaciones_asignadas)
+                stats['habitaciones_completadas'] += len(habitaciones_asignadas)
+            elif estado == 'EN_PROGRESO':
+                stats['en_progreso'] += 1
+            else:
+                stats['pendientes'] += 1
+            
+            # Habitaciones
+            habitaciones_asignadas = agenda.get('habitationsAsignadas', [])
+            if isinstance(habitaciones_asignadas, set):
+                habitaciones_asignadas = list(habitaciones_asignadas)
+            elif not isinstance(habitaciones_asignadas, list):
+                habitaciones_asignadas = []
+            
+            stats['habitaciones_total'] += len(habitaciones_asignadas)
+            
+            # Limpiadores
+            limpiadores = agenda.get('limpiadoresAsignados', [])
+            if isinstance(limpiadores, set):
+                limpiadores = list(limpiadores)
+            elif not isinstance(limpiadores, list):
+                limpiadores = []
+            
+            stats['limpiadores_asignados'].update(limpiadores)
+            
+            # Franja horaria
+            franja = agenda.get('franjaHoraria', 'SIN_FRANJA')
+            if franja not in stats['franjas_horarias']:
+                stats['franjas_horarias'][franja] = 0
+            stats['franjas_horarias'][franja] += 1
+        
+        # Convertir sets a listas para JSON
+        for zona_stats in agrupado_por_zona.values():
+            zona_stats['limpiadores_asignados'] = list(zona_stats['limpiadores_asignados'])
+        
+        # Calcular eficiencia
+        eficiencia_por_zona = {}
+        for zona, stats in agrupado_por_zona.items():
+            if stats['habitaciones_total'] > 0:
+                eficiencia = (stats['habitaciones_completadas'] / stats['habitaciones_total']) * 100
+            else:
+                eficiencia = 0
+            
+            eficiencia_por_zona[zona] = {
+                'eficiencia': round(eficiencia, 2),
+                'tareas_por_limpiador': round(stats['total_tareas'] / max(len(stats['limpiadores_asignados']), 1), 2),
+                'habitaciones_por_hora': calcular_habitaciones_por_hora(zona, agendas)
+            }
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'zona_filtrada': zona,
+            'resumen_por_zona': agrupado_por_zona,
+            'eficiencia': eficiencia_por_zona,
+            'total_general': {
+                'tareas': sum(s['total_tareas'] for s in agrupado_por_zona.values()),
+                'completadas': sum(s['completadas'] for s in agrupado_por_zona.values()),
+                'pendientes': sum(s['pendientes'] for s in agrupado_por_zona.values()),
+                'habitaciones': sum(s['habitaciones_total'] for s in agrupado_por_zona.values())
+            },
+            'recomendaciones': generar_recomendaciones_limpieza(agrupado_por_zona)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte limpieza: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": f"Error generando reporte limpieza: {str(e)}"}), 500
+
+def reporte_reservas(fecha_inicio, fecha_fin):
+    """Reporte específico de reservas"""
+    try:
+        reservas = obtener_reservas_por_fecha(fecha_inicio, fecha_fin)
+        
+        print(f"Reservas obtenidas para reporte: {len(reservas)}")
+        
+        if len(reservas) == 0:
+            return jsonify({
+                'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+                'mensaje': 'No se encontraron reservas en el período especificado',
+                'resumen': {
+                    'total_reservas': 0,
+                    'ingresos_totales': 0,
+                    'ocupacion_promedio': 0,
+                    'duracion_promedio': 0,
+                    'tasa_cancelacion': 0
+                }
+            })
+        
+        # Agrupar por estado y tipo
+        agrupado_por_estado = {}
+        agrupado_por_tipo_habitacion = {}
+        ingresos_por_dia = {}
+        noches_totales = 0
+        
+        for reserva in reservas:
+            estado = reserva.get('estado', 'SIN_ESTADO')
+            tipo_habitacion = reserva.get('tipoHabitacion', 'SIN_TIPO')
+            fecha = reserva.get('fechaInicio', 'SIN_FECHA')
+            
+            # Convertir precio a float de forma segura
+            precio = 0
+            try:
+                precio_str = str(reserva.get('precioTotal', 0))
+                precio = float(precio_str.replace(',', '.')) if precio_str else 0
+            except:
+                precio = 0
+            
+            # Calcular noches
+            try:
+                fecha_inicio_res = reserva.get('fechaInicio', fecha_inicio)
+                fecha_fin_res = reserva.get('fechaFin', fecha_inicio)
+                
+                if fecha_inicio_res and fecha_fin_res:
+                    inicio = datetime.strptime(fecha_inicio_res, '%Y-%m-%d')
+                    fin = datetime.strptime(fecha_fin_res, '%Y-%m-%d')
+                    noches = (fin - inicio).days
+                    if noches <= 0:
+                        noches = 1
+                    noches_totales += noches
+            except:
+                noches_totales += 1
+            
+            # Por estado
+            if estado not in agrupado_por_estado:
+                agrupado_por_estado[estado] = {'cantidad': 0, 'ingresos': 0}
+            agrupado_por_estado[estado]['cantidad'] += 1
+            agrupado_por_estado[estado]['ingresos'] += precio
+            
+            # Por tipo de habitación
+            if tipo_habitacion not in agrupado_por_tipo_habitacion:
+                agrupado_por_tipo_habitacion[tipo_habitacion] = {'cantidad': 0, 'ingresos': 0}
+            agrupado_por_tipo_habitacion[tipo_habitacion]['cantidad'] += 1
+            agrupado_por_tipo_habitacion[tipo_habitacion]['ingresos'] += precio
+            
+            # Ingresos por día
+            if fecha not in ingresos_por_dia:
+                ingresos_por_dia[fecha] = 0
+            ingresos_por_dia[fecha] += precio
+        
+        # Calcular ocupación
+        habitaciones_totales = len(obtener_habitaciones())
+        dias_periodo = (datetime.strptime(fecha_fin, '%Y-%m-%d') - datetime.strptime(fecha_inicio, '%Y-%m-%d')).days + 1
+        capacidad_total = habitaciones_totales * dias_periodo
+        
+        ocupacion = (noches_totales / capacidad_total * 100) if capacidad_total > 0 else 0
+        
+        ingresos_totales = sum(float(r.get('precioTotal', 0)) for r in reservas)
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'resumen': {
+                'total_reservas': len(reservas),
+                'ingresos_totales': round(ingresos_totales, 2),
+                'ocupacion_promedio': round(ocupacion, 2),
+                'duracion_promedio': round(calcular_duracion_promedio(reservas), 2),
+                'tasa_cancelacion': round(calcular_tasa_cancelacion(reservas), 2)
+            },
+            'por_estado': agrupado_por_estado,
+            'por_tipo_habitacion': agrupado_por_tipo_habitacion,
+            'ingresos_diarios': ingresos_por_dia,
+            'tendencias': analizar_tendencias_reservas(reservas)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte reservas: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": f"Error generando reporte reservas: {str(e)}"}), 500
+
+def reporte_personal(fecha_inicio, fecha_fin):
+    """Reporte específico de personal - CORREGIDO"""
+    try:
+        limpiadores = obtener_limpiadores_activos()
+        agendas = obtener_agendas_por_fecha(fecha_inicio, fecha_fin)
+        
+        print(f"Limpiadores: {len(limpiadores)}, Agendas: {len(agendas)}")
+        
+        if len(limpiadores) == 0:
+            return jsonify({
+                'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+                'mensaje': 'No se encontraron datos de personal',
+                'desempeno_individual': []
+            })
+        
+        desempeno_limpiadores = []
+        
+        for limpiador in limpiadores:
+            id_limpiador = limpiador.get('idEmpleado', limpiador.get('id', ''))
+            
+            # Filtrar agendas asignadas a este limpiador
+            agendas_limpiador = []
+            for agenda in agendas:
+                limpiadores_asignados = agenda.get('limpiadoresAsignados', [])
+                if isinstance(limpiadores_asignados, set):
+                    limpiadores_asignados = list(limpiadores_asignados)
+                elif not isinstance(limpiadores_asignados, list):
+                    limpiadores_asignados = []
+                
+                # Verificar si el ID del limpiador está en la lista
+                if id_limpiador in limpiadores_asignados:
+                    agendas_limpiador.append(agenda)
+            
+            # Calcular métricas
+            tareas_completadas = len([a for a in agendas_limpiador if a.get('estado') == 'COMPLETADO'])
+            tareas_asignadas = len(agendas_limpiador)
+            
+            # Calcular habitaciones completadas
+            habitaciones_completadas = 0
+            for agenda in agendas_limpiador:
+                if agenda.get('estado') == 'COMPLETADO':
+                    habitaciones = agenda.get('habitationsAsignadas', [])
+                    if isinstance(habitaciones, set):
+                        habitaciones = list(habitaciones)
+                    elif not isinstance(habitaciones, list):
+                        habitaciones = []
+                    habitaciones_completadas += len(habitaciones)
+            
+            eficiencia = (tareas_completadas / tareas_asignadas * 100) if tareas_asignadas > 0 else 0
+            
+            desempeno_limpiadores.append({
+                'id': id_limpiador,
+                'nombre': limpiador.get('nombre', 'Sin nombre'),
+                'estado': limpiador.get('estado', 'INACTIVO'),
+                'tareas_asignadas': tareas_asignadas,
+                'tareas_completadas': tareas_completadas,
+                'habitaciones_completadas': habitaciones_completadas,
+                'eficiencia': round(eficiencia, 2),
+                'horas_trabajadas': calcular_horas_trabajadas_limpiador(id_limpiador, agendas)
+            })
+        
+        # Ordenar por eficiencia
+        desempeno_limpiadores.sort(key=lambda x: x['eficiencia'], reverse=True)
+        
+        return jsonify({
+            'periodo': {'inicio': fecha_inicio, 'fin': fecha_fin},
+            'total_personal': len(limpiadores),
+            'activos': len([l for l in limpiadores if l.get('estado') == 'ACTIVO']),
+            'inactivos': len([l for l in limpiadores if l.get('estado') == 'INACTIVO']),
+            'desempeno_individual': desempeno_limpiadores,
+            'promedios': {
+                'eficiencia_promedio': round(calcular_promedio([d['eficiencia'] for d in desempeno_limpiadores]), 2),
+                'tareas_promedio': round(calcular_promedio([d['tareas_asignadas'] for d in desempeno_limpiadores]), 2),
+                'horas_promedio': round(calcular_promedio([d.get('horas_trabajadas', 0) for d in desempeno_limpiadores]), 2)
+            },
+            'recomendaciones_personal': generar_recomendaciones_personal(desempeno_limpiadores)
+        })
+    
+    except Exception as e:
+        print(f"Error en reporte personal: {str(e)}")
+        traceback.print_exc()
+        return jsonify({"error": f"Error generando reporte personal: {str(e)}"}), 500
+
+# ========== ENDPOINT DE DEBUG PARA REPORTES ==========
+
+@app.route('/debug/reporte', methods=['GET'])
+def debug_reporte():
+    """Endpoint para debug de reportes"""
+    try:
+        # Mostrar información de cada tabla
+        info_tablas = {}
+        
+        for tabla_nombre, tabla_info in TABLES.items():
+            table = tabla_info['table']
+            try:
+                response = table.scan(Limit=5)
+                items = response.get('Items', [])
+                info_tablas[tabla_nombre] = {
+                    'count': len(items),
+                    'sample_pks': [item.get('PK', 'Sin PK')[:50] for item in items[:3]],
+                    'sample_sks': [item.get('SK', 'Sin SK')[:50] for item in items[:3]]
+                }
+            except Exception as e:
+                info_tablas[tabla_nombre] = {'error': str(e)}
+        
+        # Probar funciones individuales
+        fecha_hoy = datetime.now().strftime('%Y-%m-%d')
+        fecha_ayer = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+        
+        reservas = obtener_reservas_por_fecha(fecha_ayer, fecha_hoy)
+        agendas = obtener_agendas_por_fecha(fecha_ayer, fecha_hoy)
+        limpiadores = obtener_limpiadores_activos()
+        habitaciones = obtener_habitaciones()
+        
+        return jsonify({
+            'tablas_info': info_tablas,
+            'funciones_prueba': {
+                'reservas_count': len(reservas),
+                'agendas_count': len(agendas),
+                'limpiadores_count': len(limpiadores),
+                'habitaciones_count': len(habitaciones)
+            },
+            'formato_pk_agenda': 'AGENDA#YYYY-MM-DD',
+            'formato_pk_reserva': 'RESERVA#YYYY-MM-DD#IDRESERVA',
+            'nota': 'Las fechas deben coincidir exactamente con el formato en PK'
+        })
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+def obtener_agendas_por_fecha(fecha_inicio, fecha_fin, zona=None):
+    """Obtener agendas en un rango de fechas"""
+    try:
+        response = table_limpieza.scan()
+        agendas = response.get('Items', [])
+        
+        agendas_filtradas = []
+        for agenda in agendas:
+            fecha_agenda = extract_fecha_from_pk(agenda.get('PK', ''))
+            if fecha_agenda and fecha_inicio <= fecha_agenda <= fecha_fin:
+                agenda_json = convertir_para_json(agenda)
+                if zona:
+                    if agenda_json.get('zona') == zona:
+                        agendas_filtradas.append(agenda_json)
+                else:
+                    agendas_filtradas.append(agenda_json)
+        
+        return agendas_filtradas
+    except Exception as e:
+        print(f"Error obteniendo agendas: {str(e)}")
+        return []
+
+def obtener_limpiadores_activos():
+    """Obtener todos los limpiadores"""
+    try:
+        response = table_limpiadores.scan()
+        limpiadores = response.get('Items', [])
+        return [convertir_para_json(l) for l in limpiadores]
+    except Exception as e:
+        print(f"Error obteniendo limpiadores: {str(e)}")
+        return []
+
+def obtener_habitaciones():
+    """Obtener todas las habitaciones"""
+    try:
+        response = table_habitacion.scan()
+        habitaciones = response.get('Items', [])
+        return [convertir_para_json(h) for h in habitaciones]
+    except Exception as e:
+        print(f"Error obteniendo habitaciones: {str(e)}")
+        return []
+
+def extract_fecha_from_pk(pk):
+    """Extraer fecha de una PK de agenda"""
+    if pk.startswith('AGENDA#'):
+        parts = pk.split('#')
+        if len(parts) > 1:
+            return parts[1]
+    return None
+
+def calcular_promedio(valores):
+    """Calcular promedio de una lista de valores"""
+    if not valores:
+        return 0
+    return sum(valores) / len(valores)
+
+def calcular_horas_trabajadas(agendas, limpiadores):
+    """Calcular horas totales trabajadas"""
+    # Simplificado: 1 hora por agenda
+    return len(agendas)
+
+def calcular_habitaciones_por_hora(zona, agendas):
+    """Calcular habitaciones por hora para una zona"""
+    agendas_zona = [a for a in agendas if a.get('zona') == zona]
+    if not agendas_zona:
+        return 0
+    
+    total_habitaciones = sum(len(a.get('habitationsAsignadas', [])) for a in agendas_zona)
+    return total_habitaciones / len(agendas_zona)
+
+def calcular_horas_trabajadas_limpiador(id_limpiador, agendas):
+    """Calcular horas trabajadas por un limpiador"""
+    agendas_limpiador = [a for a in agendas if id_limpiador in a.get('limpiadoresAsignados', [])]
+    # Suponer 1 hora por agenda
+    return len(agendas_limpiador)
+
+def calcular_duracion_promedio(reservas):
+    """Calcular duración promedio de reservas"""
+    if not reservas:
+        return 0
+    
+    total_noches = 0
+    for reserva in reservas:
+        fecha_inicio = reserva.get('fechaInicio', '')
+        fecha_fin = reserva.get('fechaFin', '')
+        if fecha_inicio and fecha_fin:
+            try:
+                inicio = datetime.strptime(fecha_inicio, '%Y-%m-%d')
+                fin = datetime.strptime(fecha_fin, '%Y-%m-%d')
+                duracion = (fin - inicio).days
+                total_noches += max(duracion, 1)
+            except:
+                total_noches += 1
+    
+    return total_noches / len(reservas)
+
+def calcular_tasa_cancelacion(reservas):
+    """Calcular tasa de cancelación"""
+    if not reservas:
+        return 0
+    
+    canceladas = len([r for r in reservas if r.get('estado') == 'CANCELADA'])
+    return (canceladas / len(reservas)) * 100
+
+def obtener_detalle_diario(fecha_inicio, fecha_fin):
+    """Obtener detalle diario de actividades"""
+    try:
+        # Crear un diccionario con todas las fechas del período
+        inicio = datetime.strptime(fecha_inicio, '%Y-%m-%d')
+        fin = datetime.strptime(fecha_fin, '%Y-%m-%d')
+        
+        detalle = {}
+        current_date = inicio
+        while current_date <= fin:
+            fecha_str = current_date.strftime('%Y-%m-%d')
+            detalle[fecha_str] = {
+                'reservas': 0,
+                'checkins': 0,
+                'checkouts': 0,
+                'tareas_limpieza': 0,
+                'tareas_completadas': 0,
+                'ingresos': 0
+            }
+            current_date += timedelta(days=1)
+        
+        # Aquí podrías llenar los datos reales consultando las tablas
+        # Por ahora devolvemos la estructura vacía
+        
+        return detalle
+    except Exception as e:
+        print(f"Error obteniendo detalle diario: {str(e)}")
+        return {}
+
+def generar_resumen_textual(estadisticas):
+    """Generar un resumen textual del reporte"""
+    res = estadisticas['reservas']
+    limp = estadisticas['limpieza']
+    pers = estadisticas['personal']
+    hab = estadisticas['habitaciones']
+    
+    resumen = f"""
+    REPORTE GENERAL - {estadisticas['fechas']['generado']}
+    
+    RESERVAS:
+    • Total: {res['total']} reservas
+    • Confirmadas: {res['confirmadas']}
+    • Pendientes: {res['pendientes']}
+    • Canceladas: {res['canceladas']}
+    • Ingresos estimados: ${res['ingresos_estimados']:,.2f}
+    
+    LIMPIEZA:
+    • Tareas programadas: {limp['tareas_totales']}
+    • Completadas: {limp['tareas_completadas']}
+    • En progreso: {limp['tareas_en_progreso']}
+    • Pendientes: {limp['tareas_pendientes']}
+    • Progreso promedio: {limp['progreso_promedio']}%
+    
+    PERSONAL:
+    • Total limpiadores: {pers['total_limpiadores']}
+    • Activos: {pers['limpiadores_activos']}
+    • Inactivos: {pers['limpiadores_inactivos']}
+    • Horas trabajadas: {pers['horas_totales_trabajadas']}h
+    
+    HABITACIONES:
+    • Total: {hab['total']}
+    • Disponibles: {hab['disponibles']}
+    • Ocupadas: {hab['ocupadas']}
+    • En limpieza: {hab['en_limpieza']}
+    • En mantenimiento: {hab['mantenimiento']}
+    """
+    
+    return resumen
+
+def generar_recomendaciones_limpieza(agrupado_por_zona):
+    """Generar recomendaciones basadas en datos de limpieza"""
+    recomendaciones = []
+    
+    for zona, stats in agrupado_por_zona.items():
+        if stats['pendientes'] > stats['completadas']:
+            recomendaciones.append(f"Zona {zona}: Alta carga pendiente. Considerar asignar más personal.")
+        
+        if len(stats['limpiadores_asignados']) == 0 and stats['total_tareas'] > 0:
+            recomendaciones.append(f"Zona {zona}: Tareas sin limpiadores asignados. Revisar asignaciones.")
+    
+    if not recomendaciones:
+        recomendaciones.append("El rendimiento de limpieza es adecuado. Mantener distribución actual.")
+    
+    return recomendaciones
+
+def generar_recomendaciones_personal(desempeno):
+    """Generar recomendaciones para el personal"""
+    recomendaciones = []
+    
+    if desempeno:
+        mejor_limpiador = max(desempeno, key=lambda x: x['eficiencia'])
+        peor_limpiador = min(desempeno, key=lambda x: x['eficiencia'])
+        
+        if mejor_limpiador['eficiencia'] > 90:
+            recomendaciones.append(f"Reconocer el buen desempeño de {mejor_limpiador['nombre']} (eficiencia: {mejor_limpiador['eficiencia']}%)")
+        
+        if peor_limpiador['eficiencia'] < 50:
+            recomendaciones.append(f"Ofrecer capacitación adicional a {peor_limpiador['nombre']} (eficiencia: {peor_limpiador['eficiencia']}%)")
+    
+    return recomendaciones
+
+def analizar_tendencias_reservas(reservas):
+    """Analizar tendencias en las reservas"""
+    tendencias = {
+        'dias_populares': {},
+        'tipo_popular': '',
+        'cliente_frecuente': ''
+    }
+    
+    if reservas:
+        # Contar reservas por día de la semana
+        for reserva in reservas:
+            fecha = reserva.get('fechaInicio', '')
+            if fecha:
+                try:
+                    dia_semana = datetime.strptime(fecha, '%Y-%m-%d').strftime('%A')
+                    tendencias['dias_populares'][dia_semana] = tendencias['dias_populares'].get(dia_semana, 0) + 1
+                except:
+                    pass
+        
+        # Tipo de habitación más popular
+        tipos = {}
+        for reserva in reservas:
+            tipo = reserva.get('tipoHabitacion', '')
+            if tipo:
+                tipos[tipo] = tipos.get(tipo, 0) + 1
+        
+        if tipos:
+            tendencias['tipo_popular'] = max(tipos.items(), key=lambda x: x[1])[0]
+    
+    return tendencias
 
 @app.route('/')
 def index():

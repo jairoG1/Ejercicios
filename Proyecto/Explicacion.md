@@ -434,4 +434,4 @@ def reporte_complejo():
 ### Como ejecutar
 En primer lugar debes ejecutar el archivo CRUD.py el cual te generara un link para visitar la pagina web
 ### En caso de Error 
-si por alguna casualidad tienes algun error por lo unico que puede ser es por el nombre de tus tablas 
+si por alguna casualidad tienes algun error por lo unico que puede ser es por el nombre de tus tablas REVISALO
