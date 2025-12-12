@@ -11,7 +11,7 @@ Sistema completo de gestión hotelera con API RESTful (Flask + DynamoDB) e inter
 ```python
 @app.route('/datos/<tabla>', methods=['GET'])
 def listar_datos(tabla):
-    """Listar todos los datos de una tabla con paginación"""
+    """Listar todos los datos """
     if tabla not in TABLES:
         return jsonify({"error": "Tabla no encontrada"}), 404
     
@@ -225,11 +225,10 @@ def eliminar_dato(tabla, id):
 @app.route('/reporte_complejo', methods=['GET'])
 def reporte_complejo():
     """
-    CONSULTA COMPLEJA: Reporte integrado del sistema hotelero
     Combina datos de múltiples tablas:
     1. Reservas VIP activas (prioridad ALTA/MEDIA, duración ≥ 3 días)
     2. Personal calificado disponible (calificación > 4.0)
-    3. Habitaciones de lujo (SUITE, PRESIDENCIAL)
+    3. Habitaciones de lujo que son  (SUITE, PRESIDENCIAL)
     4. Estadísticas consolidadas
     """
     try:
