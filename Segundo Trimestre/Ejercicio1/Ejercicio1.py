@@ -63,12 +63,7 @@ df['fecha'] = df['fecha'].apply(convertir_fecha_relativa)
 #Pasar a json
 df.to_json("ventas_limpias_Jairo.json", orient="records", force_ascii=False, indent=4)
 
-
-print("Iniciando limpieza de [Jairo Guardado]")
-print("Total de filas iniciales.",{filasiniciales})
-print("Total de filas eliminadas por duplicidad.",len(filaseliminadas))
-print("Valor de la mediana utilizada para los precios.",{media})
-print("Número total de registros con “cantidades negativas” descartados.",{negativos})
+#para ver los registros perdidos
 df_limpio = df.drop_duplicates(subset="id", keep="first")
 df_limpio = df.groupby("id").agg({
     "producto": "first",
@@ -78,4 +73,10 @@ df_limpio = df.groupby("id").agg({
 registros_iniciales = len(df)
 registros_finales = len(df_limpio)
 perdidos = registros_iniciales - registros_finales
+
+print("Iniciando limpieza de [Jairo Guardado]")
+print("Total de filas iniciales.",{filasiniciales})
+print("Total de filas eliminadas por duplicidad.",len(filaseliminadas))
+print("Valor de la mediana utilizada para los precios.",{media})
+print("Número total de registros con “cantidades negativas” descartados.",{negativos})
 print(f"Registros perdidos: {perdidos}")
