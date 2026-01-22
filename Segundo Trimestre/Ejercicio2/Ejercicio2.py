@@ -22,7 +22,7 @@ print(f"Total: {len(todos_los_pokemon_resumen)}")
 datos_finales = []
 
 
-# limitamos a 50 para ir mas rapidin
+# Si quieres limitar cambia usted el numero
 for poke in todos_los_pokemon_resumen[:1350]: 
     res = requests.get(poke['url'])
     detalles = res.json()
