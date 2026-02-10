@@ -1,7 +1,6 @@
 import pandas as pd
 
 # 1. Carga del pergamino secreto
-# Fíjate en la 'r' antes de las comillas, sirve para que las barras invertidas no den guerra
 df = pd.read_csv(r'C:\Users\jguardadoa01\Desktop\Justo\Segundo Trimestre\Ejercicio4\registros_misiones.csv')
 # --- SECCIÓN 1: LIMPIEZA DE DATOS ---
 
@@ -65,3 +64,4 @@ df_limpio = limpiar_registro(df)
 realizar_consultas(df_limpio)
 # Guardado final
 df_limpio.to_csv('misiones_limpias_[Jairo].csv', index=False)
+
