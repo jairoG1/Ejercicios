@@ -1,0 +1,1551 @@
+id_reg,ts,nin_id,aldea,chakra,rango,status,desc
+ANBU-1000,2025-02-02 11:11:00,Gaara, suna,998.21,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1001,2025-02-04 10:31:00,Temari,Konoha,6441.64,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-1002,2025-02-02 23:07:00,Shikamaru,Suna ,,D,Fallo,Movimiento sospechoso detectado
+ANBU-1003,2025-02-04 05:00:00,Choji,Amegakure,1966.92,B,Sospechoso,Posible espía detectado
+ANBU-1004,2025-02-05 14:13:00,Temari,Kiri,1205.96,S,Éxito,Escolta de persona VIP
+ANBU-1005,2025-02-01 16:21:00,Kakashi, suna,5955.33,S,En curso,Movimiento sospechoso detectado
+ANBU-1006,2025-02-01 18:24:00,Gaara,Iwa,5245.86,A,En curso,Recuperación de pergamino secreto
+ANBU-1007,2025-02-01 22:14:00,Kankuro,Konoha,4108.58,D,En curso,Escolta de persona VIP
+ANBU-1008,2025-02-01 12:31:00,Gaara,Kumo,1053.53,C,En curso,Enemigo a la vista
+ANBU-1009,2025-02-03 16:05:00,Shikamaru,Iwa,7423.79,C,Fallo,Posible espía detectado
+ANBU-1010,2025-02-04 01:47:00,Temari,Suna,5538.98,B,Éxito,Sustitución de guardias
+ANBU-1011,2025-02-03 16:36:00,Kakashi,Suna,4993.73,D,Fallo,Posible espía detectado
+ANBU-1012,2025-02-06 07:00:00,Shikamaru,Suna,7975.82,B,Éxito,Recuperación de pergamino secreto
+ANBU-1013,2025-02-04 07:38:00,Temari,Kiri,2138.61,C,Fallo,Escolta de persona VIP
+ANBU-1014,2025-02-04 04:27:00,Sasuke,Kiri,4950.96,S,Sospechoso,Escolta de persona VIP
+ANBU-1015,2025-02-05 03:58:00,Gaara,Amegakure,3647.12,S,Éxito,Enemigo a la vista
+ANBU-1016,2025-02-04 12:12:00,Sakura,Kumo,2175.66,B,Fallo,Patrulla rutinaria
+ANBU-1017,2025-02-01 06:06:00,Kankuro,Iwa,3955.04,B,Éxito,Posible espía detectado
+ANBU-1018,2025-02-01 10:47:00,Kankuro,Suna,7522.71,S,Éxito,Patrulla rutinaria
+ANBU-1019,2025-02-03 03:54:00,Sakura,Konoha,562.25,D,En curso,Patrulla rutinaria
+ANBU-1020,2025-02-05 15:12:00,Gaara,Suna,3344.77,B,Fallo,Patrulla rutinaria
+ANBU-1021,2025-02-06 18:50:00,Gaara,Konoha,6802.28,B,Éxito,Sustitución de guardias
+ANBU-1022,2025-02-06 09:07:00,Sasuke,konoha,3715.44,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-1023,2025-02-01 18:22:00,Sasuke,Iwa,5831.55,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1024,2025-02-06 06:06:00,Kankuro,Amegakure,1159.82,S,Fallo,Recuperación de pergamino secreto
+ANBU-1025,2025-02-03 03:29:00,Kakashi,Suna,4462.5,D,Éxito,Escolta de persona VIP
+ANBU-1026,2025-02-03 06:46:00,Shikamaru,Kiri,0.0,S,Fallo,Escolta de persona VIP
+ANBU-1027,2025-02-04 04:35:00,Kankuro,Suna ,6100.96,C,Fallo,Recuperación de pergamino secreto
+ANBU-1028,2025-02-06 21:28:00,Kankuro,Konoha,4725.75,A,En curso,Enemigo a la vista
+ANBU-1029,2025-02-02 04:50:00,Gaara,Suna,1488.5,B,Fallo,Patrulla rutinaria
+ANBU-1030,2025-02-03 22:18:00,Gaara,Kiri,1686.25,S,En curso,Vigilancia de puesto avanzado
+ANBU-1031,2025-02-03 06:22:00,Kankuro,Amegakure,999999.0,S,Sospechoso,Sustitución de guardias
+ANBU-1032,2025-02-04 20:27:00,,Kiri,7239.91,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1033,2025-02-01 03:00:00,Gaara,Kumo,5988.95,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1034,2025-02-03 21:01:00,Naruto,Konoha,1399.3,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-1035,2025-02-02 02:12:00,Sakura,Suna,,S,En curso,Patrulla rutinaria
+ANBU-1036,2025-02-05 02:10:00,,Kiri,2893.04,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1037,2025-02-01 08:51:00,Naruto,Kumo,6515.57,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1038,2025-02-06 04:21:00,Kakashi,Kumo,943.11,B,En curso,Enemigo a la vista
+ANBU-1039,2025-02-04 03:50:00,Ino,Iwa,6386.15,A,En curso,Patrulla rutinaria
+ANBU-1040,2025-02-05 15:19:00,Kankuro,Kumo,7009.62,S,Éxito,Posible espía detectado
+ANBU-1041,2025-02-06 09:09:00,Choji,Iwa,654.55,C,Fallo,Escolta de persona VIP
+ANBU-1042,2025-02-06 06:17:00,Temari,Amegakure,6179.0,S,Fallo,Infiltrado de la Lluvia detectado
+ANBU-1043,2025-02-02 16:15:00,,Kiri,4302.23,A,En curso,Enemigo a la vista
+ANBU-1044,2025-02-02 10:14:00,Shikamaru,Kumo,2961.52,C,En curso,Sustitución de guardias
+ANBU-1045,2025-02-02 09:23:00,Ino,konoha,3635.58,D,Éxito,Enemigo a la vista
+ANBU-1046,2025-02-05 00:28:00,Shikamaru,Kumo,7515.41,A,Sospechoso,Posible espía detectado
+ANBU-1047,2025-02-04 18:30:00,Gaara,Iwa,3542.42,B,Fallo,Posible espía detectado
+ANBU-1048,2025-02-03 11:32:00,Ino,Kumo,901.23,S,Éxito,Sustitución de guardias
+ANBU-1049,2025-02-04 03:12:00,Gaara,Suna,6708.6,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1050,2025-02-03 01:54:00,Shikamaru,Konoha,4488.49,S,Fallo,Posible espía detectado
+ANBU-1051,2025-02-01 03:26:00,Ino,Suna,5891.96,A,Éxito,Posible espía detectado
+ANBU-1052,2025-02-01 15:07:00,Kankuro,Kumo,2636.27,B,Éxito,Sustitución de guardias
+ANBU-1053,2025-02-01 16:08:00,Kakashi,Suna,6261.6,B,En curso,Sustitución de guardias
+ANBU-1054,2025-02-02 20:26:00,Temari,Kiri,1888.37,B,Éxito,Enemigo a la vista
+ANBU-1055,2025-02-03 23:25:00,Sasuke,Suna,5785.04,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1056,2025-02-05 03:24:00,Choji,Iwa,7197.56,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1057,2025-02-06 06:55:00,Shikamaru, Konoha,1469.91,C,En curso,Posible espía detectado
+ANBU-1058,2025-02-01 05:11:00,Kakashi,Suna ,,S,Sospechoso,Patrulla rutinaria
+ANBU-1059,2025-02-06 07:27:00,Gaara,Iwa,2770.63,B,Éxito,Escolta de persona VIP
+ANBU-1060,2025-02-06 07:04:00,Sasuke,Kumo,1865.48,S,Sospechoso,Escolta de persona VIP
+ANBU-1061,2025-02-02 07:38:00,Temari,Suna,5297.99,C,Fallo,Posible espía detectado
+ANBU-1062,2025-02-03 20:37:00,Sakura,Iwa,0.0,A,Fallo,Posible espía detectado
+ANBU-1063,2025-02-04 00:16:00,Sasuke,Iwa,2481.12,S,Fallo,Sustitución de guardias
+ANBU-1064,2025-02-01 02:14:00,Sakura,KONOHA ,7795.43,B,En curso,Movimiento sospechoso detectado
+ANBU-1065,2025-02-01 19:31:00,Temari,Konoha_,1482.34,D,Éxito,Sustitución de guardias
+ANBU-1066,2025-02-03 02:05:00,Ino,Iwa,2230.37,D,Fallo,Movimiento sospechoso detectado
+ANBU-1067,2025-02-01 23:02:00,Kakashi,Iwa,4899.79,S,Fallo,Movimiento sospechoso detectado
+ANBU-1068,2025-02-03 02:20:00,Kakashi,Suna,7700.02,B,Éxito,Escolta de persona VIP
+ANBU-1069,2025-02-06 22:41:00,Ino,Amegakure,0.0,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1070,2025-02-03 22:09:00,Kakashi,Kumo,5023.76,B,Éxito,Recuperación de pergamino secreto
+ANBU-1071,2025-02-01 07:02:00,Shikamaru,Iwa,7456.0,B,Fallo,Enemigo a la vista
+ANBU-1072,2025-02-02 18:53:00,Kankuro,Suna,7511.17,B,Éxito,Posible espía detectado
+ANBU-1073,2025-02-05 04:57:00,Naruto,Kiri,2426.36,D,En curso,Enemigo a la vista
+ANBU-1074,2025-02-06 02:16:00,Gaara,Amegakure,2512.29,B,Éxito,Movimiento sospechoso detectado
+ANBU-1075,2025-02-01 23:47:00,Ino,KONOHA ,4083.76,A,Éxito,Escolta de persona VIP
+ANBU-1076,2025-02-02 13:17:00,Gaara,Iwa,,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1077,2025-02-03 15:13:00,Sasuke,Kumo,2209.83,A,Fallo,Enemigo a la vista
+ANBU-1078,2025-02-03 02:32:00,Shikamaru,Iwa,2205.16,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1079,2025-02-02 07:40:00,Naruto,Kiri,6875.46,C,Éxito,Enemigo a la vista
+ANBU-1080,2025-02-02 02:41:00,Sakura,Suna,1289.25,C,Sospechoso,Patrulla rutinaria
+ANBU-1081,2025-02-05 00:59:00,Kankuro,Amegakure,4361.33,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-1082,2025-02-06 02:31:00,,Kiri,5535.61,B,En curso,Posible espía detectado
+ANBU-1083,2025-02-04 08:39:00,Ino, suna,1467.86,D,Sospechoso,Enemigo a la vista
+ANBU-1084,2025-02-06 18:20:00,Sasuke,Kiri,7174.34,B,Sospechoso,Sustitución de guardias
+ANBU-1085,2025-02-05 04:18:00,Ino,Kiri,2800.95,B,En curso,Misión de reconocimiento en fronteras
+ANBU-1086,2025-02-05 22:12:00,Choji,KONOHA ,3855.02,S,Sospechoso,Escolta de persona VIP
+ANBU-1087,2025-02-01 01:18:00,Sakura,Iwa,,C,Sospechoso,Enemigo a la vista
+ANBU-1088,2025-02-03 04:21:00,Choji,Kiri,1089.49,A,Sospechoso,Posible espía detectado
+ANBU-1089,2025-02-06 01:51:00,Sasuke,Kiri,2260.62,C,Sospechoso,Posible espía detectado
+ANBU-1090,2025-02-02 13:13:00,Naruto,Amegakure,5149.52,S,Fallo,Recuperación de pergamino secreto
+ANBU-1091,2025-02-01 05:52:00,Naruto,Kumo,1299.59,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-1092,2025-02-03 17:38:00,Shikamaru,Konoha,5809.04,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1093,2025-02-01 02:12:00,Gaara,Amegakure,4301.12,A,En curso,Escolta de persona VIP
+ANBU-1094,2025-02-04 06:57:00,Sasuke, Lluvia,5841.01,C,Fallo,Escolta de persona VIP
+ANBU-1095,2025-02-01 06:46:00,Shikamaru,Amegakure,6552.7,A,Éxito,Posible espía detectado
+ANBU-1096,2025-02-04 06:52:00,Sakura,Konoha,2164.53,S,Fallo,Escolta de persona VIP
+ANBU-1097,2025-02-04 04:45:00,,Kiri,3312.32,C,En curso,Posible espía detectado
+ANBU-1098,2025-02-01 05:00:00,Shikamaru,Amegakure,5116.03,S,Fallo,Sustitución de guardias
+ANBU-1099,2025-02-02 09:40:00,Choji,Suna,755.36,C,Éxito,Recuperación de pergamino secreto
+ANBU-1100,2025-02-03 23:33:00,Ino,Kumo,6927.55,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1101,2025-02-05 10:18:00,Kakashi,Iwa,7154.61,S,En curso,Enemigo a la vista
+ANBU-1102,2025-02-03 20:21:00,Naruto,Kumo,4752.75,C,Fallo,Posible espía detectado
+ANBU-1103,2025-02-04 21:30:00,Naruto,Suna,1573.2,D,En curso,Patrulla rutinaria
+ANBU-1104,2025-02-06 05:31:00,Ino,Iwa,-100.0,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1105,2025-02-06 04:02:00,Gaara,Amegakure,4750.37,C,Éxito,Escolta de persona VIP
+ANBU-1106,2025-02-03 18:26:00,Shikamaru,Suna ,1194.18,A,En curso,Escolta de persona VIP
+ANBU-1107,2025-02-06 03:19:00,Ino,Kumo,2387.8,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-1108,2025-02-01 01:16:00,Temari,Kumo,967.38,S,Fallo,Escolta de persona VIP
+ANBU-1109,2025-02-01 00:35:00,Ino,Konoha,5381.73,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1110,2025-02-03 11:15:00,Ino,Kiri,6417.98,S,Fallo,Patrulla rutinaria
+ANBU-1111,2025-02-01 06:36:00,,Kiri,4823.95,D,Fallo,Patrulla rutinaria
+ANBU-1112,2025-02-05 05:26:00,Naruto,Suna,6006.11,C,Éxito,Sustitución de guardias
+ANBU-1113,2025-02-01 17:38:00,Gaara,Iwa,1894.01,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-1114,2025-02-04 18:14:00,Shikamaru,Iwa,5502.31,C,En curso,Sustitución de guardias
+ANBU-1115,2025-02-03 21:27:00,Temari,Iwa,7529.18,B,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1116,2025-02-05 07:05:00,Shikamaru,Kiri,4299.25,C,Fallo,Sustitución de guardias
+ANBU-1117,2025-02-06 12:18:00,Naruto,Konoha,5793.71,A,En curso,Escolta de persona VIP
+ANBU-1118,2025-02-06 21:16:00,Kankuro,Kiri,7035.72,C,Éxito,Sustitución de guardias
+ANBU-1119,2025-02-03 19:03:00,Ino,Amegakure,1399.34,S,Fallo,Movimiento sospechoso detectado
+ANBU-1120,2025-02-03 19:41:00,Ino,Iwa,1527.8,D,En curso,Escolta de persona VIP
+ANBU-1121,2025-02-05 13:12:00,Temari,Iwa,4794.01,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1122,2025-02-03 06:57:00,Temari,Amegakure,2670.64,B,Fallo,Patrulla rutinaria
+ANBU-1123,2025-02-02 07:51:00,Kankuro,Kiri,5988.03,A,En curso,Vigilancia de puesto avanzado
+ANBU-1124,2025-02-05 08:52:00,Temari,Konoha,5160.35,S,Fallo,Movimiento sospechoso detectado
+ANBU-1125,2025-02-03 03:10:00,,Kiri,2571.74,D,Éxito,Posible espía detectado
+ANBU-1126,2025-02-05 06:14:00,Ino,Kiri,7343.96,S,Fallo,Sustitución de guardias
+ANBU-1127,2025-02-03 15:10:00,Sasuke,Kiri,2693.76,C,Éxito,Enemigo a la vista
+ANBU-1128,2025-02-05 23:06:00,Kankuro,Amegakure,4337.7,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1129,2025-02-04 23:22:00,Temari,Iwa,3961.58,S,Fallo,Movimiento sospechoso detectado
+ANBU-1130,2025-02-06 04:32:00,Temari,Suna,2882.84,S,En curso,Movimiento sospechoso detectado
+ANBU-1131,2025-02-06 08:37:00,Shikamaru,Iwa,6565.15,S,Fallo,Movimiento sospechoso detectado
+ANBU-1132,2025-02-02 14:29:00,Kankuro,KONOHA ,6655.71,A,Fallo,Recuperación de pergamino secreto
+ANBU-1133,2025-02-04 14:46:00,Sakura,Suna ,4273.31,B,En curso,Sustitución de guardias
+ANBU-1134,2025-02-02 20:03:00,Kankuro,Kiri,1261.62,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-1135,2025-02-01 17:47:00,Naruto,Konoha,,A,Éxito,Recuperación de pergamino secreto
+ANBU-1136,2025-02-03 09:19:00,Kankuro,Amegakure,1175.33,B,Fallo,Enemigo a la vista
+ANBU-1137,2025-02-02 06:17:00,Naruto,Amegakure,7334.75,A,Sospechoso,Posible espía detectado
+ANBU-1138,2025-02-03 08:46:00,Kankuro,Kiri,2591.1,A,Éxito,Posible espía detectado
+ANBU-1139,2025-02-04 01:36:00,Sasuke,Kiri,6995.91,D,Éxito,Posible espía detectado
+ANBU-1140,2025-02-03 04:06:00,Kankuro,Konoha,4717.63,D,Éxito,Patrulla rutinaria
+ANBU-1141,2025-02-03 13:30:00,Gaara,Amegakure,1472.4,C,Éxito,Recuperación de pergamino secreto
+ANBU-1142,2025-02-06 10:34:00,Choji,Kumo,4958.96,B,En curso,Vigilancia de puesto avanzado
+ANBU-1143,2025-02-02 10:58:00,Kankuro,Iwa,1313.94,C,Sospechoso,Escolta de persona VIP
+ANBU-1144,2025-02-01 15:49:00,Shikamaru,Kiri,7497.55,S,Éxito,Patrulla rutinaria
+ANBU-1145,2025-02-04 20:49:00,Kankuro,Konoha,3243.49,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1146,2025-02-03 18:26:00,Choji,Iwa,4185.92,C,En curso,Posible espía detectado
+ANBU-1147,2025-02-02 00:19:00,,Kiri,6357.19,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-1148,2025-02-01 01:20:00,Kakashi,amegakure,1206.03,C,Fallo,Patrulla rutinaria
+ANBU-1149,2025-02-01 09:36:00,Ino,Kiri,3968.45,S,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1150,2025-02-01 08:08:00,,Kiri,7858.65,C,Fallo,Posible espía detectado
+ANBU-1151,2025-02-06 03:28:00,Kakashi,Kiri,4301.14,A,Éxito,Sustitución de guardias
+ANBU-1152,2025-02-04 02:15:00,Gaara,Iwa,841.42,A,En curso,Sustitución de guardias
+ANBU-1153,2025-02-06 12:08:00,Kakashi,Kiri,5428.85,B,Sospechoso,Posible espía detectado
+ANBU-1154,2025-02-04 03:10:00,Choji,Suna,6501.62,S,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1155,2025-02-06 14:14:00,Kakashi,Iwa,999999.0,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1156,2025-02-01 04:41:00,Kankuro,amegakure,3507.81,B,Éxito,Escolta de persona VIP
+ANBU-1157,2025-02-03 18:28:00,Sasuke,Suna,5726.4,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-1158,2025-02-04 23:51:00,Kankuro,Kumo,5377.39,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1159,2025-02-05 10:32:00,Sasuke,Kumo,1752.34,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-1160,2025-02-01 09:47:00,Choji,Suna,5368.5,C,Sospechoso,Enemigo a la vista
+ANBU-1161,2025-02-05 02:10:00,Sakura,Kumo,,D,Éxito,Patrulla rutinaria
+ANBU-1162,2025-02-06 20:00:00,Naruto,Suna,-100.0,D,Éxito,Recuperación de pergamino secreto
+ANBU-1163,2025-02-06 03:59:00,Ino,Kumo,1338.06,B,Sospechoso,Posible espía detectado
+ANBU-1164,2025-02-03 04:43:00,Naruto,Suna,2701.88,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1165,2025-02-04 20:37:00,Sakura,Konoha,5479.07,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1166,2025-02-01 02:00:00,Shikamaru,Suna ,2207.66,S,Sospechoso,Patrulla rutinaria
+ANBU-1167,2025-02-06 16:56:00,Ino,Konoha,6657.28,C,Éxito,Escolta de persona VIP
+ANBU-1168,2025-02-03 16:00:00,Sakura,Konoha,7081.21,S,Fallo,Posible espía detectado
+ANBU-1169,2025-02-01 08:29:00,Choji,Kumo,5737.97,B,Éxito,Movimiento sospechoso detectado
+ANBU-1170,2025-02-06 19:53:00,Kankuro,amegakure,652.96,A,Fallo,Posible espía detectado
+ANBU-1171,2025-02-05 11:59:00,Shikamaru,Iwa,7242.74,A,Fallo,Patrulla rutinaria
+ANBU-1172,2025-02-03 04:10:00,Temari,Konoha_,6167.94,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1173,2025-02-01 02:41:00,Shikamaru,Kumo,4451.85,B,En curso,Enemigo a la vista
+ANBU-1174,2025-02-01 03:16:00,Shikamaru,Kiri,4895.89,B,Éxito,Enemigo a la vista
+ANBU-1175,2025-02-05 07:55:00,Temari,Konoha,904.14,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1176,2025-02-01 22:29:00,Sakura,Kiri,1167.29,A,En curso,Enemigo a la vista
+ANBU-1177,2025-02-04 16:14:00,Ino,Konoha,5760.91,A,Sospechoso,Escolta de persona VIP
+ANBU-1178,2025-02-05 08:55:00,Ino,Suna,2921.74,D,Éxito,Sustitución de guardias
+ANBU-1179,2025-02-03 17:29:00,Kakashi,Kiri,5508.18,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1180,2025-02-01 22:02:00,Sakura,Iwa,7165.08,B,Fallo,Movimiento sospechoso detectado
+ANBU-1181,2025-02-04 17:15:00,Kankuro,Kiri,7187.17,D,Fallo,Sustitución de guardias
+ANBU-1182,2025-02-02 08:43:00,Shikamaru,Kumo,2652.19,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-1183,2025-02-04 18:08:00,Shikamaru,Kumo,7058.03,D,En curso,Misión de reconocimiento en fronteras
+ANBU-1184,2025-02-04 01:33:00,Sakura,Iwa,6704.63,C,En curso,Recuperación de pergamino secreto
+ANBU-1185,2025-02-02 19:20:00,Temari,Kumo,651.91,B,En curso,Misión de reconocimiento en fronteras
+ANBU-1186,2025-02-05 13:50:00,Ino,Amegakure,1933.18,A,Fallo,Movimiento sospechoso detectado
+ANBU-1187,2025-02-06 17:12:00,Ino,Suna,3549.87,D,Fallo,Sustitución de guardias
+ANBU-1188,2025-02-04 01:49:00,Choji,Kumo,5722.98,D,En curso,Misión de reconocimiento en fronteras
+ANBU-1189,2025-02-04 09:42:00,Choji,Kumo,,D,Éxito,Recuperación de pergamino secreto
+ANBU-1190,2025-02-03 02:24:00,Shikamaru,SUNA,6230.67,B,Fallo,Enemigo a la vista
+ANBU-1191,2025-02-04 04:40:00,Kankuro,Kumo,3149.62,B,Éxito,Movimiento sospechoso detectado
+ANBU-1192,2025-02-06 22:11:00,Sasuke,Amegakure,2249.59,D,Éxito,Sustitución de guardias
+ANBU-1193,2025-02-06 18:25:00,Temari,Amegakure,7367.0,S,Sospechoso,Infiltrado de la Lluvia detectado
+ANBU-1194,2025-02-04 23:34:00,Sakura,Kumo,3309.81,C,Fallo,Posible espía detectado
+ANBU-1195,2025-02-03 18:58:00,Sakura,Kumo,7192.03,A,En curso,Sustitución de guardias
+ANBU-1196,2025-02-04 15:11:00,Shikamaru,Kumo,4326.9,D,Fallo,Enemigo a la vista
+ANBU-1197,2025-02-02 23:18:00,Temari, Konoha,3702.63,C,Éxito,Patrulla rutinaria
+ANBU-1198,2025-02-02 18:19:00,,Kiri,7667.81,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1199,2025-02-02 09:53:00,Sasuke,Kiri,6823.4,S,Fallo,Movimiento sospechoso detectado
+ANBU-1200,2025-02-02 23:25:00,Sasuke,Kumo,1815.14,D,Éxito,Patrulla rutinaria
+ANBU-1201,2025-02-04 13:38:00,Temari,Kiri,6342.22,D,Sospechoso,Patrulla rutinaria
+ANBU-1202,2025-02-02 13:00:00,Shikamaru,Iwa,5476.18,S,En curso,Vigilancia de puesto avanzado
+ANBU-1203,2025-02-01 23:55:00,Temari,Kiri,758.5,C,Sospechoso,Enemigo a la vista
+ANBU-1204,2025-02-05 18:17:00,Ino,Suna,7188.22,C,Fallo,Enemigo a la vista
+ANBU-1205,2025-02-05 17:04:00,Naruto,Iwa,3885.35,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1206,2025-02-02 02:56:00,Temari,Amegakure,6226.64,B,Fallo,Escolta de persona VIP
+ANBU-1207,2025-02-01 21:06:00,Kankuro, Konoha,6216.86,S,Fallo,Recuperación de pergamino secreto
+ANBU-1208,2025-02-02 16:56:00,Temari,Kumo,5287.16,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1209,2025-02-01 20:57:00,Naruto,Konoha,0.0,A,Éxito,Posible espía detectado
+ANBU-1210,2025-02-02 16:56:00,Temari,Amegakure,7767.65,A,Fallo,Enemigo a la vista
+ANBU-1211,2025-02-02 15:40:00,Choji,Konoha,4654.02,C,Fallo,Patrulla rutinaria
+ANBU-1212,2025-02-05 00:28:00,Kakashi, Konoha,753.15,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1213,2025-02-05 07:45:00,Naruto,Kiri,4161.2,A,En curso,Posible espía detectado
+ANBU-1214,2025-02-04 16:59:00,Naruto,Iwa,6026.61,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1215,2025-02-01 00:51:00,Gaara,Suna,3005.77,B,Sospechoso,Enemigo a la vista
+ANBU-1216,2025-02-01 10:49:00,Kankuro,Kiri,7855.79,D,En curso,Vigilancia de puesto avanzado
+ANBU-1217,2025-02-06 01:05:00,Ino,Iwa,,B,Éxito,Escolta de persona VIP
+ANBU-1218,2025-02-01 12:11:00,Ino,Konoha,4535.9,D,Éxito,Movimiento sospechoso detectado
+ANBU-1219,2025-02-01 12:43:00,Sakura,Amegakure,2469.53,D,Fallo,Sustitución de guardias
+ANBU-1220,2025-02-06 15:30:00,Gaara,Konoha,2323.76,C,Fallo,Posible espía detectado
+ANBU-1221,2025-02-01 08:10:00,Gaara,Kumo,6429.32,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1222,2025-02-03 17:07:00,Temari,Suna,,S,Fallo,Sustitución de guardias
+ANBU-1223,2025-02-06 07:07:00,Gaara,Kiri,,D,Fallo,Recuperación de pergamino secreto
+ANBU-1224,2025-02-02 06:58:00,Naruto,Konoha,1721.87,B,Éxito,Sustitución de guardias
+ANBU-1225,2025-02-05 07:47:00,Kakashi,Suna,1088.58,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1226,2025-02-01 01:16:00,Sasuke,KONOHA ,4587.18,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1227,2025-02-06 10:59:00,Choji,Iwa,6338.65,D,Fallo,Sustitución de guardias
+ANBU-1228,2025-02-03 04:10:00,Sasuke,Iwa,2604.96,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1229,2025-02-01 21:44:00,Kakashi, Lluvia,5473.75,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1230,2025-02-02 11:47:00,Kankuro,Kiri,1592.23,A,Sospechoso,Enemigo a la vista
+ANBU-1231,2025-02-04 01:31:00,Sakura,Suna,6441.08,B,En curso,Patrulla rutinaria
+ANBU-1232,2025-02-06 13:08:00,Sakura,Kumo,1490.34,D,Éxito,Recuperación de pergamino secreto
+ANBU-1233,2025-02-05 09:59:00,Choji,Iwa,3300.08,B,Éxito,Posible espía detectado
+ANBU-1234,2025-02-03 04:32:00,Kakashi,amegakure,4330.52,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1235,2025-02-06 18:09:00,Shikamaru,Suna,,A,En curso,Patrulla rutinaria
+ANBU-1236,2025-02-01 00:34:00,Temari,Konoha,900.52,A,Éxito,Enemigo a la vista
+ANBU-1237,2025-02-04 23:55:00,Kakashi,Amegakure,1351.78,A,Sospechoso,Patrulla rutinaria
+ANBU-1238,2025-02-06 02:37:00,Gaara,KONOHA ,3235.74,S,Éxito,Escolta de persona VIP
+ANBU-1239,2025-02-04 11:32:00,Shikamaru,SUNA,6837.05,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1240,2025-02-04 23:35:00,Sakura,Kiri,4052.91,S,Fallo,Enemigo a la vista
+ANBU-1241,2025-02-06 02:48:00,Gaara,Suna,5478.1,A,En curso,Enemigo a la vista
+ANBU-1242,2025-02-06 23:52:00,Gaara,Iwa,5017.26,A,Fallo,Enemigo a la vista
+ANBU-1243,2025-02-02 07:30:00,Sasuke,Kiri,2689.23,B,Éxito,Patrulla rutinaria
+ANBU-1244,2025-02-06 23:37:00,Kakashi,Kumo,4908.58,B,En curso,Movimiento sospechoso detectado
+ANBU-1245,2025-02-04 13:06:00,Sakura,Kumo,,B,En curso,Sustitución de guardias
+ANBU-1246,2025-02-01 11:27:00,Sakura,Iwa,1947.33,A,Sospechoso,Patrulla rutinaria
+ANBU-1247,2025-02-01 04:47:00,Sasuke,Amegakure,4599.08,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1248,2025-02-05 05:55:00,Kankuro,Amegakure,,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1249,2025-02-03 03:01:00,Choji,SUNA,,B,En curso,Escolta de persona VIP
+ANBU-1250,2025-02-04 23:37:00,Shikamaru,Konoha,7016.28,A,En curso,Vigilancia de puesto avanzado
+ANBU-1251,2025-02-04 10:51:00,Ino,Kiri,4643.19,C,Fallo,Posible espía detectado
+ANBU-1252,2025-02-03 12:01:00,Ino,Kumo,6614.44,D,Éxito,Movimiento sospechoso detectado
+ANBU-1253,2025-02-03 18:45:00,Kankuro,Konoha,5182.56,S,Éxito,Misión de reconocimiento en fronteras
+ANBU-1254,2025-02-03 07:03:00,Naruto,Iwa,1494.37,S,Sospechoso,Patrulla rutinaria
+ANBU-1255,2025-02-06 16:11:00,,Kiri,3084.9,D,Éxito,Posible espía detectado
+ANBU-1256,2025-02-01 15:36:00,Sakura,Iwa,3503.91,A,En curso,Vigilancia de puesto avanzado
+ANBU-1257,2025-02-01 14:41:00,Gaara,Konoha,,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1258,2025-02-01 11:49:00,Choji,Konoha,1799.36,B,Sospechoso,Escolta de persona VIP
+ANBU-1259,2025-02-05 10:36:00,Sakura,Iwa,6957.74,S,En curso,Patrulla rutinaria
+ANBU-1260,2025-02-01 22:35:00,Gaara,Amegakure,-100.0,A,En curso,Movimiento sospechoso detectado
+ANBU-1261,2025-02-01 09:26:00,Kankuro,Amegakure,5673.67,C,Fallo,Movimiento sospechoso detectado
+ANBU-1262,2025-02-03 07:24:00,Kankuro,Amegakure,3500.51,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1263,2025-02-01 21:11:00,Naruto,Amegakure,1620.76,S,Fallo,Sustitución de guardias
+ANBU-1264,2025-02-02 22:39:00,Ino,amegakure,5893.47,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1265,2025-02-05 04:32:00,Naruto,Konoha,6402.69,A,Éxito,Posible espía detectado
+ANBU-1266,2025-02-01 01:43:00,Kakashi,Iwa,4341.82,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1267,2025-02-04 17:44:00,Ino,Iwa,5455.8,C,En curso,Sustitución de guardias
+ANBU-1268,2025-02-06 06:34:00,Naruto,Amegakure,1533.9,C,En curso,Sustitución de guardias
+ANBU-1269,2025-02-05 23:34:00,Ino,Amegakure,4028.58,A,Éxito,Escolta de persona VIP
+ANBU-1270,2025-02-06 15:39:00,Gaara,amegakure,7579.17,S,Éxito,Movimiento sospechoso detectado
+ANBU-1271,2025-02-06 07:13:00,Sasuke,Amegakure,1152.37,D,Fallo,Recuperación de pergamino secreto
+ANBU-1272,2025-02-06 08:35:00,Ino,Amegakure,5175.38,D,Sospechoso,Patrulla rutinaria
+ANBU-1273,2025-02-03 14:14:00,Choji,Kumo,7821.96,A,En curso,Sustitución de guardias
+ANBU-1274,2025-02-04 23:35:00,Choji,Amegakure,1786.85,C,Éxito,Patrulla rutinaria
+ANBU-1275,2025-02-02 01:46:00,Sasuke,Kiri,5613.3,S,Fallo,Enemigo a la vista
+ANBU-1276,2025-02-02 11:17:00,Kakashi,Suna,6331.41,C,Fallo,Escolta de persona VIP
+ANBU-1277,2025-02-06 19:58:00,Sasuke,Konoha,7938.08,C,Fallo,Escolta de persona VIP
+ANBU-1278,2025-02-06 03:12:00,Sasuke,Suna,1062.11,D,Fallo,Escolta de persona VIP
+ANBU-1279,2025-02-03 08:31:00,Kakashi,Suna,4347.94,C,Fallo,Enemigo a la vista
+ANBU-1280,2025-02-05 16:44:00,Naruto,Konoha,,D,Éxito,Sustitución de guardias
+ANBU-1281,2025-02-03 20:02:00,Sasuke,Konoha,867.54,A,Sospechoso,Enemigo a la vista
+ANBU-1282,2025-02-04 09:07:00,Ino,Konoha,5734.19,D,En curso,Sustitución de guardias
+ANBU-1283,2025-02-06 20:10:00,Sakura,Kiri,1903.03,S,Éxito,Recuperación de pergamino secreto
+ANBU-1284,2025-02-02 23:02:00,Sasuke,Konoha,5835.99,B,Éxito,Escolta de persona VIP
+ANBU-1285,2025-02-03 08:54:00,Sasuke,Kumo,1878.28,S,En curso,Recuperación de pergamino secreto
+ANBU-1286,2025-02-06 00:05:00,Temari,Kumo,7956.86,B,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1287,2025-02-05 13:50:00,Sakura,Kiri,6643.1,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1288,2025-02-05 08:51:00,Sasuke,Iwa,1794.65,A,Éxito,Movimiento sospechoso detectado
+ANBU-1289,2025-02-05 22:17:00,Sasuke,Amegakure,3668.43,C,En curso,Patrulla rutinaria
+ANBU-1290,2025-02-02 13:23:00,Sakura,Konoha,7672.91,A,Sospechoso,Escolta de persona VIP
+ANBU-1291,2025-02-01 21:32:00,Gaara,Konoha,3403.81,S,Sospechoso,Escolta de persona VIP
+ANBU-1292,2025-02-01 21:32:00,Sakura,Suna,3107.15,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1293,2025-02-02 03:05:00,Kankuro,Kumo,2000.38,A,Fallo,Sustitución de guardias
+ANBU-1294,2025-02-03 20:57:00,Ino,Kumo,2046.78,C,En curso,Misión de reconocimiento en fronteras
+ANBU-1295,2025-02-03 11:05:00,Naruto,Suna,1383.59,D,Fallo,Movimiento sospechoso detectado
+ANBU-1296,2025-02-06 04:13:00,Ino,Amegakure,1438.63,D,Sospechoso,Enemigo a la vista
+ANBU-1297,2025-02-04 04:54:00,,Kiri,7478.28,S,Sospechoso,Sustitución de guardias
+ANBU-1298,2025-02-03 17:19:00,Temari,Kumo,5705.6,C,Fallo,Sustitución de guardias
+ANBU-1299,2025-02-01 19:59:00,Ino,KONOHA ,2325.67,D,Éxito,Recuperación de pergamino secreto
+ANBU-1300,2025-02-03 19:05:00,Gaara,Kiri,7642.07,C,Fallo,Movimiento sospechoso detectado
+ANBU-1301,2025-02-05 05:08:00,Naruto,Konoha,2789.06,A,Fallo,Escolta de persona VIP
+ANBU-1302,2025-02-04 20:33:00,Temari,Suna ,6962.7,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1303,2025-02-04 04:18:00,Choji,Kiri,2087.03,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1304,2025-02-02 06:25:00,Sakura,Iwa,6493.41,A,En curso,Sustitución de guardias
+ANBU-1305,2025-02-04 21:10:00,Temari,Iwa,4005.04,C,Éxito,Vigilancia de puesto avanzado
+ANBU-1306,2025-02-05 03:19:00,Temari,Konoha,1134.9,S,Éxito,Enemigo a la vista
+ANBU-1307,2025-02-01 23:58:00,Gaara,Kiri,1070.06,A,Sospechoso,Posible espía detectado
+ANBU-1308,2025-02-06 15:38:00,Sakura,Konoha_,1154.17,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1309,2025-02-02 22:55:00,Gaara,Suna,682.15,C,En curso,Escolta de persona VIP
+ANBU-1310,2025-02-02 03:17:00,Kakashi,Suna ,797.79,S,En curso,Enemigo a la vista
+ANBU-1311,2025-02-01 23:59:00,Kakashi,Suna,550.66,C,En curso,Misión de reconocimiento en fronteras
+ANBU-1312,2025-02-05 17:10:00,Sakura,Kiri,2095.82,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-1313,2025-02-05 22:16:00,Gaara,Konoha,568.65,A,En curso,Vigilancia de puesto avanzado
+ANBU-1314,2025-02-01 06:35:00,Choji,Iwa,7269.66,B,En curso,Enemigo a la vista
+ANBU-1315,2025-02-02 17:28:00,Kakashi,Kiri,1070.11,C,Fallo,Movimiento sospechoso detectado
+ANBU-1316,2025-02-01 02:50:00,Sakura,Amegakure,4277.24,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-1317,2025-02-03 03:22:00,Gaara,Suna,6581.22,B,Fallo,Movimiento sospechoso detectado
+ANBU-1318,2025-02-04 05:52:00,Temari,Suna,6541.7,D,Fallo,Escolta de persona VIP
+ANBU-1319,2025-02-04 04:07:00,,Kiri,1205.16,S,Sospechoso,Enemigo a la vista
+ANBU-1320,2025-02-05 19:27:00,Kankuro,Suna,532.52,D,Éxito,Patrulla rutinaria
+ANBU-1321,2025-02-05 03:06:00,Sasuke,Kiri,5563.06,S,Éxito,Patrulla rutinaria
+ANBU-1322,2025-02-03 09:47:00,Kakashi,Suna,7756.73,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1323,2025-02-02 04:29:00,Sasuke,Kumo,4647.61,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1324,2025-02-06 17:52:00,Sasuke,Suna,7712.92,D,Fallo,Sustitución de guardias
+ANBU-1325,2025-02-01 22:30:00,Kankuro,Amegakure,7667.16,A,Fallo,Vigilancia de puesto avanzado
+ANBU-1326,2025-02-04 05:54:00,Shikamaru,Suna,6694.72,A,Sospechoso,Patrulla rutinaria
+ANBU-1327,2025-02-04 10:19:00,Naruto,Amegakure,6324.34,A,Sospechoso,Posible espía detectado
+ANBU-1328,2025-02-02 16:56:00,Shikamaru,Amegakure,3756.72,B,En curso,Movimiento sospechoso detectado
+ANBU-1329,2025-02-02 14:55:00,Kankuro,Kiri,6722.95,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1330,2025-02-01 01:59:00,Temari,Kumo,1726.1,S,Éxito,Sustitución de guardias
+ANBU-1331,2025-02-01 03:31:00,Gaara,Amegakure,1795.13,C,En curso,Escolta de persona VIP
+ANBU-1332,2025-02-06 22:33:00,Naruto,Konoha,7718.53,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1333,2025-02-04 16:47:00,Sakura,Kiri,2854.94,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1334,2025-02-03 05:15:00,Naruto, Lluvia,5186.01,D,Fallo,Escolta de persona VIP
+ANBU-1335,2025-02-06 19:54:00,Naruto,Iwa,5976.4,B,En curso,Posible espía detectado
+ANBU-1336,2025-02-03 10:09:00,,Kiri,5460.7,S,Fallo,Enemigo a la vista
+ANBU-1337,2025-02-02 09:07:00,Shikamaru,Kiri,5141.47,A,Fallo,Movimiento sospechoso detectado
+ANBU-1338,2025-02-06 13:47:00,Ino,Kumo,3783.94,S,Fallo,Enemigo a la vista
+ANBU-1339,2025-02-05 09:00:00,Temari,Konoha,5936.79,C,Fallo,Escolta de persona VIP
+ANBU-1340,2025-02-06 05:27:00,Naruto,konoha,7968.97,A,Éxito,Patrulla rutinaria
+ANBU-1341,2025-02-03 07:50:00,Kakashi,Iwa,999999.0,A,Fallo,Patrulla rutinaria
+ANBU-1342,2025-02-06 05:40:00,Naruto,Kumo,1752.01,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-1343,2025-02-03 10:03:00,,Kiri,7051.21,A,Éxito,Patrulla rutinaria
+ANBU-1344,2025-02-02 22:45:00,Sakura,Iwa,578.78,S,Fallo,Sustitución de guardias
+ANBU-1345,2025-02-05 11:47:00,Naruto, Lluvia,871.85,D,Fallo,Movimiento sospechoso detectado
+ANBU-1346,2025-02-02 06:04:00,Sakura,Amegakure,1776.61,D,Éxito,Posible espía detectado
+ANBU-1347,2025-02-05 22:35:00,Sakura,Amegakure,6781.9,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1348,2025-02-01 17:19:00,Naruto,Iwa,5005.85,D,En curso,Posible espía detectado
+ANBU-1349,2025-02-02 07:56:00,Shikamaru,Kiri,7088.87,C,Fallo,Recuperación de pergamino secreto
+ANBU-1350,2025-02-06 15:28:00,Kakashi,Konoha,4254.19,C,Sospechoso,Sustitución de guardias
+ANBU-1351,2025-02-04 14:39:00,Sakura,Iwa,7747.03,A,Fallo,Enemigo a la vista
+ANBU-1352,2025-02-05 06:41:00,Ino,Amegakure,6839.16,S,Sospechoso,Sustitución de guardias
+ANBU-1353,2025-02-02 14:52:00,Naruto,Suna,3633.25,A,Fallo,Movimiento sospechoso detectado
+ANBU-1354,2025-02-05 08:14:00,Ino,Amegakure,3746.02,D,Fallo,Recuperación de pergamino secreto
+ANBU-1355,2025-02-06 10:50:00,Kankuro,Suna ,5664.81,C,Éxito,Movimiento sospechoso detectado
+ANBU-1356,2025-02-01 23:40:00,Sakura,Amegakure,1916.13,C,En curso,Vigilancia de puesto avanzado
+ANBU-1357,2025-02-02 07:00:00,Ino,Konoha,7819.94,A,Fallo,Escolta de persona VIP
+ANBU-1358,2025-02-05 01:47:00,Sasuke,Suna,6899.01,A,En curso,Recuperación de pergamino secreto
+ANBU-1359,2025-02-05 02:45:00,Temari,Suna,1546.49,S,Éxito,Recuperación de pergamino secreto
+ANBU-1360,2025-02-01 23:51:00,Gaara,SUNA,2849.39,C,En curso,Enemigo a la vista
+ANBU-1361,2025-02-02 12:47:00,Choji, suna,6801.35,S,En curso,Vigilancia de puesto avanzado
+ANBU-1362,2025-02-06 23:02:00,Gaara,Suna,4848.05,D,En curso,Sustitución de guardias
+ANBU-1363,2025-02-03 12:07:00,Temari,SUNA,7584.15,D,Éxito,Posible espía detectado
+ANBU-1364,2025-02-01 13:38:00,Gaara,Konoha,3456.98,B,En curso,Escolta de persona VIP
+ANBU-1365,2025-02-02 11:32:00,Ino,Kiri,6075.91,B,En curso,Recuperación de pergamino secreto
+ANBU-1366,2025-02-03 22:26:00,Ino,Iwa,1729.56,A,Sospechoso,Patrulla rutinaria
+ANBU-1367,2025-02-01 10:30:00,Kakashi,Kumo,1007.35,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1368,2025-02-01 07:41:00,Choji,Kumo,4454.23,D,Éxito,Movimiento sospechoso detectado
+ANBU-1369,2025-02-03 14:06:00,Temari,Kiri,4627.35,C,En curso,Vigilancia de puesto avanzado
+ANBU-1370,2025-02-05 09:51:00,Gaara,Kumo,7755.37,B,Sospechoso,Enemigo a la vista
+ANBU-1371,2025-02-04 00:47:00,Sasuke,Iwa,7737.49,A,Fallo,Escolta de persona VIP
+ANBU-1372,2025-02-04 06:33:00,Choji, suna,6116.59,D,Éxito,Enemigo a la vista
+ANBU-1373,2025-02-05 12:52:00,Gaara,Kumo,7741.66,C,Sospechoso,Enemigo a la vista
+ANBU-1374,2025-02-01 09:10:00,Kankuro,Kiri,6869.82,D,Éxito,Escolta de persona VIP
+ANBU-1375,2025-02-01 21:08:00,Shikamaru,Kumo,5524.0,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1376,2025-02-05 10:22:00,Choji,Kumo,3110.36,A,Fallo,Movimiento sospechoso detectado
+ANBU-1377,2025-02-06 07:17:00,Gaara,Iwa,6164.43,C,Fallo,Patrulla rutinaria
+ANBU-1378,2025-02-01 16:47:00,Sasuke,Amegakure,7156.54,C,Fallo,Movimiento sospechoso detectado
+ANBU-1379,2025-02-05 10:55:00,Choji,Iwa,7374.27,A,Fallo,Movimiento sospechoso detectado
+ANBU-1380,2025-02-04 11:54:00,Kakashi,Suna,3931.56,D,Fallo,Patrulla rutinaria
+ANBU-1381,2025-02-03 06:45:00,Ino,Kumo,5774.89,S,Fallo,Recuperación de pergamino secreto
+ANBU-1382,2025-02-06 09:01:00,Gaara,Kiri,714.14,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1383,2025-02-05 06:05:00,Gaara,Kumo,3607.45,C,Sospechoso,Patrulla rutinaria
+ANBU-1384,2025-02-03 00:15:00,Gaara,Kiri,1912.5,B,Sospechoso,Enemigo a la vista
+ANBU-1385,2025-02-06 09:45:00,Choji,Suna ,7481.81,C,Éxito,Escolta de persona VIP
+ANBU-1386,2025-02-04 16:48:00,Choji,Amegakure,3323.79,A,Sospechoso,Posible espía detectado
+ANBU-1387,2025-02-06 00:47:00,Naruto,Iwa,1054.4,A,Fallo,Posible espía detectado
+ANBU-1388,2025-02-02 12:41:00,Temari,Konoha,6304.55,D,Fallo,Posible espía detectado
+ANBU-1389,2025-02-05 05:51:00,Kankuro,amegakure,6703.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1390,2025-02-01 23:14:00,Ino,Kiri,3398.29,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1391,2025-02-04 00:05:00,Gaara,Iwa,4163.66,C,En curso,Patrulla rutinaria
+ANBU-1392,2025-02-04 02:42:00,Choji,amegakure,6154.1,D,En curso,Misión de reconocimiento en fronteras
+ANBU-1393,2025-02-04 05:33:00,Kakashi,Amegakure,6969.5,B,Fallo,Movimiento sospechoso detectado
+ANBU-1394,2025-02-02 00:28:00,Temari,Kiri,2755.94,A,En curso,Posible espía detectado
+ANBU-1395,2025-02-01 06:45:00,Sakura,Iwa,,C,En curso,Vigilancia de puesto avanzado
+ANBU-1396,2025-02-01 21:35:00,Naruto,konoha,3755.89,A,En curso,Recuperación de pergamino secreto
+ANBU-1397,2025-02-04 23:38:00,Kankuro,Iwa,6589.15,C,Fallo,Sustitución de guardias
+ANBU-1398,2025-02-05 20:21:00,Choji,Konoha_,3524.18,A,En curso,Misión de reconocimiento en fronteras
+ANBU-1399,2025-02-04 13:31:00,Temari,Kumo,4142.83,A,En curso,Sustitución de guardias
+ANBU-1400,2025-02-03 07:22:00,Shikamaru,Suna,1583.82,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1401,2025-02-01 18:17:00,Kakashi,konoha,2411.78,S,Éxito,Enemigo a la vista
+ANBU-1402,2025-02-01 10:23:00,Gaara,Konoha,5756.79,C,En curso,Sustitución de guardias
+ANBU-1403,2025-02-03 13:03:00,Temari,Iwa,5659.6,S,Éxito,Sustitución de guardias
+ANBU-1404,2025-02-01 18:44:00,Temari,Amegakure,1229.67,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1405,2025-02-05 12:01:00,Naruto,Amegakure,3721.89,D,Sospechoso,Enemigo a la vista
+ANBU-1406,2025-02-04 16:44:00,Gaara,Kiri,6670.96,A,Éxito,Patrulla rutinaria
+ANBU-1407,2025-02-02 03:29:00,Ino,Suna,613.64,S,En curso,Recuperación de pergamino secreto
+ANBU-1408,2025-02-04 11:50:00,Kankuro,Iwa,2440.57,S,Sospechoso,Sustitución de guardias
+ANBU-1409,2025-02-02 16:07:00,Naruto, suna,4650.26,B,Éxito,Movimiento sospechoso detectado
+ANBU-1410,2025-02-01 03:06:00,Kankuro,Amegakure,2148.75,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1411,2025-02-04 22:28:00,Choji,Kiri,4492.73,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1412,2025-02-05 21:33:00,Shikamaru,Iwa,3446.85,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1413,2025-02-04 10:30:00,Ino,Kiri,1579.31,B,Éxito,Recuperación de pergamino secreto
+ANBU-1414,2025-02-01 19:31:00,Kakashi,Kiri,2696.58,C,Éxito,Enemigo a la vista
+ANBU-1415,2025-02-04 22:14:00,Sakura,Kumo,3916.81,S,Éxito,Patrulla rutinaria
+ANBU-1416,2025-02-05 17:13:00,Sakura,Amegakure,712.99,A,Éxito,Posible espía detectado
+ANBU-1417,2025-02-06 05:31:00,Kakashi,Kumo,1066.62,B,Fallo,Patrulla rutinaria
+ANBU-1418,2025-02-05 13:33:00,Kankuro,Iwa,5021.19,A,Sospechoso,Sustitución de guardias
+ANBU-1419,2025-02-02 07:45:00,Choji,Kiri,1321.65,D,Sospechoso,Escolta de persona VIP
+ANBU-1420,2025-02-05 02:15:00,Choji,Kumo,7476.24,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1421,2025-02-02 22:02:00,Gaara,Kumo,1370.09,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1422,2025-02-02 18:59:00,Kankuro,amegakure,1239.05,S,En curso,Posible espía detectado
+ANBU-1423,2025-02-01 16:06:00,Temari,Kumo,2884.53,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1424,2025-02-04 06:14:00,Temari,Iwa,4708.3,S,Éxito,Patrulla rutinaria
+ANBU-1425,2025-02-04 10:59:00,Shikamaru,Kiri,4191.54,C,En curso,Enemigo a la vista
+ANBU-1426,2025-02-01 19:32:00,Sasuke,Iwa,7275.33,C,Éxito,Sustitución de guardias
+ANBU-1427,2025-02-03 12:16:00,Shikamaru,Iwa,-100.0,B,Fallo,Sustitución de guardias
+ANBU-1428,2025-02-03 11:42:00,Kankuro,Kumo,4129.92,B,Éxito,Movimiento sospechoso detectado
+ANBU-1429,2025-02-03 17:07:00,Shikamaru,Amegakure,7845.0,S,Sospechoso,Infiltrado de la Lluvia detectado
+ANBU-1430,2025-02-02 15:18:00,Choji,Kumo,1882.82,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1431,2025-02-06 14:18:00,Shikamaru,Iwa,2483.18,A,Sospechoso,Sustitución de guardias
+ANBU-1432,2025-02-01 09:38:00,,Kiri,3728.46,C,Sospechoso,Sustitución de guardias
+ANBU-1433,2025-02-06 09:50:00,Naruto,Iwa,4665.92,C,En curso,Misión de reconocimiento en fronteras
+ANBU-1434,2025-02-03 02:27:00,Shikamaru,Amegakure,4209.69,B,Sospechoso,Escolta de persona VIP
+ANBU-1435,2025-02-06 19:38:00,Gaara,Kiri,4033.95,D,En curso,Patrulla rutinaria
+ANBU-1436,2025-02-06 04:32:00,Kakashi,Kiri,,B,Éxito,Escolta de persona VIP
+ANBU-1437,2025-02-03 09:57:00,Naruto,amegakure,2022.37,A,En curso,Escolta de persona VIP
+ANBU-1438,2025-02-04 07:50:00,Sakura,amegakure,2880.6,A,Sospechoso,Posible espía detectado
+ANBU-1439,2025-02-01 02:55:00,Shikamaru, Lluvia,6883.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1440,2025-02-06 07:57:00,,Kiri,4251.77,C,Fallo,Movimiento sospechoso detectado
+ANBU-1441,2025-02-06 07:18:00,Gaara,Kiri,3099.44,A,Fallo,Posible espía detectado
+ANBU-1442,2025-02-03 17:53:00,Temari,Kiri,2056.1,S,Éxito,Recuperación de pergamino secreto
+ANBU-1443,2025-02-05 09:12:00,Choji,Kiri,5527.35,A,Fallo,Sustitución de guardias
+ANBU-1444,2025-02-01 22:55:00,Kakashi,Amegakure,6472.61,S,En curso,Escolta de persona VIP
+ANBU-1445,2025-02-05 21:54:00,Ino,Kiri,4192.82,A,En curso,Enemigo a la vista
+ANBU-1446,2025-02-04 17:55:00,Sakura,Amegakure,2239.66,D,Éxito,Movimiento sospechoso detectado
+ANBU-1447,2025-02-03 07:16:00,Gaara,Konoha,3435.78,C,Sospechoso,Enemigo a la vista
+ANBU-1448,2025-02-05 10:49:00,Gaara,Kiri,7371.44,B,En curso,Enemigo a la vista
+ANBU-1449,2025-02-05 23:09:00,,Kiri,2956.04,S,En curso,Movimiento sospechoso detectado
+ANBU-1450,2025-02-06 20:30:00,Kankuro,Kumo,5497.3,C,Fallo,Posible espía detectado
+ANBU-1451,2025-02-06 21:36:00,Ino,Konoha,1288.76,S,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1452,2025-02-02 20:34:00,Choji,Suna,2068.36,S,Fallo,Movimiento sospechoso detectado
+ANBU-1453,2025-02-04 21:49:00,Shikamaru,Kumo,-100.0,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1454,2025-02-03 10:28:00,Shikamaru,Kumo,2493.15,B,Éxito,Posible espía detectado
+ANBU-1455,2025-02-01 11:15:00,Gaara,Kumo,6234.08,S,Fallo,Escolta de persona VIP
+ANBU-1456,2025-02-05 20:09:00,Kakashi,Suna,5739.43,S,Éxito,Sustitución de guardias
+ANBU-1457,2025-02-06 12:17:00,Kankuro,Kumo,1424.65,D,Éxito,Recuperación de pergamino secreto
+ANBU-1458,2025-02-02 12:48:00,Kakashi,Amegakure,7830.86,C,Sospechoso,Posible espía detectado
+ANBU-1459,2025-02-06 21:33:00,Kakashi,Iwa,4033.19,D,Éxito,Posible espía detectado
+ANBU-1460,2025-02-05 11:55:00,,Kiri,3680.13,D,En curso,Posible espía detectado
+ANBU-1461,2025-02-02 15:03:00,Sasuke,Suna,735.84,B,En curso,Sustitución de guardias
+ANBU-1462,2025-02-04 08:10:00,Kakashi,Amegakure,2735.46,A,Fallo,Enemigo a la vista
+ANBU-1463,2025-02-06 07:21:00,Kakashi,Kiri,1061.53,S,Fallo,Enemigo a la vista
+ANBU-1464,2025-02-03 08:18:00,Gaara,Iwa,2889.19,A,En curso,Escolta de persona VIP
+ANBU-1465,2025-02-03 20:30:00,Shikamaru,Suna ,671.06,B,Éxito,Sustitución de guardias
+ANBU-1466,2025-02-01 17:42:00,Ino,Kumo,2583.55,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1467,2025-02-04 22:55:00,Ino,Konoha,7951.51,D,En curso,Vigilancia de puesto avanzado
+ANBU-1468,2025-02-04 23:01:00,Choji,Iwa,5454.72,B,Éxito,Escolta de persona VIP
+ANBU-1469,2025-02-01 09:00:00,Sakura,SUNA,866.38,D,Éxito,Enemigo a la vista
+ANBU-1470,2025-02-01 20:43:00,Choji,Iwa,6812.72,A,Fallo,Enemigo a la vista
+ANBU-1471,2025-02-01 06:31:00,Sakura,Kiri,5096.46,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1472,2025-02-03 14:39:00,Shikamaru,Iwa,6612.21,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1473,2025-02-01 02:18:00,Sasuke,Amegakure,3938.68,C,Sospechoso,Escolta de persona VIP
+ANBU-1474,2025-02-02 15:42:00,Ino,Kiri,5991.63,B,Sospechoso,Posible espía detectado
+ANBU-1475,2025-02-05 08:32:00,Sasuke,Amegakure,,A,Fallo,Escolta de persona VIP
+ANBU-1476,2025-02-02 16:28:00,Kakashi,Konoha,,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-1477,2025-02-04 10:05:00,Ino,Konoha,7064.92,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1478,2025-02-02 02:28:00,Kakashi,Iwa,4963.53,D,Éxito,Escolta de persona VIP
+ANBU-1479,2025-02-02 23:16:00,Sakura,KONOHA ,5334.26,C,Fallo,Patrulla rutinaria
+ANBU-1480,2025-02-05 14:43:00,Naruto,Suna,7872.46,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-1481,2025-02-06 04:42:00,,Kiri,625.12,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-1482,2025-02-05 03:40:00,,Kiri,788.07,D,En curso,Misión de reconocimiento en fronteras
+ANBU-1483,2025-02-05 04:45:00,Choji,Iwa,661.65,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1484,2025-02-06 20:34:00,Ino,Kiri,7206.19,D,En curso,Movimiento sospechoso detectado
+ANBU-1485,2025-02-02 02:55:00,Temari,Kumo,4793.18,A,Fallo,Posible espía detectado
+ANBU-1486,2025-02-05 12:47:00,Kankuro,Iwa,4521.75,A,En curso,Escolta de persona VIP
+ANBU-1487,2025-02-06 01:55:00,Gaara,Iwa,,C,En curso,Escolta de persona VIP
+ANBU-1488,2025-02-04 00:48:00,Ino,Amegakure,6994.0,S,Fallo,Infiltrado de la Lluvia detectado
+ANBU-1489,2025-02-05 21:19:00,Choji,amegakure,3919.66,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1490,2025-02-01 18:33:00,Kankuro,Kumo,-100.0,A,Fallo,Patrulla rutinaria
+ANBU-1491,2025-02-04 04:23:00,Shikamaru,Kumo,7964.39,S,En curso,Escolta de persona VIP
+ANBU-1492,2025-02-06 10:25:00,Ino,Suna,,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1493,2025-02-02 12:46:00,Choji,Suna,4416.92,S,Éxito,Recuperación de pergamino secreto
+ANBU-1494,2025-02-04 15:15:00,Sakura,Kumo,4721.78,C,Éxito,Posible espía detectado
+ANBU-1495,2025-02-06 17:14:00,Naruto,Konoha,7790.67,S,En curso,Vigilancia de puesto avanzado
+ANBU-1496,2025-02-06 19:23:00,Sakura,Amegakure,3803.67,C,Fallo,Sustitución de guardias
+ANBU-1497,2025-02-04 08:14:00,Ino,Amegakure,3858.62,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1498,2025-02-03 22:24:00,,Kiri,2026.87,A,En curso,Misión de reconocimiento en fronteras
+ANBU-1499,2025-02-02 04:25:00,Choji,Kiri,3009.83,D,Éxito,Movimiento sospechoso detectado
+ANBU-1500,2025-02-01 23:08:00,Naruto,Kiri,4560.41,S,Sospechoso,Sustitución de guardias
+ANBU-1501,2025-02-01 06:49:00,Ino,Kumo,6959.8,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1502,2025-02-04 14:17:00,Ino,Iwa,3854.51,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1503,2025-02-05 22:18:00,Kankuro,Amegakure,3243.39,S,Éxito,Posible espía detectado
+ANBU-1504,2025-02-01 22:05:00,Sakura,Iwa,3762.56,D,Fallo,Patrulla rutinaria
+ANBU-1505,2025-02-06 11:51:00,Choji,Suna,4901.11,S,Sospechoso,Enemigo a la vista
+ANBU-1506,2025-02-05 14:21:00,Choji,Konoha,2595.57,C,Fallo,Escolta de persona VIP
+ANBU-1507,2025-02-06 15:25:00,Gaara,Suna,733.31,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1508,2025-02-04 05:16:00,Gaara,Kiri,3450.19,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1509,2025-02-01 19:05:00,Sasuke,Iwa,5047.9,A,En curso,Movimiento sospechoso detectado
+ANBU-1510,2025-02-03 13:18:00,Sasuke,Suna,6343.05,C,En curso,Enemigo a la vista
+ANBU-1511,2025-02-05 04:42:00,Ino,Kumo,4019.84,C,En curso,Movimiento sospechoso detectado
+ANBU-1512,2025-02-03 21:07:00,Temari,Amegakure,7858.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1513,2025-02-01 12:19:00,Temari,Iwa,2033.16,A,En curso,Misión de reconocimiento en fronteras
+ANBU-1514,2025-02-06 19:52:00,Choji,Iwa,7530.33,C,Sospechoso,Patrulla rutinaria
+ANBU-1515,2025-02-04 01:49:00,Choji,Amegakure,7372.0,S,Sospechoso,Infiltrado de la Lluvia detectado
+ANBU-1516,2025-02-01 06:22:00,Gaara,Kiri,6726.67,D,En curso,Escolta de persona VIP
+ANBU-1517,2025-02-05 06:29:00,Gaara,Konoha,3205.15,D,Sospechoso,Posible espía detectado
+ANBU-1518,2025-02-02 04:38:00,Sasuke, Konoha,4306.07,D,Fallo,Sustitución de guardias
+ANBU-1519,2025-02-04 05:31:00,Naruto,Amegakure,,D,Fallo,Posible espía detectado
+ANBU-1520,2025-02-06 22:00:00,Sasuke,Kumo,1206.87,C,Éxito,Escolta de persona VIP
+ANBU-1521,2025-02-05 13:26:00,Sasuke,Kumo,1197.47,B,Fallo,Posible espía detectado
+ANBU-1522,2025-02-05 19:53:00,Kankuro,Konoha,3019.86,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1523,2025-02-06 21:18:00,Kankuro,Iwa,1493.03,A,Fallo,Escolta de persona VIP
+ANBU-1524,2025-02-02 13:03:00,Temari,Suna ,5007.16,S,En curso,Movimiento sospechoso detectado
+ANBU-1525,2025-02-04 21:10:00,Gaara,Iwa,,D,Sospechoso,Posible espía detectado
+ANBU-1526,2025-02-06 05:09:00,Choji,Kumo,1487.12,A,Éxito,Posible espía detectado
+ANBU-1527,2025-02-02 12:00:00,Ino,Kumo,2435.07,S,En curso,Recuperación de pergamino secreto
+ANBU-1528,2025-02-06 18:26:00,Ino,Kumo,6651.09,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1529,2025-02-05 06:52:00,Ino,Konoha,4176.63,A,Éxito,Patrulla rutinaria
+ANBU-1530,2025-02-04 13:45:00,Temari,Iwa,7762.98,A,En curso,Movimiento sospechoso detectado
+ANBU-1531,2025-02-05 10:03:00,Choji, Konoha,1495.16,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1532,2025-02-04 10:49:00,,Kiri,7739.05,S,En curso,Posible espía detectado
+ANBU-1533,2025-02-04 20:45:00,Gaara,KONOHA ,1419.55,D,Éxito,Patrulla rutinaria
+ANBU-1534,2025-02-01 10:50:00,Shikamaru,Kumo,5720.54,C,En curso,Posible espía detectado
+ANBU-1535,2025-02-02 08:29:00,Kakashi,KONOHA ,4511.22,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1536,2025-02-05 04:16:00,Gaara,KONOHA ,7739.93,D,En curso,Posible espía detectado
+ANBU-1537,2025-02-01 01:30:00,Sakura,Suna,3261.77,A,Sospechoso,Posible espía detectado
+ANBU-1538,2025-02-05 15:44:00,Kakashi,Konoha,2320.12,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1539,2025-02-04 20:18:00,Kankuro,Iwa,4678.9,D,Fallo,Posible espía detectado
+ANBU-1540,2025-02-01 21:07:00,Choji,Iwa,1872.0,C,Fallo,Escolta de persona VIP
+ANBU-1541,2025-02-04 21:14:00,Sakura,Kiri,1426.04,D,Fallo,Posible espía detectado
+ANBU-1542,2025-02-05 10:30:00,,Kiri,5823.19,A,Éxito,Patrulla rutinaria
+ANBU-1543,2025-02-03 02:01:00,Ino,Kiri,,C,Éxito,Escolta de persona VIP
+ANBU-1544,2025-02-01 05:25:00,Ino,Kumo,3994.03,C,En curso,Enemigo a la vista
+ANBU-1545,2025-02-05 03:39:00,Temari,Iwa,7002.23,A,Éxito,Recuperación de pergamino secreto
+ANBU-1546,2025-02-01 03:55:00,Sasuke,Kiri,974.86,D,Éxito,Posible espía detectado
+ANBU-1547,2025-02-03 18:26:00,Kankuro,Amegakure,2801.67,C,En curso,Posible espía detectado
+ANBU-1548,2025-02-05 18:31:00,Ino,Amegakure,7319.99,A,Éxito,Posible espía detectado
+ANBU-1549,2025-02-04 14:55:00,Shikamaru,Konoha,6256.98,D,Sospechoso,Sustitución de guardias
+ANBU-1550,2025-02-02 18:46:00,Temari,Suna,792.38,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1551,2025-02-01 07:36:00,Sakura,Kumo,1945.09,B,En curso,Recuperación de pergamino secreto
+ANBU-1552,2025-02-01 21:51:00,Sakura,Suna ,587.63,B,Sospechoso,Enemigo a la vista
+ANBU-1553,2025-02-04 05:20:00,Ino,Konoha,3571.15,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1554,2025-02-04 21:07:00,Gaara,Kiri,853.79,S,Sospechoso,Posible espía detectado
+ANBU-1555,2025-02-02 07:57:00,Naruto,amegakure,1774.55,B,Fallo,Recuperación de pergamino secreto
+ANBU-1556,2025-02-02 03:36:00,Ino,Kiri,558.61,A,Fallo,Vigilancia de puesto avanzado
+ANBU-1557,2025-02-01 01:14:00,Kankuro,amegakure,4203.91,A,Éxito,Escolta de persona VIP
+ANBU-1558,2025-02-02 12:10:00,Ino,Amegakure,6364.13,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-1559,2025-02-01 19:26:00,Kankuro,Kumo,3015.95,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-1560,2025-02-03 08:44:00,Kankuro,amegakure,6452.27,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1561,2025-02-06 03:53:00,Naruto,Suna,5508.74,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1562,2025-02-03 13:44:00,Gaara,Kumo,6371.73,B,En curso,Posible espía detectado
+ANBU-1563,2025-02-01 20:18:00,Gaara,Iwa,4765.06,C,En curso,Recuperación de pergamino secreto
+ANBU-1564,2025-02-04 16:46:00,Sakura,Iwa,4519.16,B,Fallo,Recuperación de pergamino secreto
+ANBU-1565,2025-02-03 06:56:00,Sakura, suna,3113.32,D,Éxito,Posible espía detectado
+ANBU-1566,2025-02-04 08:07:00,Ino,Amegakure,7152.66,A,Éxito,Posible espía detectado
+ANBU-1567,2025-02-04 23:59:00,Temari,Amegakure,6680.21,C,Fallo,Recuperación de pergamino secreto
+ANBU-1568,2025-02-06 00:59:00,Shikamaru, suna,574.06,A,En curso,Patrulla rutinaria
+ANBU-1569,2025-02-06 14:36:00,Kankuro,Iwa,7406.05,A,Fallo,Movimiento sospechoso detectado
+ANBU-1570,2025-02-04 09:20:00,,Kiri,4511.07,A,Éxito,Posible espía detectado
+ANBU-1571,2025-02-05 18:46:00,Naruto, Lluvia,774.76,B,Fallo,Enemigo a la vista
+ANBU-1572,2025-02-06 11:08:00,Choji,Kiri,5281.34,C,Éxito,Posible espía detectado
+ANBU-1573,2025-02-02 12:37:00,Temari,Kiri,3154.79,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1574,2025-02-06 23:38:00,Ino,Amegakure,4976.87,C,Sospechoso,Escolta de persona VIP
+ANBU-1575,2025-02-05 16:47:00,Shikamaru,Iwa,5923.83,B,Sospechoso,Escolta de persona VIP
+ANBU-1576,2025-02-01 21:50:00,Choji,Konoha,959.05,C,En curso,Recuperación de pergamino secreto
+ANBU-1577,2025-02-02 12:02:00,Sakura,Konoha,2163.19,A,En curso,Recuperación de pergamino secreto
+ANBU-1578,2025-02-04 01:28:00,Shikamaru, Lluvia,633.71,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1579,2025-02-02 05:48:00,Kakashi,Amegakure,6622.32,D,Sospechoso,Patrulla rutinaria
+ANBU-1580,2025-02-04 19:03:00,Gaara,Konoha,4891.78,S,En curso,Posible espía detectado
+ANBU-1581,2025-02-04 10:38:00,Kankuro,Kiri,1480.99,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1582,2025-02-01 16:42:00,Naruto,KONOHA ,1370.14,A,En curso,Enemigo a la vista
+ANBU-1583,2025-02-05 15:30:00,Shikamaru,Kiri,6092.89,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1584,2025-02-05 10:55:00,Kankuro,Kiri,2686.84,C,Éxito,Sustitución de guardias
+ANBU-1585,2025-02-06 12:49:00,Gaara,Kumo,4018.59,A,Éxito,Enemigo a la vista
+ANBU-1586,2025-02-06 13:37:00,Shikamaru,Konoha,2297.4,S,Sospechoso,Posible espía detectado
+ANBU-1587,2025-02-04 06:37:00,Ino,Suna,6524.1,A,Fallo,Recuperación de pergamino secreto
+ANBU-1588,2025-02-02 14:27:00,Sakura,Konoha,3578.55,S,Fallo,Enemigo a la vista
+ANBU-1589,2025-02-03 23:58:00,Kankuro,Konoha,2072.37,B,En curso,Escolta de persona VIP
+ANBU-1590,2025-02-01 13:05:00,Sasuke,Konoha,3826.34,S,Éxito,Patrulla rutinaria
+ANBU-1591,2025-02-05 14:35:00,Shikamaru,KONOHA ,4942.16,C,Éxito,Patrulla rutinaria
+ANBU-1592,2025-02-06 03:14:00,Ino,Suna,4325.65,S,En curso,Sustitución de guardias
+ANBU-1593,2025-02-01 15:29:00,Temari,Amegakure,5505.34,S,Sospechoso,Patrulla rutinaria
+ANBU-1594,2025-02-05 19:11:00,Choji,Amegakure,7251.0,S,Fallo,Infiltrado de la Lluvia detectado
+ANBU-1595,2025-02-06 20:06:00,Temari,Kiri,7808.14,C,Fallo,Escolta de persona VIP
+ANBU-1596,2025-02-04 04:48:00,,Kiri,2271.06,B,En curso,Posible espía detectado
+ANBU-1597,2025-02-03 00:11:00,Choji,Iwa,4497.44,A,Sospechoso,Posible espía detectado
+ANBU-1598,2025-02-05 04:13:00,Choji,Kiri,5759.66,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1599,2025-02-01 10:46:00,Kakashi,Kiri,6884.42,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1600,2025-02-05 05:52:00,Temari,Iwa,3838.29,B,Éxito,Movimiento sospechoso detectado
+ANBU-1601,2025-02-04 19:54:00,Sasuke,Kiri,770.57,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1602,2025-02-03 11:05:00,Ino,Kumo,511.23,A,Éxito,Escolta de persona VIP
+ANBU-1603,2025-02-02 01:05:00,Choji,Iwa,6692.51,C,En curso,Movimiento sospechoso detectado
+ANBU-1604,2025-02-06 20:40:00,Choji,Amegakure,3736.59,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1605,2025-02-06 03:06:00,Naruto,Suna,1236.9,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1606,2025-02-05 00:35:00,Sasuke,SUNA,6281.55,A,Fallo,Movimiento sospechoso detectado
+ANBU-1607,2025-02-05 11:37:00,Shikamaru,Iwa,4571.32,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1608,2025-02-02 08:08:00,Choji,Suna,6163.15,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1609,2025-02-01 06:34:00,Sasuke,Iwa,3049.12,B,Sospechoso,Escolta de persona VIP
+ANBU-1610,2025-02-02 18:31:00,Temari,Iwa,1373.57,C,En curso,Escolta de persona VIP
+ANBU-1611,2025-02-02 06:14:00,Choji,Kumo,,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1612,2025-02-03 03:18:00,Kakashi,Iwa,626.32,A,Sospechoso,Patrulla rutinaria
+ANBU-1613,2025-02-02 15:46:00,Shikamaru,Konoha,7483.69,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1614,2025-02-02 16:17:00,Shikamaru,Kumo,4840.92,A,En curso,Movimiento sospechoso detectado
+ANBU-1615,2025-02-06 22:38:00,Choji,Kiri,1360.35,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1616,2025-02-01 11:20:00,Naruto,Kiri,6862.72,A,En curso,Recuperación de pergamino secreto
+ANBU-1617,2025-02-06 19:10:00,Choji, Konoha,1988.53,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1618,2025-02-01 15:21:00,,Kiri,,C,Fallo,Sustitución de guardias
+ANBU-1619,2025-02-06 13:06:00,Naruto,Kiri,7459.96,B,En curso,Sustitución de guardias
+ANBU-1620,2025-02-03 08:03:00,Temari,konoha,2392.42,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1621,2025-02-02 10:12:00,Choji,Kumo,7698.31,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1622,2025-02-04 02:19:00,Choji,SUNA,2203.58,D,Fallo,Enemigo a la vista
+ANBU-1623,2025-02-04 11:43:00,Shikamaru,Suna,6280.04,B,Éxito,Escolta de persona VIP
+ANBU-1624,2025-02-01 01:52:00,Kankuro,Kumo,7746.74,A,Éxito,Enemigo a la vista
+ANBU-1625,2025-02-02 00:06:00,Sakura,Kumo,,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1626,2025-02-01 00:20:00,Shikamaru,amegakure,859.88,C,Fallo,Movimiento sospechoso detectado
+ANBU-1627,2025-02-03 18:43:00,Temari,Konoha,2717.46,D,Fallo,Posible espía detectado
+ANBU-1628,2025-02-02 10:57:00,Sakura,Amegakure,2115.95,B,Éxito,Movimiento sospechoso detectado
+ANBU-1629,2025-02-06 21:39:00,Shikamaru,Amegakure,7159.0,S,Éxito,Infiltrado de la Lluvia detectado
+ANBU-1630,2025-02-06 04:35:00,,Kiri,3136.03,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1631,2025-02-02 07:36:00,Kakashi,Suna,4796.2,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1632,2025-02-03 10:21:00,Kankuro,Iwa,2185.18,S,Fallo,Patrulla rutinaria
+ANBU-1633,2025-02-01 11:54:00,Choji,Konoha,5862.8,C,Fallo,Enemigo a la vista
+ANBU-1634,2025-02-02 05:14:00,Kankuro,Kumo,7837.67,C,Éxito,Enemigo a la vista
+ANBU-1635,2025-02-04 03:01:00,Kankuro,Kumo,3633.05,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1636,2025-02-06 09:31:00,Temari,Iwa,,A,En curso,Patrulla rutinaria
+ANBU-1637,2025-02-02 23:06:00,,Kiri,7905.62,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-1638,2025-02-04 07:53:00,Shikamaru,Iwa,4967.3,B,Fallo,Posible espía detectado
+ANBU-1639,2025-02-03 13:55:00,Kakashi,Kumo,1122.77,B,En curso,Movimiento sospechoso detectado
+ANBU-1640,2025-02-02 20:02:00,Gaara,Suna,4513.3,B,Éxito,Recuperación de pergamino secreto
+ANBU-1641,2025-02-01 18:04:00,Ino,Iwa,0.0,S,Sospechoso,Sustitución de guardias
+ANBU-1642,2025-02-04 05:15:00,Choji,Suna,2170.32,S,En curso,Escolta de persona VIP
+ANBU-1643,2025-02-04 04:13:00,Choji,Amegakure,7664.27,D,Fallo,Escolta de persona VIP
+ANBU-1644,2025-02-03 09:37:00,Ino,Kiri,6171.34,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1645,2025-02-02 15:18:00,Naruto,Amegakure,3199.0,A,En curso,Recuperación de pergamino secreto
+ANBU-1646,2025-02-02 06:30:00,Gaara,Iwa,3939.52,D,En curso,Patrulla rutinaria
+ANBU-1647,2025-02-06 10:04:00,Ino,Kiri,7010.88,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1648,2025-02-05 00:59:00,Shikamaru,Amegakure,4544.2,C,Fallo,Enemigo a la vista
+ANBU-1649,2025-02-01 03:07:00,Sasuke,Iwa,3137.74,A,En curso,Vigilancia de puesto avanzado
+ANBU-1650,2025-02-06 19:28:00,Sakura,Konoha,3867.64,D,Éxito,Patrulla rutinaria
+ANBU-1651,2025-02-06 13:34:00,Kakashi,Iwa,5264.4,D,Fallo,Recuperación de pergamino secreto
+ANBU-1652,2025-02-03 06:20:00,Sakura,SUNA,6136.65,S,Éxito,Recuperación de pergamino secreto
+ANBU-1653,2025-02-02 07:11:00,Sasuke,Suna ,7458.64,C,En curso,Misión de reconocimiento en fronteras
+ANBU-1654,2025-02-03 00:03:00,Ino,Amegakure,6155.12,S,Éxito,Recuperación de pergamino secreto
+ANBU-1655,2025-02-06 17:45:00,,Kiri,4705.6,S,En curso,Recuperación de pergamino secreto
+ANBU-1656,2025-02-06 16:25:00,Kakashi,Amegakure,7405.73,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1657,2025-02-03 07:03:00,Gaara,Suna,6126.07,S,En curso,Enemigo a la vista
+ANBU-1658,2025-02-02 00:38:00,Sasuke,Kiri,4223.62,A,En curso,Recuperación de pergamino secreto
+ANBU-1659,2025-02-01 22:31:00,Kankuro,Kumo,,D,Éxito,Patrulla rutinaria
+ANBU-1660,2025-02-03 21:49:00,Gaara,Suna,4840.53,B,Sospechoso,Posible espía detectado
+ANBU-1661,2025-02-05 04:05:00,Choji,Kumo,999999.0,C,Sospechoso,Patrulla rutinaria
+ANBU-1662,2025-02-03 13:02:00,Kakashi,Amegakure,2173.6,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1663,2025-02-02 01:54:00,Choji,Amegakure,2172.27,B,En curso,Vigilancia de puesto avanzado
+ANBU-1664,2025-02-01 05:18:00,Kakashi,Kumo,5569.53,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1665,2025-02-05 00:00:00,Kankuro,Amegakure,7370.24,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1666,2025-02-04 09:22:00,,Kiri,6829.58,B,Fallo,Patrulla rutinaria
+ANBU-1667,2025-02-01 01:06:00,Kankuro,Konoha,7060.02,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-1668,2025-02-05 02:44:00,Ino,Iwa,6945.73,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1669,2025-02-05 14:26:00,Sasuke,Suna ,7188.03,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1670,2025-02-01 10:55:00,Shikamaru,Suna,4080.51,C,Fallo,Patrulla rutinaria
+ANBU-1671,2025-02-06 01:18:00,Temari,Iwa,3255.0,C,Éxito,Movimiento sospechoso detectado
+ANBU-1672,2025-02-02 06:24:00,Naruto,Kiri,,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1673,2025-02-06 21:24:00,Shikamaru,Kumo,-100.0,A,En curso,Posible espía detectado
+ANBU-1674,2025-02-05 02:25:00,Kakashi,Amegakure,786.23,B,En curso,Patrulla rutinaria
+ANBU-1675,2025-02-04 07:15:00,Choji,Kiri,1959.62,A,Éxito,Escolta de persona VIP
+ANBU-1676,2025-02-05 12:04:00,Gaara,Iwa,4381.95,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1677,2025-02-03 07:34:00,Kakashi,Suna,2517.01,S,Sospechoso,Patrulla rutinaria
+ANBU-1678,2025-02-05 12:22:00,Ino,Suna,2859.32,A,Fallo,Recuperación de pergamino secreto
+ANBU-1679,2025-02-01 23:01:00,Naruto, Lluvia,4906.88,S,Sospechoso,Escolta de persona VIP
+ANBU-1680,2025-02-04 06:44:00,Kankuro,Konoha,4500.72,D,Sospechoso,Enemigo a la vista
+ANBU-1681,2025-02-01 07:46:00,Sakura,Konoha,,A,Éxito,Recuperación de pergamino secreto
+ANBU-1682,2025-02-04 16:27:00,Sakura,Amegakure,3072.55,D,Éxito,Vigilancia de puesto avanzado
+ANBU-1683,2025-02-04 03:51:00,Naruto,Amegakure,7489.0,S,Fallo,Infiltrado de la Lluvia detectado
+ANBU-1684,2025-02-04 08:05:00,Shikamaru,Kumo,3655.27,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1685,2025-02-03 07:18:00,Gaara,Iwa,1746.29,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1686,2025-02-03 07:03:00,Ino,Iwa,6663.33,A,Fallo,Misión de reconocimiento en fronteras
+ANBU-1687,2025-02-04 22:57:00,Kakashi,Konoha,6395.31,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1688,2025-02-02 16:45:00,Gaara,Kiri,2074.28,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-1689,2025-02-02 15:05:00,Shikamaru,Iwa,0.0,S,Éxito,Movimiento sospechoso detectado
+ANBU-1690,2025-02-04 05:35:00,Temari,Amegakure,1180.14,B,Sospechoso,Posible espía detectado
+ANBU-1691,2025-02-04 19:05:00,Naruto,Iwa,1340.23,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1692,2025-02-04 02:57:00,Choji,Iwa,6377.49,A,En curso,Movimiento sospechoso detectado
+ANBU-1693,2025-02-06 08:47:00,Gaara,Konoha,2695.02,A,Éxito,Enemigo a la vista
+ANBU-1694,2025-02-01 11:39:00,Temari,Kiri,4229.59,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1695,2025-02-01 15:24:00,Choji,Kumo,5254.7,B,En curso,Vigilancia de puesto avanzado
+ANBU-1696,2025-02-03 13:04:00,Ino,Kiri,3151.21,C,En curso,Recuperación de pergamino secreto
+ANBU-1697,2025-02-03 10:12:00,Sakura,Kiri,6268.59,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1698,2025-02-05 22:50:00,Choji, suna,5801.52,C,Éxito,Vigilancia de puesto avanzado
+ANBU-1699,2025-02-03 07:28:00,Sasuke,Iwa,,S,En curso,Enemigo a la vista
+ANBU-1700,2025-02-01 04:17:00,Naruto,Kiri,1223.77,C,En curso,Vigilancia de puesto avanzado
+ANBU-1701,2025-02-05 10:26:00,Kakashi,Amegakure,1699.59,B,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1702,2025-02-03 21:56:00,Shikamaru,Suna,3884.47,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1703,2025-02-03 12:20:00,Ino,Kumo,5552.18,S,Sospechoso,Patrulla rutinaria
+ANBU-1704,2025-02-04 05:49:00,Naruto,Konoha_,2192.62,C,En curso,Vigilancia de puesto avanzado
+ANBU-1705,2025-02-03 07:22:00,Ino,Kumo,5824.81,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1706,2025-02-05 00:48:00,Temari,Suna,7954.05,D,Sospechoso,Sustitución de guardias
+ANBU-1707,2025-02-05 09:04:00,Temari, Lluvia,3554.81,C,Fallo,Posible espía detectado
+ANBU-1708,2025-02-03 02:29:00,Shikamaru,konoha,,C,Éxito,Escolta de persona VIP
+ANBU-1709,2025-02-05 05:04:00,Choji,Kumo,7343.19,D,En curso,Patrulla rutinaria
+ANBU-1710,2025-02-06 16:44:00,Naruto,Kumo,6674.09,C,Sospechoso,Escolta de persona VIP
+ANBU-1711,2025-02-02 15:24:00,Gaara,Kumo,7847.07,B,Sospechoso,Posible espía detectado
+ANBU-1712,2025-02-05 07:51:00,Kakashi,Amegakure,5143.25,B,Sospechoso,Patrulla rutinaria
+ANBU-1713,2025-02-04 15:55:00,Kakashi,Iwa,2154.81,S,Fallo,Movimiento sospechoso detectado
+ANBU-1714,2025-02-05 03:35:00,Kankuro,Iwa,4962.46,B,Fallo,Escolta de persona VIP
+ANBU-1715,2025-02-02 19:07:00,Choji,Kumo,4552.91,D,Fallo,Posible espía detectado
+ANBU-1716,2025-02-04 06:20:00,Naruto,Kumo,-100.0,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1717,2025-02-05 14:04:00,Temari,Suna ,5649.99,B,En curso,Movimiento sospechoso detectado
+ANBU-1718,2025-02-03 10:10:00,Naruto,Iwa,4451.25,B,Fallo,Escolta de persona VIP
+ANBU-1719,2025-02-06 20:24:00,Sakura,Kumo,5690.3,S,Éxito,Enemigo a la vista
+ANBU-1720,2025-02-05 04:43:00,Choji,Konoha,3716.23,B,Fallo,Posible espía detectado
+ANBU-1721,2025-02-06 11:03:00,Naruto,Amegakure,6675.49,S,Éxito,Recuperación de pergamino secreto
+ANBU-1722,2025-02-06 22:56:00,Naruto,Kumo,3621.88,D,Éxito,Posible espía detectado
+ANBU-1723,2025-02-06 13:10:00,Sakura,Kiri,2030.97,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1724,2025-02-01 13:24:00,Temari,Iwa,7585.09,A,Sospechoso,Patrulla rutinaria
+ANBU-1725,2025-02-04 09:01:00,Gaara,konoha,1620.93,B,Fallo,Movimiento sospechoso detectado
+ANBU-1726,2025-02-03 09:44:00,Ino,Amegakure,1688.36,B,Éxito,Sustitución de guardias
+ANBU-1727,2025-02-06 15:19:00,Sasuke,Amegakure,5014.72,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1728,2025-02-04 00:19:00,Kakashi,Suna,7580.38,D,Sospechoso,Posible espía detectado
+ANBU-1729,2025-02-04 06:20:00,Kakashi,Kiri,4883.85,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1730,2025-02-04 07:43:00,Choji,Kumo,1534.36,C,En curso,Posible espía detectado
+ANBU-1731,2025-02-06 09:02:00,Kakashi,Amegakure,3877.85,S,En curso,Recuperación de pergamino secreto
+ANBU-1732,2025-02-01 06:07:00,Choji,Kiri,3932.68,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-1733,2025-02-06 03:49:00,Kankuro,Kumo,1958.92,C,Sospechoso,Enemigo a la vista
+ANBU-1734,2025-02-06 18:15:00,Kankuro,Iwa,4572.28,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-1735,2025-02-06 12:48:00,Ino,Kumo,6816.9,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1736,2025-02-06 03:17:00,Kakashi,Kiri,5877.09,A,Fallo,Vigilancia de puesto avanzado
+ANBU-1737,2025-02-01 12:42:00,Kankuro,Iwa,866.06,C,En curso,Enemigo a la vista
+ANBU-1738,2025-02-05 02:57:00,Shikamaru,Iwa,7773.71,S,Fallo,Enemigo a la vista
+ANBU-1739,2025-02-03 22:12:00,Choji,Kumo,4461.54,B,Éxito,Recuperación de pergamino secreto
+ANBU-1740,2025-02-04 22:48:00,Shikamaru,Kiri,5445.7,C,Fallo,Misión de reconocimiento en fronteras
+ANBU-1741,2025-02-02 21:07:00,Choji,Konoha,1350.14,B,Fallo,Movimiento sospechoso detectado
+ANBU-1742,2025-02-01 07:55:00,Shikamaru,amegakure,7854.29,B,Fallo,Escolta de persona VIP
+ANBU-1743,2025-02-03 14:36:00,Kankuro,Kumo,4858.2,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1744,2025-02-03 06:53:00,Sakura,KONOHA ,6333.79,B,Fallo,Sustitución de guardias
+ANBU-1745,2025-02-01 11:29:00,Kankuro,Konoha,6399.05,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1746,2025-02-02 15:58:00,Choji,Amegakure,6422.52,B,Sospechoso,Escolta de persona VIP
+ANBU-1747,2025-02-01 02:49:00,Gaara,Iwa,2004.98,S,En curso,Patrulla rutinaria
+ANBU-1748,2025-02-01 06:50:00,Sakura,Suna,6707.55,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1749,2025-02-06 17:57:00,Sasuke,Iwa,2760.31,S,Fallo,Movimiento sospechoso detectado
+ANBU-1750,2025-02-03 02:57:00,Sakura,Konoha_,3117.72,S,Fallo,Movimiento sospechoso detectado
+ANBU-1751,2025-02-02 18:01:00,Choji,Konoha,6620.5,S,Fallo,Posible espía detectado
+ANBU-1752,2025-02-04 20:14:00,Shikamaru,Konoha,6968.02,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-1753,2025-02-04 19:45:00,Sakura,Kumo,3699.0,A,En curso,Sustitución de guardias
+ANBU-1754,2025-02-01 21:17:00,Naruto,Kiri,3948.03,A,En curso,Escolta de persona VIP
+ANBU-1755,2025-02-06 04:14:00,Kakashi,Amegakure,6786.75,B,Sospechoso,Enemigo a la vista
+ANBU-1756,2025-02-06 21:49:00,Kankuro,Kiri,,A,Fallo,Enemigo a la vista
+ANBU-1757,2025-02-06 06:35:00,Shikamaru,Kiri,3087.05,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1758,2025-02-04 16:56:00,Gaara,Konoha_,2680.75,C,En curso,Vigilancia de puesto avanzado
+ANBU-1759,2025-02-02 04:20:00,Choji,Suna ,7351.16,D,Sospechoso,Patrulla rutinaria
+ANBU-1760,2025-02-04 03:56:00,Kankuro,Kumo,7368.11,S,En curso,Patrulla rutinaria
+ANBU-1761,2025-02-03 05:43:00,Naruto,amegakure,3476.47,C,Fallo,Enemigo a la vista
+ANBU-1762,2025-02-02 07:00:00,Gaara,Iwa,5010.1,B,Sospechoso,Posible espía detectado
+ANBU-1763,2025-02-06 20:40:00,Sakura,Konoha_,603.24,A,Éxito,Vigilancia de puesto avanzado
+ANBU-1764,2025-02-06 00:02:00,Sakura,Suna ,2490.63,A,Fallo,Patrulla rutinaria
+ANBU-1765,2025-02-02 00:06:00,Kakashi,Kumo,1954.16,D,En curso,Recuperación de pergamino secreto
+ANBU-1766,2025-02-03 02:56:00,Ino,Konoha,5802.38,B,Fallo,Sustitución de guardias
+ANBU-1767,2025-02-01 20:40:00,Naruto,Amegakure,7846.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1768,2025-02-04 15:43:00,Temari,Suna ,5620.9,C,Fallo,Escolta de persona VIP
+ANBU-1769,2025-02-01 10:16:00,Sakura,Kiri,5363.84,C,Sospechoso,Patrulla rutinaria
+ANBU-1770,2025-02-02 21:17:00,Sasuke,Kumo,6184.72,B,En curso,Misión de reconocimiento en fronteras
+ANBU-1771,2025-02-05 23:05:00,Shikamaru,Iwa,5282.04,S,Sospechoso,Escolta de persona VIP
+ANBU-1772,2025-02-04 13:31:00,Naruto,Suna,3222.02,A,Fallo,Posible espía detectado
+ANBU-1773,2025-02-03 23:29:00,Naruto,Amegakure,6344.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1774,2025-02-06 03:42:00,Gaara,Kiri,1619.25,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1775,2025-02-05 01:03:00,Sasuke,Kiri,7814.81,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1776,2025-02-05 09:01:00,Sasuke,Kumo,,C,Éxito,Movimiento sospechoso detectado
+ANBU-1777,2025-02-05 16:23:00,Kankuro,Iwa,7780.78,A,Éxito,Recuperación de pergamino secreto
+ANBU-1778,2025-02-06 12:33:00,Gaara,Iwa,1945.26,S,En curso,Escolta de persona VIP
+ANBU-1779,2025-02-01 07:45:00,Gaara,Kiri,1116.6,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-1780,2025-02-05 05:13:00,Naruto,Kumo,4333.41,B,Fallo,Sustitución de guardias
+ANBU-1781,2025-02-06 02:19:00,Naruto,Kiri,3997.93,A,En curso,Escolta de persona VIP
+ANBU-1782,2025-02-05 02:03:00,Gaara,Kumo,2664.05,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1783,2025-02-06 09:39:00,Temari,Kiri,6711.84,C,Éxito,Enemigo a la vista
+ANBU-1784,2025-02-06 15:22:00,Kakashi,Amegakure,5768.46,C,Éxito,Sustitución de guardias
+ANBU-1785,2025-02-03 19:30:00,Kakashi,Kumo,2887.9,A,En curso,Escolta de persona VIP
+ANBU-1786,2025-02-04 04:51:00,Shikamaru,Suna,3350.11,S,Éxito,Posible espía detectado
+ANBU-1787,2025-02-06 05:08:00,Shikamaru,Suna ,6245.41,D,Fallo,Posible espía detectado
+ANBU-1788,2025-02-01 15:10:00,Kakashi,Kiri,6598.6,A,Fallo,Recuperación de pergamino secreto
+ANBU-1789,2025-02-04 12:45:00,Gaara,Amegakure,6615.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-1790,2025-02-03 14:59:00,Choji,Kumo,5339.86,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1791,2025-02-04 22:10:00,Naruto,Kumo,,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-1792,2025-02-01 19:45:00,Shikamaru,Kumo,,D,En curso,Movimiento sospechoso detectado
+ANBU-1793,2025-02-01 16:58:00,Kankuro, Konoha,6649.2,S,Éxito,Enemigo a la vista
+ANBU-1794,2025-02-01 04:19:00,Ino,Kiri,685.86,C,En curso,Recuperación de pergamino secreto
+ANBU-1795,2025-02-02 18:38:00,Choji,Kumo,7539.67,C,Fallo,Escolta de persona VIP
+ANBU-1796,2025-02-05 22:51:00,Ino,Kumo,885.56,A,En curso,Movimiento sospechoso detectado
+ANBU-1797,2025-02-02 07:02:00,Shikamaru,Kumo,938.93,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1798,2025-02-06 11:55:00,Shikamaru,Suna,7528.75,A,En curso,Escolta de persona VIP
+ANBU-1799,2025-02-05 13:53:00,Gaara,Konoha,3660.84,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1800,2025-02-05 19:34:00,Sakura,Kumo,912.74,C,Éxito,Patrulla rutinaria
+ANBU-1801,2025-02-06 14:21:00,Naruto,Kiri,4794.23,D,Sospechoso,Enemigo a la vista
+ANBU-1802,2025-02-04 06:40:00,Sasuke,Amegakure,7034.64,C,En curso,Vigilancia de puesto avanzado
+ANBU-1803,2025-02-01 14:08:00,Naruto,Suna,1574.04,B,En curso,Posible espía detectado
+ANBU-1804,2025-02-04 02:23:00,Shikamaru, Lluvia,,C,Éxito,Enemigo a la vista
+ANBU-1805,2025-02-03 15:21:00,Sasuke,amegakure,1134.13,S,Éxito,Escolta de persona VIP
+ANBU-1806,2025-02-05 15:35:00,Shikamaru,Suna,980.86,B,En curso,Sustitución de guardias
+ANBU-1807,2025-02-02 15:38:00,Kankuro,Kumo,5550.12,B,En curso,Vigilancia de puesto avanzado
+ANBU-1808,2025-02-01 17:01:00,Sakura,Kiri,2489.53,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1809,2025-02-02 23:18:00,Temari,Konoha,2122.61,S,Fallo,Escolta de persona VIP
+ANBU-1810,2025-02-06 01:26:00,Temari,Suna,6404.71,A,Éxito,Movimiento sospechoso detectado
+ANBU-1811,2025-02-04 00:33:00,Ino,Kiri,6956.05,B,En curso,Posible espía detectado
+ANBU-1812,2025-02-05 04:55:00,Shikamaru, Lluvia,1411.6,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1813,2025-02-04 14:24:00,Temari,Amegakure,6342.88,B,En curso,Enemigo a la vista
+ANBU-1814,2025-02-06 23:08:00,Kakashi,Amegakure,2213.39,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-1815,2025-02-06 15:41:00,Kankuro,Iwa,2712.88,B,En curso,Patrulla rutinaria
+ANBU-1816,2025-02-04 00:46:00,Temari,Kumo,2952.8,S,Fallo,Sustitución de guardias
+ANBU-1817,2025-02-02 00:22:00,Shikamaru,Suna,6351.72,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1818,2025-02-06 10:33:00,Ino,Konoha,5723.36,C,Éxito,Escolta de persona VIP
+ANBU-1819,2025-02-02 03:01:00,Ino,Suna,,B,Fallo,Movimiento sospechoso detectado
+ANBU-1820,2025-02-05 20:38:00,Sakura,konoha,6687.83,S,En curso,Enemigo a la vista
+ANBU-1821,2025-02-04 15:52:00,Sakura,Konoha,3294.61,A,Éxito,Vigilancia de puesto avanzado
+ANBU-1822,2025-02-05 20:53:00,Sakura,Amegakure,4303.03,B,En curso,Enemigo a la vista
+ANBU-1823,2025-02-02 22:02:00,Naruto,Konoha,2645.82,S,Éxito,Enemigo a la vista
+ANBU-1824,2025-02-02 04:05:00,Temari,Kiri,1727.2,D,En curso,Recuperación de pergamino secreto
+ANBU-1825,2025-02-06 17:12:00,Ino,Kumo,6859.98,S,Éxito,Misión de reconocimiento en fronteras
+ANBU-1826,2025-02-06 11:59:00,Naruto,Kiri,6206.81,A,Fallo,Vigilancia de puesto avanzado
+ANBU-1827,2025-02-01 08:12:00,Sasuke,Kumo,7509.87,B,Éxito,Movimiento sospechoso detectado
+ANBU-1828,2025-02-01 01:10:00,Kakashi,SUNA,4872.45,A,Fallo,Movimiento sospechoso detectado
+ANBU-1829,2025-02-01 07:45:00,Shikamaru,Suna,4567.77,S,En curso,Escolta de persona VIP
+ANBU-1830,2025-02-01 16:24:00,Kankuro,Iwa,2414.64,D,Éxito,Enemigo a la vista
+ANBU-1831,2025-02-01 03:10:00,Choji,Suna,548.61,S,En curso,Patrulla rutinaria
+ANBU-1832,2025-02-04 02:33:00,Temari,Amegakure,1779.46,D,Sospechoso,Escolta de persona VIP
+ANBU-1833,2025-02-04 17:57:00,Ino,Suna ,7511.21,B,Sospechoso,Sustitución de guardias
+ANBU-1834,2025-02-02 06:16:00,Naruto,Suna,2669.62,B,Éxito,Patrulla rutinaria
+ANBU-1835,2025-02-04 16:24:00,Gaara,Iwa,7401.15,C,Éxito,Posible espía detectado
+ANBU-1836,2025-02-01 21:10:00,Kankuro,Iwa,2933.16,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-1837,2025-02-01 20:57:00,Temari,Iwa,3052.47,A,En curso,Posible espía detectado
+ANBU-1838,2025-02-03 09:07:00,Gaara,Amegakure,7632.71,S,En curso,Patrulla rutinaria
+ANBU-1839,2025-02-05 04:42:00,,Kiri,5116.88,B,Sospechoso,Posible espía detectado
+ANBU-1840,2025-02-06 23:11:00,Ino,Iwa,6442.44,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1841,2025-02-02 22:53:00,Temari,Kumo,1560.17,C,Éxito,Movimiento sospechoso detectado
+ANBU-1842,2025-02-03 16:34:00,Naruto,Suna,1953.74,S,Fallo,Patrulla rutinaria
+ANBU-1843,2025-02-05 23:18:00,Ino,Iwa,6829.89,A,En curso,Posible espía detectado
+ANBU-1844,2025-02-02 17:05:00,Kakashi,Kumo,6700.57,B,Fallo,Escolta de persona VIP
+ANBU-1845,2025-02-04 11:45:00,Sakura,Kumo,1953.49,C,Sospechoso,Posible espía detectado
+ANBU-1846,2025-02-06 10:05:00,Gaara,Suna,858.27,B,En curso,Patrulla rutinaria
+ANBU-1847,2025-02-01 13:12:00,Choji,Suna,2057.24,B,En curso,Misión de reconocimiento en fronteras
+ANBU-1848,2025-02-06 12:29:00,Shikamaru,Kiri,3568.9,D,Fallo,Patrulla rutinaria
+ANBU-1849,2025-02-04 18:30:00,Kankuro, suna,1759.07,C,En curso,Posible espía detectado
+ANBU-1850,2025-02-02 11:05:00,Kankuro,Kiri,3913.18,B,Sospechoso,Patrulla rutinaria
+ANBU-1851,2025-02-04 10:36:00,Sasuke,Suna,5478.59,A,Fallo,Sustitución de guardias
+ANBU-1852,2025-02-06 07:29:00,Kankuro,Konoha,853.18,S,Sospechoso,Escolta de persona VIP
+ANBU-1853,2025-02-06 02:23:00,Temari,Kiri,4287.1,S,Éxito,Sustitución de guardias
+ANBU-1854,2025-02-04 19:15:00,Gaara,Suna ,2009.73,A,Fallo,Sustitución de guardias
+ANBU-1855,2025-02-05 20:51:00,Ino,Kumo,1164.66,S,Éxito,Escolta de persona VIP
+ANBU-1856,2025-02-01 14:23:00,Sasuke,Amegakure,6786.01,B,Fallo,Escolta de persona VIP
+ANBU-1857,2025-02-03 21:49:00,Kakashi,Konoha,2104.99,B,Éxito,Posible espía detectado
+ANBU-1858,2025-02-01 16:12:00,Naruto,Konoha,4449.9,A,Fallo,Movimiento sospechoso detectado
+ANBU-1859,2025-02-01 23:24:00,Kakashi,Suna,2175.6,D,Éxito,Movimiento sospechoso detectado
+ANBU-1860,2025-02-05 14:36:00,Temari,Konoha,4873.79,C,Éxito,Movimiento sospechoso detectado
+ANBU-1861,2025-02-03 18:58:00,Kankuro,Amegakure,6803.87,A,Éxito,Patrulla rutinaria
+ANBU-1862,2025-02-02 11:26:00,Gaara,Konoha_,1959.57,A,Éxito,Patrulla rutinaria
+ANBU-1863,2025-02-06 11:12:00,Temari, Lluvia,6920.15,C,Fallo,Recuperación de pergamino secreto
+ANBU-1864,2025-02-03 05:13:00,Kakashi,Suna ,999999.0,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-1865,2025-02-06 03:25:00,Shikamaru,Kiri,2021.86,S,En curso,Patrulla rutinaria
+ANBU-1866,2025-02-05 10:36:00,Shikamaru,Konoha,7426.83,D,En curso,Misión de reconocimiento en fronteras
+ANBU-1867,2025-02-02 05:47:00,Kankuro,Amegakure,7004.03,S,Fallo,Enemigo a la vista
+ANBU-1868,2025-02-05 08:28:00,Temari,Kumo,5748.11,B,En curso,Sustitución de guardias
+ANBU-1869,2025-02-02 00:10:00,Shikamaru,Kumo,4468.86,C,Sospechoso,Posible espía detectado
+ANBU-1870,2025-02-06 11:36:00,Choji,Amegakure,7333.51,S,En curso,Recuperación de pergamino secreto
+ANBU-1871,2025-02-01 19:15:00,Kakashi,Suna,7897.64,S,Sospechoso,Escolta de persona VIP
+ANBU-1872,2025-02-06 01:19:00,Ino,Kiri,2026.49,S,Fallo,Movimiento sospechoso detectado
+ANBU-1873,2025-02-01 23:37:00,Kankuro,Kiri,,A,Fallo,Sustitución de guardias
+ANBU-1874,2025-02-04 17:03:00,Choji,Iwa,642.5,C,En curso,Vigilancia de puesto avanzado
+ANBU-1875,2025-02-05 02:22:00,Choji,Kiri,938.86,C,Fallo,Escolta de persona VIP
+ANBU-1876,2025-02-05 19:21:00,Temari,SUNA,2107.73,A,Fallo,Misión de reconocimiento en fronteras
+ANBU-1877,2025-02-06 15:23:00,Kankuro,Suna,1791.76,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1878,2025-02-06 04:12:00,Temari,Amegakure,7038.81,S,Éxito,Movimiento sospechoso detectado
+ANBU-1879,2025-02-05 15:54:00,Kankuro,Kumo,3283.31,B,Éxito,Posible espía detectado
+ANBU-1880,2025-02-05 09:59:00,Choji,Amegakure,7798.53,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-1881,2025-02-01 14:34:00,Kankuro, suna,3384.06,C,Sospechoso,Patrulla rutinaria
+ANBU-1882,2025-02-01 21:53:00,Shikamaru,Amegakure,3195.13,D,Fallo,Patrulla rutinaria
+ANBU-1883,2025-02-03 23:37:00,Shikamaru,Kiri,4894.86,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1884,2025-02-02 11:18:00,Kankuro,Kiri,7415.91,S,En curso,Recuperación de pergamino secreto
+ANBU-1885,2025-02-01 12:32:00,Ino,Konoha_,5138.54,D,Éxito,Sustitución de guardias
+ANBU-1886,2025-02-05 08:27:00,Gaara,Konoha_,1651.86,D,Éxito,Posible espía detectado
+ANBU-1887,2025-02-03 06:48:00,Ino,Konoha,0.0,C,En curso,Posible espía detectado
+ANBU-1888,2025-02-01 18:29:00,Sakura,Konoha,7103.36,C,Éxito,Escolta de persona VIP
+ANBU-1889,2025-02-06 17:35:00,Sakura,Kumo,7710.17,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-1890,2025-02-06 07:15:00,Kakashi,Suna,4056.48,A,Éxito,Escolta de persona VIP
+ANBU-1891,2025-02-04 14:45:00,Sasuke, Lluvia,6209.03,B,Sospechoso,Sustitución de guardias
+ANBU-1892,2025-02-02 10:11:00,Choji,Iwa,501.99,B,Fallo,Posible espía detectado
+ANBU-1893,2025-02-03 03:18:00,Kankuro, Lluvia,4952.68,C,Fallo,Posible espía detectado
+ANBU-1894,2025-02-03 23:30:00,Naruto,Suna,6759.48,D,En curso,Sustitución de guardias
+ANBU-1895,2025-02-05 12:30:00,Kankuro,Kumo,4214.31,D,Éxito,Posible espía detectado
+ANBU-1896,2025-02-04 01:33:00,Shikamaru,Suna,1454.14,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1897,2025-02-04 22:12:00,Kakashi,Amegakure,1211.76,S,Éxito,Escolta de persona VIP
+ANBU-1898,2025-02-04 08:00:00,Ino,Kiri,1218.78,D,En curso,Patrulla rutinaria
+ANBU-1899,2025-02-02 10:57:00,Shikamaru,Konoha_,7614.45,A,Sospechoso,Sustitución de guardias
+ANBU-1900,2025-02-03 20:29:00,Naruto,Iwa,1915.71,C,Éxito,Escolta de persona VIP
+ANBU-1901,2025-02-02 00:46:00,Ino,SUNA,2613.94,A,Éxito,Movimiento sospechoso detectado
+ANBU-1902,2025-02-05 15:25:00,Choji,Amegakure,6622.85,A,Éxito,Escolta de persona VIP
+ANBU-1903,2025-02-03 06:48:00,Ino,Konoha,3192.33,B,Éxito,Vigilancia de puesto avanzado
+ANBU-1904,2025-02-05 11:12:00,Ino,Suna,5392.41,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1905,2025-02-01 07:34:00,Temari,Amegakure,823.6,B,Sospechoso,Enemigo a la vista
+ANBU-1906,2025-02-01 07:01:00,Temari,Iwa,3556.91,D,En curso,Posible espía detectado
+ANBU-1907,2025-02-01 17:59:00,Naruto,Iwa,1250.96,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1908,2025-02-03 18:13:00,Temari,Suna,7177.24,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1909,2025-02-03 18:50:00,Kankuro,Amegakure,6518.57,S,Éxito,Patrulla rutinaria
+ANBU-1910,2025-02-05 17:02:00,Kakashi,Kumo,6500.06,S,Sospechoso,Escolta de persona VIP
+ANBU-1911,2025-02-05 16:50:00,Sasuke,Kumo,4625.26,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1912,2025-02-06 11:15:00,Sasuke,Suna,4256.43,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1913,2025-02-03 05:25:00,Kankuro,Iwa,1744.96,B,Fallo,Vigilancia de puesto avanzado
+ANBU-1914,2025-02-05 07:11:00,Gaara,Suna,3818.76,B,Sospechoso,Escolta de persona VIP
+ANBU-1915,2025-02-03 05:29:00,Shikamaru,Kumo,4393.59,C,En curso,Patrulla rutinaria
+ANBU-1916,2025-02-03 14:30:00,Kakashi,Suna,2739.63,D,Fallo,Vigilancia de puesto avanzado
+ANBU-1917,2025-02-04 13:30:00,Kakashi,Amegakure,3898.74,B,Fallo,Patrulla rutinaria
+ANBU-1918,2025-02-02 03:41:00,Sakura,Konoha,4650.18,S,Fallo,Enemigo a la vista
+ANBU-1919,2025-02-03 07:23:00,Shikamaru,Suna,4818.63,B,Éxito,Sustitución de guardias
+ANBU-1920,2025-02-06 14:50:00,,Kiri,7615.62,A,Éxito,Escolta de persona VIP
+ANBU-1921,2025-02-03 09:53:00,Gaara,Suna,4476.23,A,En curso,Recuperación de pergamino secreto
+ANBU-1922,2025-02-01 14:15:00,Kakashi,Suna,3612.06,S,Fallo,Enemigo a la vista
+ANBU-1923,2025-02-03 12:37:00,Sakura,Kiri,1055.69,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-1924,2025-02-05 15:53:00,Gaara,Kumo,5305.75,A,En curso,Recuperación de pergamino secreto
+ANBU-1925,2025-02-04 11:55:00,Kakashi,Konoha,1145.13,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-1926,2025-02-05 04:35:00,Naruto,Konoha,3885.5,S,Fallo,Enemigo a la vista
+ANBU-1927,2025-02-06 04:18:00,Sasuke,Kumo,3230.13,B,Sospechoso,Sustitución de guardias
+ANBU-1928,2025-02-01 04:29:00,Gaara,Konoha,2423.91,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1929,2025-02-06 20:01:00,Shikamaru,Suna,7306.48,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-1930,2025-02-02 08:20:00,Gaara,Suna,640.82,C,Fallo,Movimiento sospechoso detectado
+ANBU-1931,2025-02-01 16:24:00,Sasuke,Amegakure,,B,Sospechoso,Escolta de persona VIP
+ANBU-1932,2025-02-05 17:23:00,Temari,Iwa,500.97,B,Éxito,Enemigo a la vista
+ANBU-1933,2025-02-03 20:22:00,Temari,konoha,5315.84,D,Fallo,Enemigo a la vista
+ANBU-1934,2025-02-03 07:35:00,Choji,SUNA,4131.01,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1935,2025-02-04 13:16:00,Temari, Konoha,6696.34,C,En curso,Sustitución de guardias
+ANBU-1936,2025-02-05 20:26:00,Sasuke,Suna,7279.57,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1937,2025-02-06 06:22:00,Sakura,Kumo,6828.72,A,En curso,Movimiento sospechoso detectado
+ANBU-1938,2025-02-04 05:18:00,Choji,Konoha,6348.93,D,En curso,Enemigo a la vista
+ANBU-1939,2025-02-06 19:27:00,Ino,Amegakure,7472.92,C,Fallo,Vigilancia de puesto avanzado
+ANBU-1940,2025-02-02 20:00:00,Sasuke,Kumo,653.29,C,Éxito,Enemigo a la vista
+ANBU-1941,2025-02-06 11:27:00,Kankuro,Iwa,3433.82,C,Sospechoso,Posible espía detectado
+ANBU-1942,2025-02-01 08:18:00,Sakura,Iwa,3225.26,B,Éxito,Posible espía detectado
+ANBU-1943,2025-02-06 21:17:00,Shikamaru,Kiri,0.0,A,En curso,Posible espía detectado
+ANBU-1944,2025-02-02 18:46:00,Choji,Amegakure,7498.07,A,En curso,Posible espía detectado
+ANBU-1945,2025-02-04 11:48:00,Temari,Iwa,1694.52,S,Éxito,Recuperación de pergamino secreto
+ANBU-1946,2025-02-02 17:04:00,Temari,Konoha,6374.22,S,Sospechoso,Enemigo a la vista
+ANBU-1947,2025-02-04 14:55:00,Kankuro,Suna,3988.18,B,En curso,Escolta de persona VIP
+ANBU-1948,2025-02-05 19:11:00,Sasuke,Konoha,5826.53,S,Éxito,Movimiento sospechoso detectado
+ANBU-1949,2025-02-05 16:05:00,Naruto,Suna,2276.58,B,En curso,Posible espía detectado
+ANBU-1950,2025-02-04 23:14:00,Gaara,Suna,,S,Fallo,Recuperación de pergamino secreto
+ANBU-1951,2025-02-04 15:08:00,Gaara,SUNA,6092.29,A,En curso,Recuperación de pergamino secreto
+ANBU-1952,2025-02-06 14:46:00,Temari,Amegakure,1084.97,C,Fallo,Movimiento sospechoso detectado
+ANBU-1953,2025-02-05 11:31:00,Gaara,Kiri,,S,Sospechoso,Patrulla rutinaria
+ANBU-1954,2025-02-04 04:09:00,,Kiri,1376.73,S,Éxito,Enemigo a la vista
+ANBU-1955,2025-02-04 04:27:00,Naruto,Kumo,5554.3,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1956,2025-02-01 21:50:00,Ino,Kiri,7209.32,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-1957,2025-02-04 04:32:00,Temari,Kumo,7202.06,C,Fallo,Escolta de persona VIP
+ANBU-1958,2025-02-01 23:56:00,Shikamaru,Kiri,1957.84,A,Fallo,Misión de reconocimiento en fronteras
+ANBU-1959,2025-02-01 04:01:00,Temari,Kumo,6383.78,B,Fallo,Recuperación de pergamino secreto
+ANBU-1960,2025-02-06 17:11:00,Naruto,Suna,2430.01,B,En curso,Patrulla rutinaria
+ANBU-1961,2025-02-03 22:37:00,Ino,KONOHA ,3997.93,D,Fallo,Escolta de persona VIP
+ANBU-1962,2025-02-06 23:17:00,Ino,Kumo,4078.26,C,Éxito,Vigilancia de puesto avanzado
+ANBU-1963,2025-02-03 04:14:00,Ino,Amegakure,5289.19,D,En curso,Escolta de persona VIP
+ANBU-1964,2025-02-06 18:41:00,,Kiri,2490.74,B,Éxito,Recuperación de pergamino secreto
+ANBU-1965,2025-02-02 02:13:00,Temari,Kiri,6071.69,A,En curso,Posible espía detectado
+ANBU-1966,2025-02-06 10:01:00,Temari,Kiri,4098.14,S,En curso,Movimiento sospechoso detectado
+ANBU-1967,2025-02-01 16:44:00,Choji,Suna,4697.77,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-1968,2025-02-05 19:01:00,Gaara,Kiri,5612.42,C,En curso,Misión de reconocimiento en fronteras
+ANBU-1969,2025-02-06 08:58:00,Choji,Iwa,5092.35,C,En curso,Vigilancia de puesto avanzado
+ANBU-1970,2025-02-02 05:09:00,Shikamaru,Iwa,2130.13,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-1971,2025-02-06 02:45:00,Kankuro,Kumo,7312.29,S,En curso,Enemigo a la vista
+ANBU-1972,2025-02-04 00:26:00,Kankuro,Kumo,910.76,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1973,2025-02-04 15:12:00,Gaara,konoha,6254.37,S,Fallo,Vigilancia de puesto avanzado
+ANBU-1974,2025-02-03 05:02:00,Temari,Kumo,3658.63,C,Sospechoso,Enemigo a la vista
+ANBU-1975,2025-02-04 21:33:00,Sakura,Amegakure,4092.18,A,Éxito,Posible espía detectado
+ANBU-1976,2025-02-03 00:44:00,Choji,Kumo,6002.21,C,Fallo,Movimiento sospechoso detectado
+ANBU-1977,2025-02-04 03:58:00,Choji,Konoha,5268.43,A,Éxito,Patrulla rutinaria
+ANBU-1978,2025-02-02 05:06:00,Choji, Lluvia,4280.32,S,Éxito,Recuperación de pergamino secreto
+ANBU-1979,2025-02-05 05:08:00,Ino,Kumo,579.04,A,Éxito,Movimiento sospechoso detectado
+ANBU-1980,2025-02-01 17:46:00,Gaara,Kiri,7348.75,D,Sospechoso,Patrulla rutinaria
+ANBU-1981,2025-02-05 10:24:00,Shikamaru,Iwa,3420.44,A,En curso,Sustitución de guardias
+ANBU-1982,2025-02-02 07:48:00,Gaara,Kumo,2405.74,A,En curso,Posible espía detectado
+ANBU-1983,2025-02-02 00:41:00,Temari,Iwa,5283.02,C,Éxito,Posible espía detectado
+ANBU-1984,2025-02-03 23:52:00,Choji,Amegakure,2357.08,B,Sospechoso,Sustitución de guardias
+ANBU-1985,2025-02-01 19:37:00,Ino,Iwa,1279.06,S,Fallo,Posible espía detectado
+ANBU-1986,2025-02-05 03:05:00,Kankuro,Kumo,1937.0,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1987,2025-02-01 12:31:00,Temari,Kiri,7940.84,D,Sospechoso,Patrulla rutinaria
+ANBU-1988,2025-02-04 10:47:00,Sakura,Iwa,6252.11,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-1989,2025-02-06 04:57:00,Gaara,Kiri,,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1990,2025-02-01 13:59:00,Shikamaru,Konoha,6648.21,C,Sospechoso,Sustitución de guardias
+ANBU-1991,2025-02-03 12:38:00,Naruto,Kumo,640.48,D,En curso,Sustitución de guardias
+ANBU-1992,2025-02-05 03:20:00,Naruto,Iwa,6814.1,A,En curso,Movimiento sospechoso detectado
+ANBU-1993,2025-02-06 10:07:00,Naruto, suna,5622.08,A,En curso,Misión de reconocimiento en fronteras
+ANBU-1994,2025-02-03 00:29:00,Choji,Konoha,7389.01,S,Éxito,Posible espía detectado
+ANBU-1995,2025-02-01 06:09:00,Gaara,Amegakure,5782.05,S,Éxito,Patrulla rutinaria
+ANBU-1996,2025-02-05 07:02:00,Ino,Suna ,5645.23,D,Éxito,Sustitución de guardias
+ANBU-1997,2025-02-04 04:17:00,Gaara,Iwa,3548.37,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1998,2025-02-05 01:55:00,Naruto,Kiri,7618.38,A,Éxito,Patrulla rutinaria
+ANBU-1999,2025-02-03 21:48:00,Choji,Iwa,3404.42,B,En curso,Misión de reconocimiento en fronteras
+ANBU-2000,2025-02-03 12:15:00,Sasuke,Kiri,6302.86,D,Éxito,Escolta de persona VIP
+ANBU-2001,2025-02-05 18:46:00,Kankuro,Konoha,1310.28,S,Éxito,Escolta de persona VIP
+ANBU-2002,2025-02-01 17:33:00,Choji,konoha,7950.38,A,En curso,Sustitución de guardias
+ANBU-2003,2025-02-02 04:10:00,Shikamaru,Konoha,3782.6,B,Fallo,Posible espía detectado
+ANBU-2004,2025-02-02 17:01:00,Shikamaru, Lluvia,1292.11,D,En curso,Misión de reconocimiento en fronteras
+ANBU-2005,2025-02-03 16:59:00,Shikamaru,Suna,4504.97,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2006,2025-02-05 11:10:00,,Kiri,4213.42,S,Éxito,Sustitución de guardias
+ANBU-2007,2025-02-01 01:17:00,Ino,Iwa,800.2,S,Sospechoso,Enemigo a la vista
+ANBU-2008,2025-02-06 01:29:00,Naruto,Konoha,2953.48,A,Éxito,Movimiento sospechoso detectado
+ANBU-2009,2025-02-02 06:21:00,Ino,Kiri,3933.26,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-2010,2025-02-05 00:20:00,Gaara,Iwa,7268.0,C,Sospechoso,Sustitución de guardias
+ANBU-2011,2025-02-02 01:09:00,Naruto,Iwa,4772.31,S,Fallo,Sustitución de guardias
+ANBU-2012,2025-02-04 06:37:00,Gaara,Suna,1996.02,A,Éxito,Patrulla rutinaria
+ANBU-2013,2025-02-02 04:55:00,Temari,Iwa,4889.79,B,En curso,Escolta de persona VIP
+ANBU-2014,2025-02-03 20:34:00,Temari,Amegakure,3646.92,D,Éxito,Movimiento sospechoso detectado
+ANBU-2015,2025-02-03 06:29:00,Shikamaru,Konoha,3980.75,B,Fallo,Recuperación de pergamino secreto
+ANBU-2016,2025-02-04 01:08:00,Kakashi, suna,1171.74,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-2017,2025-02-02 22:15:00,Kankuro,Kumo,1241.82,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-2018,2025-02-04 05:01:00,Kakashi, Lluvia,,B,Sospechoso,Patrulla rutinaria
+ANBU-2019,2025-02-01 04:57:00,Sakura,konoha,511.47,B,Éxito,Patrulla rutinaria
+ANBU-2020,2025-02-02 22:58:00,Temari,Suna,1458.0,D,Éxito,Enemigo a la vista
+ANBU-2021,2025-02-06 12:12:00,Naruto,Kumo,,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-2022,2025-02-03 00:04:00,Gaara,Iwa,7500.27,C,En curso,Posible espía detectado
+ANBU-2023,2025-02-01 05:06:00,Ino,Iwa,1107.78,S,En curso,Posible espía detectado
+ANBU-2024,2025-02-01 19:55:00,Kankuro,Konoha,3686.61,D,Éxito,Sustitución de guardias
+ANBU-2025,2025-02-04 03:22:00,Kakashi,Suna,7579.82,S,Fallo,Patrulla rutinaria
+ANBU-2026,2025-02-01 21:41:00,Naruto,Kumo,4493.72,S,Éxito,Posible espía detectado
+ANBU-2027,2025-02-01 17:10:00,Sakura,Kiri,3837.25,C,En curso,Vigilancia de puesto avanzado
+ANBU-2028,2025-02-02 22:50:00,Ino,Amegakure,5811.49,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2029,2025-02-02 07:57:00,Temari,Kiri,868.56,C,Fallo,Sustitución de guardias
+ANBU-2030,2025-02-04 01:40:00,Sasuke,Amegakure,7282.73,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-2031,2025-02-06 14:34:00,Ino,Amegakure,7219.01,S,Éxito,Enemigo a la vista
+ANBU-2032,2025-02-02 19:18:00,Kankuro,Konoha,6689.45,C,En curso,Vigilancia de puesto avanzado
+ANBU-2033,2025-02-03 18:22:00,Sakura,Iwa,1046.2,B,Sospechoso,Enemigo a la vista
+ANBU-2034,2025-02-05 19:31:00,Choji,Kiri,2621.56,C,Éxito,Posible espía detectado
+ANBU-2035,2025-02-01 02:22:00,Temari,SUNA,2518.06,D,Sospechoso,Escolta de persona VIP
+ANBU-2036,2025-02-03 18:34:00,Kankuro,Suna,7960.35,D,Fallo,Posible espía detectado
+ANBU-2037,2025-02-06 01:33:00,Choji,Kiri,4026.93,C,Fallo,Misión de reconocimiento en fronteras
+ANBU-2038,2025-02-01 11:51:00,Temari,konoha,2507.54,C,En curso,Patrulla rutinaria
+ANBU-2039,2025-02-03 22:36:00,Shikamaru,Kiri,3811.02,C,Éxito,Posible espía detectado
+ANBU-2040,2025-02-04 23:30:00,Ino,Kiri,2177.79,A,En curso,Posible espía detectado
+ANBU-2041,2025-02-06 06:50:00,Choji,Suna,7456.11,A,Fallo,Patrulla rutinaria
+ANBU-2042,2025-02-04 14:15:00,Sakura,Kumo,814.81,B,En curso,Vigilancia de puesto avanzado
+ANBU-2043,2025-02-02 05:59:00,Kakashi,Konoha_,2964.64,B,Éxito,Vigilancia de puesto avanzado
+ANBU-2044,2025-02-01 10:12:00,Sakura,Kumo,5884.04,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2045,2025-02-06 14:48:00,Sakura,Konoha,6498.19,B,Éxito,Patrulla rutinaria
+ANBU-2046,2025-02-06 04:13:00,Gaara,Kiri,4593.6,C,Fallo,Sustitución de guardias
+ANBU-2047,2025-02-03 12:17:00,Choji,SUNA,2966.57,S,Éxito,Vigilancia de puesto avanzado
+ANBU-2048,2025-02-02 04:52:00,Ino,Konoha_,3549.28,D,Éxito,Enemigo a la vista
+ANBU-2049,2025-02-02 05:16:00,Kankuro,Amegakure,3482.14,S,Fallo,Misión de reconocimiento en fronteras
+ANBU-2050,2025-02-06 17:30:00,Kankuro,Amegakure,554.5,C,Sospechoso,Escolta de persona VIP
+ANBU-2051,2025-02-01 05:47:00,Naruto,Suna,7533.03,S,Sospechoso,Patrulla rutinaria
+ANBU-2052,2025-02-01 00:50:00,Shikamaru,Kiri,,S,Fallo,Patrulla rutinaria
+ANBU-2053,2025-02-01 14:59:00,Sasuke,Amegakure,7462.94,C,En curso,Sustitución de guardias
+ANBU-2054,2025-02-06 22:44:00,Temari,Kiri,5565.09,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-2055,2025-02-02 06:45:00,Sasuke,Kumo,6995.09,D,En curso,Recuperación de pergamino secreto
+ANBU-2056,2025-02-04 20:16:00,Gaara,Amegakure,4784.18,S,Fallo,Vigilancia de puesto avanzado
+ANBU-2057,2025-02-01 06:46:00,Kankuro,SUNA,592.45,D,Fallo,Posible espía detectado
+ANBU-2058,2025-02-04 22:50:00,Sasuke,Kumo,2826.59,C,Fallo,Enemigo a la vista
+ANBU-2059,2025-02-05 03:38:00,Kakashi,Amegakure,5781.17,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2060,2025-02-04 07:40:00,Naruto,Konoha_,6135.5,B,Éxito,Escolta de persona VIP
+ANBU-2061,2025-02-03 18:29:00,Shikamaru,Kumo,6454.75,A,En curso,Posible espía detectado
+ANBU-2062,2025-02-05 07:58:00,Sakura,Iwa,7017.45,D,En curso,Vigilancia de puesto avanzado
+ANBU-2063,2025-02-02 05:30:00,Sasuke,Suna,7040.56,A,Éxito,Enemigo a la vista
+ANBU-2064,2025-02-04 19:40:00,Kakashi,Kumo,1275.46,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2065,2025-02-05 08:41:00,Kankuro,Amegakure,6432.42,D,Fallo,Posible espía detectado
+ANBU-2066,2025-02-06 17:32:00,Shikamaru,Iwa,-100.0,A,En curso,Recuperación de pergamino secreto
+ANBU-2067,2025-02-06 14:59:00,Temari,Iwa,5977.37,C,En curso,Movimiento sospechoso detectado
+ANBU-2068,2025-02-02 14:22:00,Kankuro,Iwa,7201.55,S,Éxito,Posible espía detectado
+ANBU-2069,2025-02-01 05:42:00,Kankuro,Amegakure,5294.12,D,Éxito,Posible espía detectado
+ANBU-2070,2025-02-02 03:00:00,Shikamaru,Konoha,3643.95,A,Éxito,Enemigo a la vista
+ANBU-2071,2025-02-06 02:11:00,Ino,KONOHA ,4055.57,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2072,2025-02-03 17:02:00,Temari,Kumo,4281.16,A,Sospechoso,Posible espía detectado
+ANBU-2073,2025-02-06 11:44:00,Ino,Kumo,3813.63,A,Sospechoso,Posible espía detectado
+ANBU-2074,2025-02-01 11:07:00,Shikamaru,KONOHA ,5356.58,S,En curso,Vigilancia de puesto avanzado
+ANBU-2075,2025-02-06 08:02:00,Sakura,Konoha,6232.95,A,Sospechoso,Escolta de persona VIP
+ANBU-2076,2025-02-02 21:10:00,Ino,Suna,7209.15,D,Éxito,Enemigo a la vista
+ANBU-2077,2025-02-05 01:55:00,Sasuke,Kumo,698.38,B,Éxito,Posible espía detectado
+ANBU-2078,2025-02-06 01:07:00,Sasuke,Amegakure,5110.43,C,Éxito,Recuperación de pergamino secreto
+ANBU-2079,2025-02-01 19:25:00,Kakashi, suna,4234.63,S,Fallo,Recuperación de pergamino secreto
+ANBU-2080,2025-02-06 20:28:00,Choji,Suna ,,S,Sospechoso,Enemigo a la vista
+ANBU-2081,2025-02-03 13:25:00,Gaara,Amegakure,3572.39,D,Éxito,Sustitución de guardias
+ANBU-2082,2025-02-03 12:22:00,Naruto,Kiri,5075.87,A,Sospechoso,Enemigo a la vista
+ANBU-2083,2025-02-01 06:58:00,Kankuro,Kumo,2491.52,S,Fallo,Vigilancia de puesto avanzado
+ANBU-2084,2025-02-04 12:25:00,Naruto,Konoha,5174.27,B,En curso,Vigilancia de puesto avanzado
+ANBU-2085,2025-02-06 06:14:00,Ino,Kumo,1576.05,A,Sospechoso,Posible espía detectado
+ANBU-2086,2025-02-02 19:59:00,Kakashi,Iwa,6338.99,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-2087,2025-02-02 21:33:00,Choji,Amegakure,939.7,C,Sospechoso,Enemigo a la vista
+ANBU-2088,2025-02-05 18:48:00,,Kiri,4761.83,B,Fallo,Recuperación de pergamino secreto
+ANBU-2089,2025-02-02 13:37:00,Kankuro,Kumo,3801.58,B,En curso,Vigilancia de puesto avanzado
+ANBU-2090,2025-02-06 06:24:00,Sakura,Suna,7000.11,D,En curso,Recuperación de pergamino secreto
+ANBU-2091,2025-02-02 03:20:00,Choji,Amegakure,6012.29,S,Éxito,Enemigo a la vista
+ANBU-2092,2025-02-03 09:23:00,Kankuro,Iwa,1947.56,B,Sospechoso,Enemigo a la vista
+ANBU-2093,2025-02-05 19:16:00,Sasuke,Iwa,2345.52,C,En curso,Enemigo a la vista
+ANBU-2094,2025-02-04 11:12:00,Ino,Kiri,7288.86,A,Fallo,Recuperación de pergamino secreto
+ANBU-2095,2025-02-05 10:18:00,Choji,Iwa,6318.94,S,En curso,Movimiento sospechoso detectado
+ANBU-2096,2025-02-04 10:51:00,Ino,Amegakure,3186.39,S,Éxito,Enemigo a la vista
+ANBU-2097,2025-02-02 18:38:00,Choji,Iwa,6171.48,S,Éxito,Movimiento sospechoso detectado
+ANBU-2098,2025-02-01 12:16:00,Ino,Suna,1761.61,A,Sospechoso,Posible espía detectado
+ANBU-2099,2025-02-03 02:03:00,Sakura,Iwa,6472.84,A,Fallo,Sustitución de guardias
+ANBU-2100,2025-02-06 03:45:00,Kakashi,Iwa,7938.99,S,Fallo,Escolta de persona VIP
+ANBU-2101,2025-02-02 16:38:00,Sasuke,Kiri,999999.0,B,Sospechoso,Sustitución de guardias
+ANBU-2102,2025-02-04 01:42:00,Ino,Kumo,,S,Éxito,Patrulla rutinaria
+ANBU-2103,2025-02-06 17:36:00,Sasuke,Amegakure,6260.0,S,Sospechoso,Infiltrado de la Lluvia detectado
+ANBU-2104,2025-02-06 00:52:00,Shikamaru,Iwa,7801.3,S,Fallo,Movimiento sospechoso detectado
+ANBU-2105,2025-02-03 22:37:00,Sasuke,Iwa,2775.99,A,Sospechoso,Enemigo a la vista
+ANBU-2106,2025-02-02 23:04:00,Choji,Konoha,3460.97,S,En curso,Patrulla rutinaria
+ANBU-2107,2025-02-06 03:51:00,Choji,Iwa,1094.11,S,Éxito,Movimiento sospechoso detectado
+ANBU-2108,2025-02-04 13:18:00,Kakashi,Suna,883.78,D,Fallo,Recuperación de pergamino secreto
+ANBU-2109,2025-02-04 05:49:00,Kankuro,Iwa,5564.79,B,Sospechoso,Sustitución de guardias
+ANBU-2110,2025-02-05 03:57:00,Shikamaru,Kiri,4436.73,B,Fallo,Movimiento sospechoso detectado
+ANBU-2111,2025-02-06 09:50:00,Sakura,Konoha,6832.6,C,En curso,Movimiento sospechoso detectado
+ANBU-2112,2025-02-05 12:14:00,Gaara,Kumo,7875.66,S,En curso,Movimiento sospechoso detectado
+ANBU-2113,2025-02-06 03:07:00,Kankuro,Konoha,3921.24,D,Éxito,Posible espía detectado
+ANBU-2114,2025-02-02 16:02:00,Choji,Konoha,7209.12,S,Fallo,Recuperación de pergamino secreto
+ANBU-2115,2025-02-03 23:53:00,Gaara,Suna,,A,Fallo,Posible espía detectado
+ANBU-2116,2025-02-04 09:08:00,Sakura,Konoha,6032.92,B,Fallo,Posible espía detectado
+ANBU-2117,2025-02-05 14:59:00,Sakura,Konoha,2670.58,C,En curso,Misión de reconocimiento en fronteras
+ANBU-2118,2025-02-01 19:57:00,Sakura,Kumo,6279.26,S,En curso,Misión de reconocimiento en fronteras
+ANBU-2119,2025-02-05 05:43:00,Sakura,Iwa,5820.23,C,Éxito,Posible espía detectado
+ANBU-2120,2025-02-04 22:53:00,Choji,Kumo,3770.36,A,En curso,Posible espía detectado
+ANBU-2121,2025-02-05 18:45:00,,Kiri,2272.96,S,Éxito,Enemigo a la vista
+ANBU-2122,2025-02-02 09:41:00,Sakura,Kumo,4784.84,A,Fallo,Movimiento sospechoso detectado
+ANBU-2123,2025-02-01 02:10:00,Gaara,Suna,5427.71,D,En curso,Patrulla rutinaria
+ANBU-2124,2025-02-02 20:29:00,Gaara,Kiri,4420.81,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2125,2025-02-01 13:16:00,Shikamaru,Amegakure,-100.0,B,Sospechoso,Posible espía detectado
+ANBU-2126,2025-02-04 07:24:00,Sasuke,Suna,4023.63,A,Sospechoso,Enemigo a la vista
+ANBU-2127,2025-02-05 10:45:00,Choji,Kumo,5119.96,D,Sospechoso,Sustitución de guardias
+ANBU-2128,2025-02-01 02:02:00,Gaara,Suna,2983.16,A,En curso,Movimiento sospechoso detectado
+ANBU-2129,2025-02-05 04:09:00,Sakura,Suna,1655.43,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2130,2025-02-01 09:34:00,Sakura,Iwa,2991.06,B,Fallo,Recuperación de pergamino secreto
+ANBU-2131,2025-02-02 03:51:00,Choji,Kiri,5339.09,S,En curso,Misión de reconocimiento en fronteras
+ANBU-2132,2025-02-04 19:53:00,Kankuro,Suna,4383.9,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-2133,2025-02-01 16:37:00,Shikamaru,Kumo,4460.23,C,Éxito,Escolta de persona VIP
+ANBU-2134,2025-02-01 14:43:00,Sasuke,Suna,7782.42,S,Sospechoso,Patrulla rutinaria
+ANBU-2135,2025-02-02 17:21:00,Shikamaru,Kumo,1137.57,S,Fallo,Sustitución de guardias
+ANBU-2136,2025-02-04 16:10:00,Naruto,amegakure,2126.44,D,Fallo,Recuperación de pergamino secreto
+ANBU-2137,2025-02-06 09:37:00,Gaara,Kumo,992.27,A,Éxito,Escolta de persona VIP
+ANBU-2138,2025-02-03 18:16:00,Shikamaru,Kumo,7273.48,B,En curso,Sustitución de guardias
+ANBU-2139,2025-02-03 01:17:00,Kakashi,SUNA,7596.02,B,Sospechoso,Posible espía detectado
+ANBU-2140,2025-02-06 02:26:00,Kankuro,Iwa,1484.46,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2141,2025-02-02 13:12:00,Sasuke,Konoha,5091.42,B,Sospechoso,Sustitución de guardias
+ANBU-2142,2025-02-06 07:59:00,Gaara,Iwa,3308.14,B,En curso,Misión de reconocimiento en fronteras
+ANBU-2143,2025-02-03 23:38:00,Sakura,Kumo,4581.95,S,En curso,Patrulla rutinaria
+ANBU-2144,2025-02-06 16:27:00,Kankuro,Kumo,1488.82,C,En curso,Enemigo a la vista
+ANBU-2145,2025-02-03 17:43:00,Naruto,Suna,0.0,A,Sospechoso,Escolta de persona VIP
+ANBU-2146,2025-02-03 08:43:00,Choji,Kiri,4956.43,S,Éxito,Recuperación de pergamino secreto
+ANBU-2147,2025-02-06 07:02:00,Kakashi, Konoha,7444.11,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2148,2025-02-03 14:21:00,Shikamaru,Amegakure,1782.54,D,Fallo,Patrulla rutinaria
+ANBU-2149,2025-02-01 23:27:00,Shikamaru,Kumo,6445.23,D,Sospechoso,Patrulla rutinaria
+ANBU-2150,2025-02-06 22:54:00,Naruto,Kumo,6225.53,B,Fallo,Patrulla rutinaria
+ANBU-2151,2025-02-03 08:07:00,Gaara,Kumo,3757.79,B,Sospechoso,Enemigo a la vista
+ANBU-2152,2025-02-06 08:35:00,Sakura,Kiri,4355.51,A,Éxito,Vigilancia de puesto avanzado
+ANBU-2153,2025-02-02 18:52:00,Kakashi,Kumo,2785.25,C,Éxito,Movimiento sospechoso detectado
+ANBU-2154,2025-02-01 14:32:00,Sakura,Amegakure,3480.0,B,Fallo,Vigilancia de puesto avanzado
+ANBU-2155,2025-02-03 00:56:00,Sakura,Iwa,5664.86,B,En curso,Enemigo a la vista
+ANBU-2156,2025-02-05 16:44:00,Naruto,Amegakure,2503.7,B,En curso,Movimiento sospechoso detectado
+ANBU-2157,2025-02-02 08:48:00,Shikamaru,Konoha,6488.36,A,Sospechoso,Sustitución de guardias
+ANBU-2158,2025-02-02 22:15:00,Kakashi,Amegakure,2147.86,B,Fallo,Movimiento sospechoso detectado
+ANBU-2159,2025-02-06 09:12:00,Sakura,Kiri,7414.79,S,Fallo,Movimiento sospechoso detectado
+ANBU-2160,2025-02-04 17:16:00,Kankuro,Suna,3133.87,D,Fallo,Escolta de persona VIP
+ANBU-2161,2025-02-04 00:37:00,Gaara,Konoha,7903.54,C,Fallo,Enemigo a la vista
+ANBU-2162,2025-02-01 05:30:00,Temari, Lluvia,2118.73,D,Éxito,Enemigo a la vista
+ANBU-2163,2025-02-03 08:45:00,Kakashi,Kumo,4164.62,S,En curso,Posible espía detectado
+ANBU-2164,2025-02-06 08:05:00,Kankuro, Konoha,1624.26,C,Éxito,Enemigo a la vista
+ANBU-2165,2025-02-01 05:31:00,Choji,Iwa,4716.77,A,Éxito,Enemigo a la vista
+ANBU-2166,2025-02-02 09:33:00,Choji,Kiri,851.52,D,Fallo,Escolta de persona VIP
+ANBU-2167,2025-02-02 03:36:00,Ino,Kiri,6573.76,B,En curso,Movimiento sospechoso detectado
+ANBU-2168,2025-02-02 06:12:00,Kakashi,Amegakure,7326.14,D,Fallo,Escolta de persona VIP
+ANBU-2169,2025-02-05 17:58:00,Ino,Kumo,4011.91,B,En curso,Patrulla rutinaria
+ANBU-2170,2025-02-03 00:17:00,Kakashi,KONOHA ,5925.38,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2171,2025-02-04 23:56:00,,Kiri,1189.71,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-2172,2025-02-05 05:53:00,Sakura,Iwa,4401.42,A,Fallo,Movimiento sospechoso detectado
+ANBU-2173,2025-02-06 06:52:00,Choji,Suna,2245.42,A,En curso,Enemigo a la vista
+ANBU-2174,2025-02-02 18:11:00,Sakura,Konoha,1638.55,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-2175,2025-02-05 15:32:00,Choji,Konoha,6844.88,S,Sospechoso,Patrulla rutinaria
+ANBU-2176,2025-02-05 13:29:00,Gaara,Kumo,2645.39,C,Fallo,Misión de reconocimiento en fronteras
+ANBU-2177,2025-02-01 20:58:00,Kankuro, suna,6341.18,C,En curso,Enemigo a la vista
+ANBU-2178,2025-02-05 23:00:00,Naruto,Iwa,2057.9,C,Fallo,Vigilancia de puesto avanzado
+ANBU-2179,2025-02-03 20:53:00,Gaara,Amegakure,3621.99,C,En curso,Patrulla rutinaria
+ANBU-2180,2025-02-05 06:23:00,Kankuro,Konoha,2426.34,C,Fallo,Sustitución de guardias
+ANBU-2181,2025-02-01 16:31:00,Shikamaru,Konoha,7300.84,S,Éxito,Posible espía detectado
+ANBU-2182,2025-02-01 02:56:00,Kakashi,Iwa,4484.11,D,Sospechoso,Escolta de persona VIP
+ANBU-2183,2025-02-05 20:25:00,Ino,Suna,1871.15,D,En curso,Patrulla rutinaria
+ANBU-2184,2025-02-02 20:34:00,Gaara,Kiri,4891.87,C,Fallo,Patrulla rutinaria
+ANBU-2185,2025-02-01 20:40:00,Kankuro,Amegakure,7693.34,S,Fallo,Vigilancia de puesto avanzado
+ANBU-2186,2025-02-05 20:51:00,Shikamaru,Suna,0.0,S,En curso,Escolta de persona VIP
+ANBU-2187,2025-02-04 04:42:00,Shikamaru,Kiri,7135.56,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-2188,2025-02-01 12:12:00,Temari,Suna,6554.0,S,Éxito,Recuperación de pergamino secreto
+ANBU-2189,2025-02-05 00:32:00,Choji,Kiri,2562.95,A,Éxito,Posible espía detectado
+ANBU-2190,2025-02-06 04:53:00,Naruto,Iwa,5023.56,C,Fallo,Posible espía detectado
+ANBU-2191,2025-02-02 03:52:00,Kankuro,konoha,5373.71,C,Fallo,Posible espía detectado
+ANBU-2192,2025-02-03 08:56:00,Sasuke,Kiri,5317.65,S,Éxito,Escolta de persona VIP
+ANBU-2193,2025-02-04 15:22:00,Shikamaru,Amegakure,3646.03,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-2194,2025-02-01 08:52:00,Kankuro,Iwa,1292.74,C,Fallo,Movimiento sospechoso detectado
+ANBU-2195,2025-02-04 11:20:00,Kankuro,Iwa,7448.09,C,Sospechoso,Sustitución de guardias
+ANBU-2196,2025-02-01 19:26:00,,Kiri,5425.02,D,En curso,Misión de reconocimiento en fronteras
+ANBU-2197,2025-02-06 20:54:00,Choji,Kumo,5121.88,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2198,2025-02-01 03:30:00,Sakura,Konoha,5176.01,C,En curso,Misión de reconocimiento en fronteras
+ANBU-2199,2025-02-04 16:15:00,Naruto,Suna,6020.4,D,Sospechoso,Escolta de persona VIP
+ANBU-2200,2025-02-04 00:01:00,Shikamaru,Kumo,4492.69,D,Fallo,Escolta de persona VIP
+ANBU-2201,2025-02-06 16:25:00,Sasuke, Lluvia,6494.72,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-2202,2025-02-03 13:55:00,Sasuke,Kumo,1639.54,B,Sospechoso,Sustitución de guardias
+ANBU-2203,2025-02-04 04:57:00,Sakura,Iwa,3020.22,S,En curso,Misión de reconocimiento en fronteras
+ANBU-2204,2025-02-04 15:36:00,Temari,Kiri,7143.87,B,En curso,Enemigo a la vista
+ANBU-2205,2025-02-01 04:55:00,Sakura,Suna,5736.28,S,Sospechoso,Patrulla rutinaria
+ANBU-2206,2025-02-06 02:25:00,Temari,Suna,7008.15,C,En curso,Sustitución de guardias
+ANBU-2207,2025-02-03 13:45:00,Sasuke,Kumo,5609.97,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-2208,2025-02-01 17:02:00,Kankuro,Suna,5026.18,S,Fallo,Enemigo a la vista
+ANBU-2209,2025-02-04 00:16:00,Sasuke,Iwa,6557.95,B,Sospechoso,Escolta de persona VIP
+ANBU-2210,2025-02-01 18:14:00,Naruto,Kiri,6755.57,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2211,2025-02-04 17:52:00,Sakura,Konoha_,2726.46,A,En curso,Enemigo a la vista
+ANBU-2212,2025-02-03 07:23:00,Temari,Amegakure,4369.69,A,En curso,Recuperación de pergamino secreto
+ANBU-2213,2025-02-04 07:55:00,Sakura,Konoha,1666.49,B,En curso,Recuperación de pergamino secreto
+ANBU-2214,2025-02-06 06:49:00,Kankuro,Amegakure,2592.73,D,Fallo,Recuperación de pergamino secreto
+ANBU-2215,2025-02-03 07:44:00,Ino,Suna,2074.14,B,En curso,Misión de reconocimiento en fronteras
+ANBU-2216,2025-02-04 10:12:00,Choji,Suna,758.82,D,Fallo,Vigilancia de puesto avanzado
+ANBU-2217,2025-02-05 07:21:00,Kakashi,Iwa,6279.76,B,Sospechoso,Enemigo a la vista
+ANBU-2218,2025-02-01 08:58:00,Temari,Konoha_,2267.32,C,En curso,Sustitución de guardias
+ANBU-2219,2025-02-01 17:03:00,Sasuke,Kiri,557.25,D,En curso,Movimiento sospechoso detectado
+ANBU-2220,2025-02-02 22:33:00,Naruto,Kiri,999999.0,A,Sospechoso,Sustitución de guardias
+ANBU-2221,2025-02-05 23:32:00,Kakashi,Amegakure,7983.0,S,Éxito,Infiltrado de la Lluvia detectado
+ANBU-2222,2025-02-05 17:42:00,Temari,Kiri,3041.56,B,En curso,Vigilancia de puesto avanzado
+ANBU-2223,2025-02-02 03:54:00,Choji,Suna ,1041.34,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-2224,2025-02-04 16:26:00,Temari,Kiri,5126.04,B,Éxito,Sustitución de guardias
+ANBU-2225,2025-02-02 14:34:00,Kakashi, suna,3251.41,S,Éxito,Misión de reconocimiento en fronteras
+ANBU-2226,2025-02-04 01:03:00,Sasuke,Konoha,6520.41,C,En curso,Patrulla rutinaria
+ANBU-2227,2025-02-05 00:00:00,Naruto,Kiri,4792.88,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-2228,2025-02-01 22:34:00,Naruto, suna,4917.76,A,Sospechoso,Posible espía detectado
+ANBU-2229,2025-02-04 16:23:00,Shikamaru,Suna,6712.39,A,Fallo,Patrulla rutinaria
+ANBU-2230,2025-02-03 10:09:00,Sakura,Iwa,1382.86,S,Éxito,Recuperación de pergamino secreto
+ANBU-2231,2025-02-02 09:13:00,Ino,Suna,7719.63,B,Fallo,Escolta de persona VIP
+ANBU-2232,2025-02-05 06:03:00,Naruto,Amegakure,7899.15,A,Fallo,Movimiento sospechoso detectado
+ANBU-2233,2025-02-05 01:45:00,Temari,Konoha,7346.73,D,En curso,Movimiento sospechoso detectado
+ANBU-2234,2025-02-04 11:45:00,Choji,Iwa,5442.83,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2235,2025-02-03 23:18:00,Sakura, Konoha,3301.59,S,Fallo,Vigilancia de puesto avanzado
+ANBU-2236,2025-02-06 09:02:00,Temari,Konoha,6960.32,S,Fallo,Sustitución de guardias
+ANBU-2237,2025-02-05 21:26:00,Naruto, suna,5021.93,C,Fallo,Misión de reconocimiento en fronteras
+ANBU-2238,2025-02-05 06:48:00,Sakura,Kumo,1906.67,B,Éxito,Movimiento sospechoso detectado
+ANBU-2239,2025-02-03 06:57:00,Temari,Iwa,4917.38,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-2240,2025-02-06 19:07:00,Sasuke,Kiri,5274.07,A,Fallo,Vigilancia de puesto avanzado
+ANBU-2241,2025-02-06 11:24:00,Naruto,Kumo,5703.56,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-2242,2025-02-03 15:41:00,Ino,Suna,4367.48,A,En curso,Posible espía detectado
+ANBU-2243,2025-02-03 18:36:00,Choji,amegakure,2910.42,B,Sospechoso,Sustitución de guardias
+ANBU-2244,2025-02-02 15:37:00,Kankuro,Konoha,4484.15,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-2245,2025-02-06 00:16:00,Kakashi,Konoha_,,A,En curso,Posible espía detectado
+ANBU-2246,2025-02-01 06:45:00,Ino,Amegakure,2954.12,A,Sospechoso,Patrulla rutinaria
+ANBU-2247,2025-02-02 13:22:00,Temari,Kiri,0.0,B,En curso,Sustitución de guardias
+ANBU-2248,2025-02-04 00:57:00,Sasuke, suna,5565.23,D,Fallo,Movimiento sospechoso detectado
+ANBU-2249,2025-02-02 10:00:00,Kankuro,Amegakure,5990.13,D,En curso,Sustitución de guardias
+ANBU-2250,2025-02-06 01:34:00,Temari,Kiri,5263.03,C,Fallo,Enemigo a la vista
+ANBU-2251,2025-02-02 19:55:00,Naruto,Kumo,3295.61,D,En curso,Escolta de persona VIP
+ANBU-2252,2025-02-04 08:22:00,Gaara,Amegakure,5962.83,B,Éxito,Movimiento sospechoso detectado
+ANBU-2253,2025-02-02 04:11:00,Kakashi,Kiri,7120.66,C,Sospechoso,Posible espía detectado
+ANBU-2254,2025-02-04 02:37:00,Temari, suna,7756.17,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-2255,2025-02-02 20:19:00,Ino,Kumo,4106.71,A,En curso,Patrulla rutinaria
+ANBU-2256,2025-02-01 19:25:00,Shikamaru, Lluvia,4556.54,S,Fallo,Enemigo a la vista
+ANBU-2257,2025-02-05 11:00:00,Ino,Kiri,2689.0,B,Sospechoso,Posible espía detectado
+ANBU-2258,2025-02-02 04:42:00,Shikamaru,konoha,4501.3,S,En curso,Misión de reconocimiento en fronteras
+ANBU-2259,2025-02-05 15:04:00,Sakura,Konoha,7708.87,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2260,2025-02-06 07:58:00,Temari,Suna,1105.09,C,En curso,Escolta de persona VIP
+ANBU-2261,2025-02-02 11:04:00,Sasuke,Kumo,1706.22,B,Fallo,Escolta de persona VIP
+ANBU-2262,2025-02-06 01:36:00,Temari,Kumo,6822.2,C,Sospechoso,Patrulla rutinaria
+ANBU-2263,2025-02-02 20:57:00,Temari,Amegakure,7928.67,C,En curso,Sustitución de guardias
+ANBU-2264,2025-02-03 23:14:00,Sasuke,Suna,3426.09,S,Sospechoso,Sustitución de guardias
+ANBU-2265,2025-02-02 02:07:00,Ino,Iwa,5421.67,C,Éxito,Patrulla rutinaria
+ANBU-2266,2025-02-02 03:14:00,Temari,Kumo,875.04,A,Sospechoso,Patrulla rutinaria
+ANBU-2267,2025-02-01 00:58:00,Sakura,Konoha,7110.9,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2268,2025-02-03 10:04:00,Sasuke,Kumo,,S,Sospechoso,Posible espía detectado
+ANBU-2269,2025-02-02 12:19:00,Sakura,Amegakure,3428.57,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2270,2025-02-04 04:24:00,Sasuke,Kumo,2074.98,C,Fallo,Recuperación de pergamino secreto
+ANBU-2271,2025-02-04 01:15:00,Choji,Kumo,4870.35,S,Fallo,Enemigo a la vista
+ANBU-2272,2025-02-02 21:34:00,Kankuro,Kiri,2698.81,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2273,2025-02-06 03:52:00,Choji,Kumo,7795.31,A,Sospechoso,Sustitución de guardias
+ANBU-2274,2025-02-02 00:21:00,Temari,Konoha,3322.17,C,Éxito,Escolta de persona VIP
+ANBU-2275,2025-02-05 07:26:00,Kankuro,Konoha,6483.27,A,En curso,Enemigo a la vista
+ANBU-2276,2025-02-01 04:02:00,Shikamaru, Lluvia,4023.25,D,En curso,Movimiento sospechoso detectado
+ANBU-2277,2025-02-05 08:27:00,,Kiri,5805.73,C,Éxito,Sustitución de guardias
+ANBU-2278,2025-02-06 01:20:00,Kankuro,Konoha,5345.98,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2279,2025-02-02 05:13:00,Ino,Suna,5669.19,C,Éxito,Sustitución de guardias
+ANBU-2280,2025-02-04 09:36:00,Gaara, suna,5870.43,D,Éxito,Movimiento sospechoso detectado
+ANBU-2281,2025-02-05 08:47:00,Choji,Kumo,3008.84,D,Éxito,Escolta de persona VIP
+ANBU-2282,2025-02-05 18:59:00,Sasuke,konoha,3687.5,D,En curso,Escolta de persona VIP
+ANBU-2283,2025-02-03 01:30:00,Kakashi,Suna,4997.46,S,Sospechoso,Escolta de persona VIP
+ANBU-2284,2025-02-04 12:50:00,Sakura,Suna ,1571.53,B,Fallo,Patrulla rutinaria
+ANBU-2285,2025-02-02 05:59:00,Temari,Kiri,,A,En curso,Escolta de persona VIP
+ANBU-2286,2025-02-02 04:24:00,Ino,Kumo,7421.59,S,Fallo,Enemigo a la vista
+ANBU-2287,2025-02-06 23:05:00,Choji,Kiri,6118.18,B,Fallo,Escolta de persona VIP
+ANBU-2288,2025-02-05 19:43:00,Temari,Suna,0.0,A,Éxito,Sustitución de guardias
+ANBU-2289,2025-02-02 21:01:00,Shikamaru,Konoha,670.32,A,Fallo,Patrulla rutinaria
+ANBU-2290,2025-02-03 09:27:00,Naruto,konoha,5121.29,C,Éxito,Enemigo a la vista
+ANBU-2291,2025-02-01 21:07:00,Temari,Amegakure,6988.16,A,En curso,Sustitución de guardias
+ANBU-2292,2025-02-06 23:42:00,Sasuke,Kiri,7847.02,A,Fallo,Misión de reconocimiento en fronteras
+ANBU-2293,2025-02-04 11:52:00,Naruto,Amegakure,6901.0,D,Fallo,Movimiento sospechoso detectado
+ANBU-2294,2025-02-05 13:56:00,Choji,Iwa,2781.11,B,Sospechoso,Escolta de persona VIP
+ANBU-2295,2025-02-01 20:48:00,Naruto,Amegakure,2987.69,B,En curso,Enemigo a la vista
+ANBU-2296,2025-02-03 21:07:00,Gaara,Konoha,7631.26,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-2297,2025-02-01 09:24:00,Choji,amegakure,5608.78,S,Fallo,Recuperación de pergamino secreto
+ANBU-2298,2025-02-01 08:21:00,Choji,amegakure,7851.32,S,Fallo,Movimiento sospechoso detectado
+ANBU-2299,2025-02-04 04:44:00,Naruto,Iwa,3300.54,C,Éxito,Vigilancia de puesto avanzado
+ANBU-2300,2025-02-01 07:10:00,Ino,Amegakure,7215.27,S,Sospechoso,Sustitución de guardias
+ANBU-2301,2025-02-01 17:37:00,Naruto,Amegakure,7069.02,D,En curso,Enemigo a la vista
+ANBU-2302,2025-02-05 17:12:00,Naruto,Iwa,4248.54,S,Éxito,Movimiento sospechoso detectado
+ANBU-2303,2025-02-06 11:36:00,Gaara,amegakure,3325.28,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-2304,2025-02-04 16:45:00,Temari,Konoha,7031.93,S,Éxito,Enemigo a la vista
+ANBU-2305,2025-02-03 08:50:00,Kankuro,Iwa,2047.33,S,Fallo,Vigilancia de puesto avanzado
+ANBU-2306,2025-02-03 07:14:00,Naruto,Konoha,1140.32,D,Fallo,Vigilancia de puesto avanzado
+ANBU-2307,2025-02-03 11:55:00,Sakura,Amegakure,7267.16,A,En curso,Enemigo a la vista
+ANBU-2308,2025-02-03 15:09:00,Ino,Amegakure,954.86,A,En curso,Vigilancia de puesto avanzado
+ANBU-2309,2025-02-05 00:36:00,Sasuke,Kiri,3519.94,A,En curso,Posible espía detectado
+ANBU-2310,2025-02-02 12:41:00,Choji,Iwa,888.19,A,Éxito,Movimiento sospechoso detectado
+ANBU-2311,2025-02-04 13:47:00,Kankuro,Kumo,3498.44,D,Sospechoso,Patrulla rutinaria
+ANBU-2312,2025-02-06 17:03:00,Shikamaru,Suna,7359.21,S,En curso,Posible espía detectado
+ANBU-2313,2025-02-02 23:54:00,Naruto,Kumo,,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2314,2025-02-01 01:36:00,Gaara,Suna,2216.87,D,Fallo,Posible espía detectado
+ANBU-2315,2025-02-02 07:10:00,Kakashi,Suna,6456.06,B,Fallo,Sustitución de guardias
+ANBU-2316,2025-02-05 04:16:00,Kakashi,Iwa,5465.69,B,Fallo,Vigilancia de puesto avanzado
+ANBU-2317,2025-02-06 01:47:00,Gaara,Kiri,1135.0,A,Éxito,Enemigo a la vista
+ANBU-2318,2025-02-03 06:42:00,Sasuke,Kumo,2455.87,B,Sospechoso,Patrulla rutinaria
+ANBU-2319,2025-02-03 11:03:00,Gaara,Iwa,5916.04,A,Fallo,Escolta de persona VIP
+ANBU-2320,2025-02-06 12:26:00,Kakashi, suna,4534.56,C,Éxito,Movimiento sospechoso detectado
+ANBU-2321,2025-02-05 13:34:00,Naruto,Amegakure,6242.0,S,Éxito,Infiltrado de la Lluvia detectado
+ANBU-2322,2025-02-01 09:20:00,Sasuke,Suna,6128.09,S,Fallo,Posible espía detectado
+ANBU-2323,2025-02-02 12:13:00,Kakashi,Iwa,4527.36,B,En curso,Posible espía detectado
+ANBU-2324,2025-02-06 13:14:00,Temari, Konoha,1221.01,S,Éxito,Recuperación de pergamino secreto
+ANBU-2325,2025-02-04 21:02:00,Naruto,Kumo,3501.13,B,En curso,Enemigo a la vista
+ANBU-2326,2025-02-02 14:10:00,Gaara,Kiri,,D,Éxito,Patrulla rutinaria
+ANBU-2327,2025-02-04 04:00:00,Sasuke,Kumo,602.37,C,En curso,Escolta de persona VIP
+ANBU-2328,2025-02-05 02:02:00,Kankuro,Kumo,3081.31,S,Sospechoso,Escolta de persona VIP
+ANBU-2329,2025-02-03 09:11:00,Sasuke,Kiri,566.88,D,Fallo,Sustitución de guardias
+ANBU-2330,2025-02-04 15:01:00,Gaara,Amegakure,6237.03,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-2331,2025-02-06 20:42:00,Ino,Iwa,4857.92,C,Sospechoso,Sustitución de guardias
+ANBU-2332,2025-02-02 23:07:00,Ino,Kumo,3611.73,A,En curso,Movimiento sospechoso detectado
+ANBU-2333,2025-02-01 06:01:00,Gaara,Kiri,7674.5,S,Sospechoso,Escolta de persona VIP
+ANBU-2334,2025-02-05 17:28:00,Kakashi,Iwa,7007.5,S,En curso,Patrulla rutinaria
+ANBU-2335,2025-02-04 00:09:00,Choji,Kiri,6470.4,B,Éxito,Vigilancia de puesto avanzado
+ANBU-2336,2025-02-01 00:39:00,Naruto,Amegakure,4140.57,S,Sospechoso,Sustitución de guardias
+ANBU-2337,2025-02-03 17:01:00,Kakashi,Kumo,4932.71,D,Fallo,Patrulla rutinaria
+ANBU-2338,2025-02-06 13:27:00,Kankuro,Konoha,4385.23,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-2339,2025-02-06 13:56:00,Kakashi,Iwa,5660.91,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-2340,2025-02-01 00:32:00,Temari,Kumo,3103.73,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-2341,2025-02-05 22:24:00,Ino,Suna,3286.37,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-2342,2025-02-06 02:22:00,Kakashi,Kumo,524.17,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2343,2025-02-04 21:13:00,Naruto,Suna,5777.96,D,Sospechoso,Movimiento sospechoso detectado
+ANBU-2344,2025-02-06 12:18:00,Ino,Amegakure,855.77,A,Éxito,Sustitución de guardias
+ANBU-2345,2025-02-06 02:02:00,Gaara,Kumo,1145.01,B,En curso,Recuperación de pergamino secreto
+ANBU-2346,2025-02-03 14:24:00,Kakashi,Konoha,4460.93,B,En curso,Movimiento sospechoso detectado
+ANBU-2347,2025-02-04 17:34:00,Gaara,Kumo,1002.33,B,En curso,Vigilancia de puesto avanzado
+ANBU-2348,2025-02-05 00:53:00,,Kiri,5524.76,D,Éxito,Patrulla rutinaria
+ANBU-2349,2025-02-03 21:18:00,Sasuke,Iwa,6706.71,S,En curso,Posible espía detectado
+ANBU-2350,2025-02-01 02:58:00,Gaara,Kumo,3365.91,S,Sospechoso,Enemigo a la vista
+ANBU-2351,2025-02-02 17:31:00,Choji,Amegakure,2502.87,B,En curso,Vigilancia de puesto avanzado
+ANBU-2352,2025-02-06 15:13:00,Naruto,Kumo,4920.68,D,Éxito,Enemigo a la vista
+ANBU-2353,2025-02-05 18:11:00,Choji,Iwa,567.13,A,En curso,Movimiento sospechoso detectado
+ANBU-2354,2025-02-06 19:44:00,Kankuro,Konoha,5085.7,B,Fallo,Recuperación de pergamino secreto
+ANBU-2355,2025-02-05 08:57:00,Shikamaru,Konoha,4589.57,D,En curso,Misión de reconocimiento en fronteras
+ANBU-2356,2025-02-04 01:33:00,Sakura,Amegakure,4066.22,S,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2357,2025-02-03 04:31:00,Temari,Suna,3411.19,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2358,2025-02-04 20:01:00,,Kiri,5668.6,D,Fallo,Sustitución de guardias
+ANBU-2359,2025-02-02 07:35:00,Kankuro,Suna,4003.28,C,En curso,Enemigo a la vista
+ANBU-2360,2025-02-06 09:07:00,Kankuro,Suna,6711.15,C,Sospechoso,Sustitución de guardias
+ANBU-2361,2025-02-04 08:14:00,Ino,Kumo,4949.49,D,Sospechoso,Enemigo a la vista
+ANBU-2362,2025-02-06 08:31:00,Naruto,Konoha,3349.65,S,Fallo,Sustitución de guardias
+ANBU-2363,2025-02-04 16:41:00,Gaara,Amegakure,3665.21,A,Éxito,Patrulla rutinaria
+ANBU-2364,2025-02-04 18:28:00,Sasuke,Kiri,5935.09,S,Éxito,Misión de reconocimiento en fronteras
+ANBU-2365,2025-02-02 00:03:00,Naruto,Suna,2284.61,B,Sospechoso,Enemigo a la vista
+ANBU-2366,2025-02-01 20:39:00,Kankuro,Amegakure,7503.0,S,En curso,Infiltrado de la Lluvia detectado
+ANBU-2367,2025-02-02 18:06:00,Sasuke,Iwa,7170.03,D,En curso,Recuperación de pergamino secreto
+ANBU-2368,2025-02-06 07:01:00,Kankuro,Kumo,3414.82,C,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2369,2025-02-02 18:32:00,Shikamaru,Amegakure,6723.42,D,Sospechoso,Posible espía detectado
+ANBU-2370,2025-02-04 09:35:00,Naruto,Amegakure,7350.34,D,Éxito,Recuperación de pergamino secreto
+ANBU-2371,2025-02-06 13:25:00,Sakura,Suna,5760.35,A,Fallo,Vigilancia de puesto avanzado
+ANBU-2372,2025-02-04 10:37:00,Shikamaru,Konoha,1822.46,C,Fallo,Vigilancia de puesto avanzado
+ANBU-2373,2025-02-05 16:02:00,Naruto,amegakure,5473.43,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-2374,2025-02-02 14:15:00,Choji,Konoha,4863.48,A,Fallo,Vigilancia de puesto avanzado
+ANBU-2375,2025-02-02 21:27:00,Gaara,KONOHA ,3044.48,D,Éxito,Enemigo a la vista
+ANBU-2376,2025-02-03 11:34:00,Temari,Kumo,588.96,C,Sospechoso,Recuperación de pergamino secreto
+ANBU-2377,2025-02-02 05:05:00,Kankuro,KONOHA ,6269.42,C,Sospechoso,Sustitución de guardias
+ANBU-2378,2025-02-02 18:32:00,Ino,Amegakure,1103.09,B,Sospechoso,Sustitución de guardias
+ANBU-2379,2025-02-03 20:04:00,,Kiri,3559.95,S,Éxito,Sustitución de guardias
+ANBU-2380,2025-02-05 12:05:00,Sasuke,konoha,,D,En curso,Escolta de persona VIP
+ANBU-2381,2025-02-05 17:31:00,Temari,Kumo,5570.13,D,Éxito,Escolta de persona VIP
+ANBU-2382,2025-02-05 14:57:00,Shikamaru,KONOHA ,4204.59,B,Éxito,Posible espía detectado
+ANBU-2383,2025-02-03 00:08:00,Ino, Lluvia,2017.3,S,Éxito,Patrulla rutinaria
+ANBU-2384,2025-02-03 15:12:00,Sasuke,Kumo,7649.83,C,Sospechoso,Enemigo a la vista
+ANBU-2385,2025-02-02 00:27:00,Gaara,Iwa,7282.78,C,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2386,2025-02-04 17:12:00,Sakura,Amegakure,6398.83,D,Sospechoso,Escolta de persona VIP
+ANBU-2387,2025-02-05 02:02:00,Choji,Kumo,3508.68,C,Éxito,Movimiento sospechoso detectado
+ANBU-2388,2025-02-04 15:16:00,Shikamaru,Iwa,3275.07,D,Éxito,Recuperación de pergamino secreto
+ANBU-2389,2025-02-05 16:41:00,Shikamaru,Kumo,672.51,D,Sospechoso,Posible espía detectado
+ANBU-2390,2025-02-03 21:54:00,Temari, Konoha,2819.98,A,Éxito,Movimiento sospechoso detectado
+ANBU-2391,2025-02-01 23:45:00,Naruto,Konoha_,795.68,A,Éxito,Escolta de persona VIP
+ANBU-2392,2025-02-03 13:49:00,Shikamaru,Kumo,3738.48,B,Éxito,Misión de reconocimiento en fronteras
+ANBU-2393,2025-02-06 18:44:00,Shikamaru,Amegakure,6610.65,B,Sospechoso,Recuperación de pergamino secreto
+ANBU-2394,2025-02-01 09:29:00,Shikamaru,Iwa,6769.53,D,En curso,Recuperación de pergamino secreto
+ANBU-2395,2025-02-05 10:32:00,Ino,Kumo,5760.21,D,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2396,2025-02-06 02:07:00,Choji,SUNA,562.09,D,En curso,Movimiento sospechoso detectado
+ANBU-2397,2025-02-05 06:37:00,Gaara,Konoha,2195.11,S,Éxito,Enemigo a la vista
+ANBU-2398,2025-02-04 01:18:00,Sasuke,Konoha,2606.1,B,Éxito,Movimiento sospechoso detectado
+ANBU-2399,2025-02-03 09:48:00,Temari,Kiri,,S,Éxito,Movimiento sospechoso detectado
+ANBU-2400,2025-02-03 09:49:00,Temari,Kumo,5131.4,C,En curso,Misión de reconocimiento en fronteras
+ANBU-2401,2025-02-03 11:30:00,Shikamaru,Amegakure,3051.31,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2402,2025-02-01 08:58:00,Choji,SUNA,6760.3,B,Fallo,Posible espía detectado
+ANBU-2403,2025-02-06 15:29:00,,Kiri,7623.48,D,Éxito,Recuperación de pergamino secreto
+ANBU-2404,2025-02-02 22:26:00,Gaara,Amegakure,6833.67,S,En curso,Recuperación de pergamino secreto
+ANBU-2405,2025-02-04 17:02:00,Ino,Kiri,,D,Éxito,Recuperación de pergamino secreto
+ANBU-2406,2025-02-06 02:29:00,Shikamaru,Suna,1853.24,C,Sospechoso,Posible espía detectado
+ANBU-2407,2025-02-03 13:41:00,Kakashi,Kiri,1444.45,C,En curso,Escolta de persona VIP
+ANBU-2408,2025-02-02 07:59:00,Kakashi,konoha,5671.81,S,Éxito,Misión de reconocimiento en fronteras
+ANBU-2409,2025-02-06 22:18:00,Sasuke,Amegakure,,D,Sospechoso,Enemigo a la vista
+ANBU-2410,2025-02-05 11:49:00,Naruto,Kumo,,S,En curso,Enemigo a la vista
+ANBU-2411,2025-02-05 01:05:00,Sasuke,Iwa,6035.82,C,En curso,Vigilancia de puesto avanzado
+ANBU-2412,2025-02-01 03:41:00,Sasuke,Konoha,2782.26,D,En curso,Enemigo a la vista
+ANBU-2413,2025-02-01 08:18:00,Kakashi, Konoha,2731.15,D,Sospechoso,Sustitución de guardias
+ANBU-2414,2025-02-03 11:49:00,Sasuke,Kumo,767.42,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2415,2025-02-02 17:35:00,Shikamaru,Suna ,7554.25,A,Éxito,Vigilancia de puesto avanzado
+ANBU-2416,2025-02-02 06:46:00,Choji,Konoha,7950.41,A,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2417,2025-02-06 13:58:00,Kakashi,Iwa,,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-2418,2025-02-04 20:12:00,Sasuke,Iwa,935.63,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2419,2025-02-03 07:42:00,Temari,KONOHA ,5918.16,D,Fallo,Posible espía detectado
+ANBU-2420,2025-02-01 17:27:00,Ino,Amegakure,5250.61,C,Éxito,Patrulla rutinaria
+ANBU-2421,2025-02-04 23:50:00,Naruto,Suna,2476.57,C,En curso,Recuperación de pergamino secreto
+ANBU-2422,2025-02-04 23:04:00,Choji,Suna,2878.69,C,Éxito,Recuperación de pergamino secreto
+ANBU-2423,2025-02-04 01:55:00,Gaara,Suna,685.97,B,En curso,Vigilancia de puesto avanzado
+ANBU-2424,2025-02-03 16:58:00,Choji,Iwa,2193.77,A,Éxito,Enemigo a la vista
+ANBU-2425,2025-02-01 07:39:00,Kankuro,Iwa,569.1,B,Éxito,Vigilancia de puesto avanzado
+ANBU-2426,2025-02-04 02:42:00,Naruto,Kiri,7557.56,A,Sospechoso,Sustitución de guardias
+ANBU-2427,2025-02-04 17:32:00,Temari,Kumo,,D,En curso,Misión de reconocimiento en fronteras
+ANBU-2428,2025-02-06 12:51:00,Naruto,SUNA,,A,En curso,Posible espía detectado
+ANBU-2429,2025-02-02 20:00:00,Shikamaru,Konoha,7717.85,C,En curso,Posible espía detectado
+ANBU-2430,2025-02-03 09:39:00,Shikamaru, suna,7790.93,C,Sospechoso,Movimiento sospechoso detectado
+ANBU-2431,2025-02-04 08:34:00,Sasuke,Suna,5623.19,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-2432,2025-02-01 22:37:00,Choji,Amegakure,1370.17,S,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2433,2025-02-01 19:13:00,Shikamaru,Kumo,3707.69,A,Éxito,Misión de reconocimiento en fronteras
+ANBU-2434,2025-02-06 20:26:00,Shikamaru,Iwa,4037.15,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2435,2025-02-03 12:08:00,Sakura,Amegakure,3550.1,A,Éxito,Recuperación de pergamino secreto
+ANBU-2436,2025-02-04 06:03:00,Shikamaru,Konoha,625.84,B,Sospechoso,Escolta de persona VIP
+ANBU-2437,2025-02-04 16:46:00,Kankuro, Konoha,5863.47,B,Fallo,Recuperación de pergamino secreto
+ANBU-2438,2025-02-05 10:51:00,Ino,Kumo,7156.5,A,Éxito,Movimiento sospechoso detectado
+ANBU-2439,2025-02-01 21:12:00,Naruto,Amegakure,5060.96,S,Fallo,Sustitución de guardias
+ANBU-2440,2025-02-01 05:23:00,Temari,Amegakure,1131.86,A,En curso,Enemigo a la vista
+ANBU-2441,2025-02-05 05:25:00,Kakashi,Kiri,999999.0,A,Sospechoso,Recuperación de pergamino secreto
+ANBU-2442,2025-02-03 19:18:00,Kankuro,Iwa,1471.27,C,En curso,Recuperación de pergamino secreto
+ANBU-2443,2025-02-04 08:23:00,Naruto,Suna,2344.07,C,Éxito,Enemigo a la vista
+ANBU-2444,2025-02-03 07:04:00,Temari,Kumo,5701.5,B,En curso,Misión de reconocimiento en fronteras
+ANBU-2445,2025-02-04 18:13:00,Naruto,Iwa,555.88,B,Fallo,Movimiento sospechoso detectado
+ANBU-2446,2025-02-01 23:05:00,Naruto,Kumo,4756.88,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-2447,2025-02-04 15:15:00,Gaara,Suna,1455.65,A,Éxito,Posible espía detectado
+ANBU-2448,2025-02-02 08:53:00,,Kiri,6165.35,D,Éxito,Posible espía detectado
+ANBU-2449,2025-02-03 18:58:00,Sakura,Suna,7202.98,S,Éxito,Sustitución de guardias
+ANBU-2450,2025-02-05 11:46:00,Choji,Iwa,659.67,C,Sospechoso,Escolta de persona VIP
+ANBU-2451,2025-02-02 23:34:00,Choji,Amegakure,7614.0,S,Fallo,Infiltrado de la Lluvia detectado
+ANBU-2452,2025-02-06 11:58:00,Shikamaru, Lluvia,4312.5,C,Éxito,Posible espía detectado
+ANBU-2453,2025-02-06 07:02:00,Kakashi,Konoha,1571.57,B,En curso,Posible espía detectado
+ANBU-2454,2025-02-03 11:25:00,Kakashi,Konoha,7834.71,S,Éxito,Recuperación de pergamino secreto
+ANBU-2455,2025-02-05 05:22:00,Gaara,Konoha,4011.06,S,Sospechoso,Patrulla rutinaria
+ANBU-2456,2025-02-04 04:36:00,Shikamaru,Kiri,599.54,S,Sospechoso,Enemigo a la vista
+ANBU-2457,2025-02-01 14:33:00,Temari,Amegakure,4343.1,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-2458,2025-02-04 16:02:00,Temari,Suna,5002.02,S,Fallo,Sustitución de guardias
+ANBU-2459,2025-02-01 02:50:00,Sakura,Kumo,3813.38,C,Fallo,Patrulla rutinaria
+ANBU-2460,2025-02-06 04:26:00,Naruto,Konoha,2156.68,D,Sospechoso,Sustitución de guardias
+ANBU-2461,2025-02-05 18:43:00,Kankuro, suna,1719.82,C,Éxito,Misión de reconocimiento en fronteras
+ANBU-2462,2025-02-05 00:37:00,Ino,Kiri,5205.86,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2463,2025-02-06 15:52:00,Temari,Kiri,6936.35,A,Sospechoso,Posible espía detectado
+ANBU-2464,2025-02-04 20:34:00,Sakura,Amegakure,5639.02,A,Fallo,Vigilancia de puesto avanzado
+ANBU-2465,2025-02-03 03:02:00,Choji,Konoha,3338.43,A,Sospechoso,Movimiento sospechoso detectado
+ANBU-2466,2025-02-03 10:00:00,Shikamaru,Konoha,1200.19,C,En curso,Sustitución de guardias
+ANBU-2467,2025-02-02 17:40:00,Naruto,Konoha,2000.09,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-2468,2025-02-05 18:31:00,Shikamaru,Suna,1640.11,A,Fallo,Recuperación de pergamino secreto
+ANBU-2469,2025-02-02 01:15:00,Temari,Iwa,4991.48,C,En curso,Vigilancia de puesto avanzado
+ANBU-2470,2025-02-03 19:00:00,Choji,Kumo,6197.75,A,En curso,Patrulla rutinaria
+ANBU-2471,2025-02-01 01:30:00,Ino,Kumo,6465.19,D,En curso,Sustitución de guardias
+ANBU-2472,2025-02-06 21:51:00,Kakashi,Iwa,3137.5,S,En curso,Posible espía detectado
+ANBU-2473,2025-02-06 06:22:00,Kankuro,Iwa,4874.0,S,Sospechoso,Patrulla rutinaria
+ANBU-2474,2025-02-01 07:18:00,Sakura,Kumo,1934.96,A,En curso,Movimiento sospechoso detectado
+ANBU-2475,2025-02-01 12:52:00,Ino,Iwa,615.54,B,Fallo,Enemigo a la vista
+ANBU-2476,2025-02-02 02:51:00,Naruto,Iwa,1359.35,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2477,2025-02-05 05:44:00,Kankuro,Kiri,1741.48,B,Fallo,Patrulla rutinaria
+ANBU-2478,2025-02-05 02:20:00,Sasuke,Iwa,7356.18,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2479,2025-02-05 01:07:00,Temari,Kumo,3262.88,B,Sospechoso,Sustitución de guardias
+ANBU-2480,2025-02-03 00:58:00,Sakura,Kumo,6751.01,S,Fallo,Patrulla rutinaria
+ANBU-2481,2025-02-03 06:04:00,Sasuke,Suna,2842.05,S,Sospechoso,Sustitución de guardias
+ANBU-2482,2025-02-05 07:58:00,Ino,Konoha,1688.05,D,En curso,Posible espía detectado
+ANBU-2483,2025-02-06 17:24:00,Naruto,Konoha,2602.95,C,Sospechoso,Patrulla rutinaria
+ANBU-2484,2025-02-02 06:32:00,Gaara,Kumo,7508.28,A,En curso,Movimiento sospechoso detectado
+ANBU-2485,2025-02-04 11:30:00,Sasuke,Suna ,1988.97,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-2486,2025-02-05 14:35:00,Choji,Amegakure,3970.55,A,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2487,2025-02-04 18:11:00,Sakura,Iwa,2597.15,C,Éxito,Posible espía detectado
+ANBU-2488,2025-02-01 11:04:00,,Kiri,2460.8,A,Éxito,Recuperación de pergamino secreto
+ANBU-2489,2025-02-02 21:21:00,Kakashi,Iwa,5507.26,C,Fallo,Escolta de persona VIP
+ANBU-2490,2025-02-06 21:25:00,Kankuro,Amegakure,1964.23,B,Fallo,Misión de reconocimiento en fronteras
+ANBU-2491,2025-02-01 13:11:00,Sasuke,Iwa,2655.48,A,Éxito,Escolta de persona VIP
+ANBU-2492,2025-02-05 16:09:00,Gaara,Suna ,5496.61,C,Sospechoso,Posible espía detectado
+ANBU-2493,2025-02-06 06:17:00,Choji,Iwa,4067.62,A,En curso,Misión de reconocimiento en fronteras
+ANBU-2494,2025-02-02 01:54:00,Shikamaru,Konoha,4911.78,B,En curso,Escolta de persona VIP
+ANBU-2495,2025-02-06 08:44:00,Ino,Suna,4846.8,D,Sospechoso,Enemigo a la vista
+ANBU-2496,2025-02-01 05:01:00,Sakura,Kumo,3261.14,D,En curso,Movimiento sospechoso detectado
+ANBU-2497,2025-02-06 03:34:00,Kakashi,Kumo,5836.87,S,En curso,Escolta de persona VIP
+ANBU-2498,2025-02-05 00:10:00,Naruto,Kumo,2791.26,C,Sospechoso,Escolta de persona VIP
+ANBU-2499,2025-02-05 06:33:00,Kakashi,Kumo,3475.19,C,Éxito,Escolta de persona VIP
+ANBU-1758,2025-02-04 16:56:00,Gaara,Konoha_,2680.75,C,En curso,Vigilancia de puesto avanzado
+ANBU-1465,2025-02-03 20:30:00,Shikamaru,Suna ,671.06,B,Éxito,Sustitución de guardias
+ANBU-1072,2025-02-02 18:53:00,Kankuro,Suna,7511.17,B,Éxito,Posible espía detectado
+ANBU-1923,2025-02-03 12:37:00,Sakura,Kiri,1055.69,S,Sospechoso,Movimiento sospechoso detectado
+ANBU-2442,2025-02-03 19:18:00,Kankuro,Iwa,1471.27,C,En curso,Recuperación de pergamino secreto
+ANBU-1421,2025-02-02 22:02:00,Gaara,Kumo,1370.09,S,Sospechoso,Recuperación de pergamino secreto
+ANBU-2013,2025-02-02 04:55:00,Temari,Iwa,4889.79,B,En curso,Escolta de persona VIP
+ANBU-1710,2025-02-06 16:44:00,Naruto,Kumo,6674.09,C,Sospechoso,Escolta de persona VIP
+ANBU-2310,2025-02-02 12:41:00,Choji,Iwa,888.19,A,Éxito,Movimiento sospechoso detectado
+ANBU-1840,2025-02-06 23:11:00,Ino,Iwa,6442.44,B,Sospechoso,Misión de reconocimiento en fronteras
+ANBU-1807,2025-02-02 15:38:00,Kankuro,Kumo,5550.12,B,En curso,Vigilancia de puesto avanzado
+ANBU-1258,2025-02-01 11:49:00,Choji,Konoha,1799.36,B,Sospechoso,Escolta de persona VIP
+ANBU-2219,2025-02-01 17:03:00,Sasuke,Kiri,557.25,D,En curso,Movimiento sospechoso detectado
+ANBU-1678,2025-02-05 12:22:00,Ino,Suna,2859.32,A,Fallo,Recuperación de pergamino secreto
+ANBU-2449,2025-02-03 18:58:00,Sakura,Suna,7202.98,S,Éxito,Sustitución de guardias
+ANBU-2337,2025-02-03 17:01:00,Kakashi,Kumo,4932.71,D,Fallo,Patrulla rutinaria
+ANBU-2211,2025-02-04 17:52:00,Sakura,Konoha_,2726.46,A,En curso,Enemigo a la vista
+ANBU-1000,2025-02-02 11:11:00,Gaara, suna,,S,Éxito,Vigilancia de puesto avanzado
+ANBU-1583,2025-02-05 15:30:00,Shikamaru,Kiri,6092.89,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1762,2025-02-02 07:00:00,Gaara,Iwa,5010.1,B,Sospechoso,Posible espía detectado
+ANBU-2237,2025-02-05 21:26:00,Naruto, suna,5021.93,C,Fallo,Misión de reconocimiento en fronteras
+ANBU-1535,2025-02-02 08:29:00,Kakashi,KONOHA ,4511.22,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-2276,2025-02-01 04:02:00,Shikamaru, Lluvia,4023.25,D,En curso,Movimiento sospechoso detectado
+ANBU-1257,2025-02-01 14:41:00,Gaara,Konoha,3094.07,B,Sospechoso,Movimiento sospechoso detectado
+ANBU-1936,2025-02-05 20:26:00,Sasuke,Suna,7279.57,D,Sospechoso,Recuperación de pergamino secreto
+ANBU-2251,2025-02-02 19:55:00,Naruto,Kumo,3295.61,D,En curso,Escolta de persona VIP
+ANBU-1478,2025-02-02 02:28:00,Kakashi,Iwa,4963.53,D,Éxito,Escolta de persona VIP
+ANBU-2299,2025-02-04 04:44:00,Naruto,Iwa,3300.54,C,Éxito,Vigilancia de puesto avanzado
+ANBU-1912,2025-02-06 11:15:00,Sasuke,Suna,4256.43,S,En curso,Misión de reconocimiento en fronteras
+ANBU-1580,2025-02-04 19:03:00,Gaara,Konoha,,S,En curso,Posible espía detectado
+ANBU-1472,2025-02-03 14:39:00,Shikamaru,Iwa,6612.21,D,Fallo,Misión de reconocimiento en fronteras
+ANBU-1536,2025-02-05 04:16:00,Gaara,KONOHA ,7739.93,D,En curso,Posible espía detectado
+ANBU-1728,2025-02-04 00:19:00,Kakashi,Suna,7580.38,D,Sospechoso,Posible espía detectado
+ANBU-1664,2025-02-01 05:18:00,Kakashi,Kumo,5569.53,D,Sospechoso,Vigilancia de puesto avanzado
+ANBU-2467,2025-02-02 17:40:00,Naruto,Konoha,2000.09,D,Éxito,Misión de reconocimiento en fronteras
+ANBU-1564,2025-02-04 16:46:00,Sakura,Iwa,4519.16,B,Fallo,Recuperación de pergamino secreto
+ANBU-2407,2025-02-03 13:41:00,Kakashi,Kiri,1444.45,C,En curso,Escolta de persona VIP
+ANBU-1310,2025-02-02 03:17:00,Kakashi,Suna ,797.79,S,En curso,Enemigo a la vista
+ANBU-2142,2025-02-06 07:59:00,Gaara,Iwa,3308.14,B,En curso,Misión de reconocimiento en fronteras
+ANBU-2437,2025-02-04 16:46:00,Kankuro, Konoha,5863.47,B,Fallo,Recuperación de pergamino secreto
+ANBU-2456,2025-02-04 04:36:00,Shikamaru,Kiri,599.54,S,Sospechoso,Enemigo a la vista
+ANBU-2084,2025-02-04 12:25:00,Naruto,Konoha,5174.27,B,En curso,Vigilancia de puesto avanzado
+ANBU-1028,2025-02-06 21:28:00,Kankuro,Konoha,4725.75,A,En curso,Enemigo a la vista
+ANBU-1313,2025-02-05 22:16:00,Gaara,Konoha,568.65,A,En curso,Vigilancia de puesto avanzado
+ANBU-2291,2025-02-01 21:07:00,Temari,Amegakure,6988.16,A,En curso,Sustitución de guardias
+ANBU-1957,2025-02-04 04:32:00,Temari,Kumo,7202.06,C,Fallo,Escolta de persona VIP
+ANBU-1138,2025-02-03 08:46:00,Kankuro,Kiri,2591.1,A,Éxito,Posible espía detectado
+ANBU-1061,2025-02-02 07:38:00,Temari,Suna,,C,Fallo,Posible espía detectado
+ANBU-2226,2025-02-04 01:03:00,Sasuke,Konoha,6520.41,C,En curso,Patrulla rutinaria
+ANBU-2498,2025-02-05 00:10:00,Naruto,Kumo,2791.26,C,Sospechoso,Escolta de persona VIP
