@@ -19,4 +19,11 @@ Automatización Mediante Eventos: Se elimina la intervención humana. El proceso
 
 Optimización de Recursos y Costos: Bajo el esquema de "pago por uso", solo se factura el tiempo exacto de ejecución (medido en milisegundos). Esto resulta mucho más eficiente que mantener infraestructura local o servidores encendidos en tiempos de inactividad.
 
+
 Abstracción de la Infraestructura: El desarrollador se desentiende de la configuración del sistema operativo, las actualizaciones de seguridad o la gestión de dependencias. Esto permite que el enfoque técnico se centre exclusivamente en la lógica del código y no en el mantenimiento del entorno.
+
+### Opcional
+#### Cambiamos el filtro
+![Foto2](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea8.1.2.png)
+#### Comprobamos el resultado 
+![Foto2](https://github.com/jairoG1/Ejercicios/blob/main/Fotos/Tarea8.1.3.png)
