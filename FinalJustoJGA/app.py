@@ -4,15 +4,13 @@ import numpy as np
 import plotly.graph_objects as go
 from scipy.spatial import distance
 from sklearn.preprocessing import MinMaxScaler
+import os
 
 st.set_page_config(page_title="Elite Scouting System", layout="wide")
 
 st.markdown("""
     <style>
-    /* Fondo principal y textos */
     .main { background-color: #1a120b; color: #e5d9b6; }
-    
-    /* Estilo de las metricas (KPIs) */
     div[data-testid="stMetric"] {
         background-color: #2c1e12;
         padding: 15px;
@@ -21,27 +19,26 @@ st.markdown("""
     }
     div[data-testid="stMetric"] label { color: #d4af37 !important; font-weight: bold; }
     div[data-testid="stMetric"] div[data-testid="stMetricValue"] { color: #ffffff; }
-
-    /* Barra lateral */
     section[data-testid="stSidebar"] { background-color: #2c1e12; }
     section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] p {
         color: #d4af37 !important;
     }
-
-    /* Tablas y Dataframes */
     .stDataFrame { border: 1px solid #d4af37; border-radius: 5px; }
-    
-    /* Titulos */
     h1, h2, h3 { color: #d4af37 !important; }
     </style>
     """, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
-        return pd.read_csv('players_data.csv')
+    base_path = os.path.dirname(__file__)
+    file_path = os.path.join(base_path, 'players_data.csv')
+    return pd.read_csv(file_path)
 
-
-df = load_data()
+try:
+    df = load_data()
+except Exception as e:
+    st.error(f"Error crítico: No se encontró el archivo. Detalle: {e}")
+    df = None
 
 if df is not None:
     st.sidebar.title("SISTEMA DE SCOUTING")
@@ -69,8 +66,10 @@ if df is not None:
 
     clones = get_clones(target_player, df_norm, df)
     p_info = df[df['Nombre'] == target_player].iloc[0]
+
     st.title("PANEL DE ANALISIS DE SCOUTING")
     st.markdown(f"Analisis detallado de {target_player} y busqueda de candidatos compatibles.")
+
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Unidad / Equipo", p_info['Equipo'])
     k2.metric("Edad", f"{p_info['Edad']} años")
@@ -101,6 +100,7 @@ if df is not None:
             margin=dict(t=30, b=30, l=30, r=30)
         )
         st.plotly_chart(fig_radar, use_container_width=True)
+
     with col_right:
         st.subheader("Posicionamiento Tactico")
         fig_map = go.Figure()
@@ -116,11 +116,14 @@ if df is not None:
             paper_bgcolor='#2c1e12', plot_bgcolor='#2c1e12', height=400, font_color="#d4af37"
         )
         st.plotly_chart(fig_map, use_container_width=True)
+
     st.subheader("Candidatos Identificados")
     display_df = df[df['Nombre'].isin(clones['Nombre'])][['Nombre', 'Equipo', 'Edad', 'Valor_Mercado', 'Potencial']]
     st.dataframe(display_df, use_container_width=True, hide_index=True)
+
     st.markdown("---")
     comp_player = st.selectbox("Seleccione candidato para comparativa tecnica", clones['Nombre'].unique())
+    
     c_left, c_right = st.columns(2)
     with c_left:
         st.subheader("Comparativa de Habilidades")
@@ -142,5 +145,3 @@ if df is not None:
             paper_bgcolor='#2c1e12', plot_bgcolor='rgba(0,0,0,0)', font_color="#e5d9b6"
         )
         st.plotly_chart(fig_line, use_container_width=True)
-else:
-    st.error("Error al cargar el archivo de datos. Verifique que players_data.csv este presente.")
