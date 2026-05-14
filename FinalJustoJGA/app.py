@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 from scipy.spatial import distance
 from sklearn.preprocessing import MinMaxScaler
 
-# 1. CONFIGURACION Y ESTILO PERSONALIZADO
 st.set_page_config(page_title="Elite Scouting System", layout="wide")
 
 st.markdown("""
@@ -37,22 +36,16 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# 2. CARGA DE DATOS
 @st.cache_data
 def load_data():
-    try:
-        # Se asume que el archivo players_data.csv esta en la misma carpeta
         return pd.read_csv('players_data.csv')
-    except:
-        return None
+
 
 df = load_data()
 
 if df is not None:
-    # --- SIDEBAR (PANEL LATERAL) ---
     st.sidebar.title("SISTEMA DE SCOUTING")
     st.sidebar.markdown("---")
-    
     target_player = st.sidebar.selectbox("Agente Objetivo", df['Nombre'].unique())
     
     st.sidebar.subheader("PARAMETROS TACTICOS")
@@ -60,7 +53,6 @@ if df is not None:
     umbral_edad = st.sidebar.slider("Limite de edad", 15, 40, 28)
     presupuesto = st.sidebar.number_input("Presupuesto Maximo (MEUR)", 0, 250, 150)
 
-    # --- PROCESAMIENTO DE INTELIGENCIA ---
     metrics = ['Goles', 'Asistencias', 'Pases_%', 'Regates', 'Recuperaciones', 'Duelos_Aereos', 'xG']
     scaler = MinMaxScaler()
     df_norm = df.copy()
@@ -77,12 +69,8 @@ if df is not None:
 
     clones = get_clones(target_player, df_norm, df)
     p_info = df[df['Nombre'] == target_player].iloc[0]
-
-    # --- CUERPO PRINCIPAL ---
     st.title("PANEL DE ANALISIS DE SCOUTING")
     st.markdown(f"Analisis detallado de {target_player} y busqueda de candidatos compatibles.")
-
-    # KPIs Superiores
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Unidad / Equipo", p_info['Equipo'])
     k2.metric("Edad", f"{p_info['Edad']} años")
@@ -90,8 +78,6 @@ if df is not None:
     k4.metric("Potencial", p_info['Potencial'])
 
     st.markdown("---")
-
-    # Graficos Principales
     col_left, col_right = st.columns(2)
 
     with col_left:
@@ -115,7 +101,6 @@ if df is not None:
             margin=dict(t=30, b=30, l=30, r=30)
         )
         st.plotly_chart(fig_radar, use_container_width=True)
-
     with col_right:
         st.subheader("Posicionamiento Tactico")
         fig_map = go.Figure()
@@ -131,16 +116,11 @@ if df is not None:
             paper_bgcolor='#2c1e12', plot_bgcolor='#2c1e12', height=400, font_color="#d4af37"
         )
         st.plotly_chart(fig_map, use_container_width=True)
-
-    # Tabla de Candidatos
     st.subheader("Candidatos Identificados")
     display_df = df[df['Nombre'].isin(clones['Nombre'])][['Nombre', 'Equipo', 'Edad', 'Valor_Mercado', 'Potencial']]
     st.dataframe(display_df, use_container_width=True, hide_index=True)
-
-    # Comparativa de Habilidades
     st.markdown("---")
     comp_player = st.selectbox("Seleccione candidato para comparativa tecnica", clones['Nombre'].unique())
-    
     c_left, c_right = st.columns(2)
     with c_left:
         st.subheader("Comparativa de Habilidades")
@@ -153,7 +133,6 @@ if df is not None:
 
     with c_right:
         st.subheader(f"Proyeccion de Crecimiento: {comp_player}")
-        # Simulacion de proyeccion basada en potencial
         anos = [2024, 2025, 2026, 2027]
         progreso = [c_info['Goles'], c_info['Goles'] + 2, c_info['Goles'] + 4, c_info['Goles'] + 7]
         fig_line = go.Figure(go.Scatter(x=anos, y=progreso, line=dict(color='#d4af37', width=3)))
